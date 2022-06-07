@@ -1,9 +1,10 @@
 import React from 'react';
+import HomeHeader from "./HomeHeader";
 
 function Home(props) {
     return (
         <div>
-            Home
+            <HomeHeader />
         </div>
     );
 }
