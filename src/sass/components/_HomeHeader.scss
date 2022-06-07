@@ -1,0 +1,14 @@
+.home-nav__container {
+  &-list {
+    font-family: $font-base;
+    font-weight: lighter;
+    font-size: 18px;
+    display: flex;
+    li {
+      margin: 20px;
+      a {
+        color: $color-darkgray;
+      }
+    }
+  }
+}
