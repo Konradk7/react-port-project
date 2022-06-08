@@ -1,4 +1,5 @@
 import React from 'react';
+import Decoration from '../assets/Decoration.svg'
 
 function HomeHeader() {
     return (
@@ -16,7 +17,16 @@ function HomeHeader() {
                     <li><a href="#">Kontakt</a></li>
                 </ul>
             </nav>
-            <h1 className="home-nav__container--title">Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce</h1>
+            <div className="home-header__container">
+                <h1 className="home-header__container--title">Zacznij pomagać!
+                    <br/> Oddaj niechciane rzeczy w zaufane ręce
+                </h1>
+                <img src={Decoration} alt="decoration" style={{marginLeft: "180px", marginTop: "20px"}}/>
+                <div>
+                    <a href="#">Oddaj rzeczy</a>
+                    <a href="#">Zorganizuj zbiórkę</a>
+                </div>
+            </div>
         </div>
     );
 }
