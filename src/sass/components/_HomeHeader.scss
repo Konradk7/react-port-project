@@ -4,13 +4,12 @@
   justify-content: end;
   width: 900px;
 
-  &-header {
+  &--header {
     display: flex;
     justify-content: end;
 
     li {
-      margin-right: 5px;
-      margin-top: 20px;
+      margin: 20px 5px;
 
       &:last-child {
         margin-right: 20px;
@@ -27,7 +26,7 @@
     }
   }
 
-  &-list {
+  &--list {
     font-family: $font-base;
     font-weight: lighter;
     font-size: 18px;
@@ -50,5 +49,9 @@
         }
       }
     }
+  }
+
+  &--title {
+    font-size: 38px;
   }
 }
