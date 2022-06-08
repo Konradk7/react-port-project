@@ -3,9 +3,9 @@ import React from 'react';
 function HomeHeader(props) {
     return (
         <nav className="home-nav__container">
-            <ul style={{display: "flex", justifyContent: "end"}}>
-                <li style={{marginRight: "30px"}}><a href="#" style={{ color: "gray"}}>Zaloguj</a></li>
-                <li style={{marginRight: "40px"}}><a href="#" style={{ color: "gray"}}>Załóż konto</a></li>
+            <ul className="home-nav__container-header">
+                <li><a href="#">Zaloguj</a></li>
+                <li><a href="#">Załóż konto</a></li>
             </ul>
             <ul className="home-nav__container-list">
                 <li><a href="#">Start</a></li>
