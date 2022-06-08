@@ -4,8 +4,8 @@ import Items from "../assets/Hero Image@2x.png"
 
 function Home(props) {
     return (
-        <div style={{display: "flex", position: "relative"}}>
-            <img src={Items} alt="items" style={{height: "700px", position: "relative", left: "-350px"}}/>
+        <div>
+            {/*<img src={Items} alt="items" style={{height: "700px", position: "relative", left: "-350px"}}/>*/}
             <HomeHeader />
         </div>
     );
