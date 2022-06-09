@@ -1,0 +1,35 @@
+.statistics__container {
+  height: 384px;
+  background-image: url("../../assets/OrangeBGC@2x.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  section {
+    height: 334px;
+    width: 252px;
+    margin-top: 100px;
+
+    h2 {
+      font-size: 90px;
+      color: $color-yellow;
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      font-size: 18px;
+      color: $color-darkgray;
+      margin-bottom: 28px;
+
+    }
+
+    p {
+      font-size: 16px;
+      color: $color-darkgray;
+
+    }
+  }
+}
