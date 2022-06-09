@@ -1,0 +1,45 @@
+import React from 'react';
+import Decoration from "../assets/Decoration.svg";
+import Package from "../assets/package@2x.png";
+import Refresh from "../assets/refresh@2x.png";
+import Shirt from "../assets/shirt@2x.png";
+import Zoom from "../assets/zoom@2x.png";
+
+function Settings() {
+    return (
+        <div>
+
+            <div>
+                <h2>Wystarczą 4 proste kroki</h2>
+                <img src={Decoration} alt="decoration"/>
+            </div>
+
+            <section>
+                <img src={Shirt} alt="shirt photo"/>
+                <h4>Wybierz rzeczy</h4>
+                <p>ubrania, zabawki, sprzęt i inne</p>
+            </section>
+
+            <section>
+                <img src={Package} alt="package photo"/>
+                <h4>Spakuj je</h4>
+                <p>skorzystaj z worków na śmieci</p>
+            </section>
+
+            <section>
+                <img src={Zoom} alt="zoom photo"/>
+                <h4>Zdecyduj komu chcesz pomóc</h4>
+                <p>wybierz zaufane miejsce</p>
+            </section>
+
+            <section>
+                <img src={Refresh} alt="refresh photo"/>
+                <h4>Zamów kuriera</h4>
+                <p>kurier przyjedzie w dogodnym terminie</p>
+            </section>
+
+        </div>
+    );
+}
+
+export default Settings;
