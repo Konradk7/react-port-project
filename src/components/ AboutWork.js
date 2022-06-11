@@ -3,13 +3,13 @@ import Decoration from '../assets/Decoration.svg';
 
 function AboutWork() {
     return (
-        <div>
-            <h2>Komu pomagamy?</h2>
-            <img src={Decoration} alt="decoration"/>
-            <div>
+        <div className="about-work__container">
+            <h2 className="about-work__container--title">Komu pomagamy?</h2>
+            <img src={Decoration} alt="decoration" className="about-work__container--decoration"/>
+            <div className="about-work__container--links">
                 <a href="#">Fundacjom</a>
-                <a href="#">Organizacjom pozarządowym</a>
-                <a href="#">Lokalnym zbiórkom</a>
+                <a href="#" style={{display: "flex", flexDirection: "column"}}><span>Organizacjom</span> <span>pozarządowym</span></a>
+                <a href="#" style={{display: "flex", flexDirection: "column"}}><span>Lokalnym</span> <span>zbiórkom</span></a>
             </div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,

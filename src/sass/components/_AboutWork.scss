@@ -1,0 +1,24 @@
+.about-work__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $font-alt;
+  color: $color-darkgray;
+
+  &--title {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+  &--decoration {
+    width: 225px;
+    margin-bottom: 35px;
+  }
+  &--links {
+    margin-bottom: 35px;
+    display: flex;
+    a {
+      color: $color-darkgray;
+      margin: 40px;
+    }
+  }
+}
