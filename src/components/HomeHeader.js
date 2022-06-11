@@ -23,9 +23,9 @@ function HomeHeader() {
                     <br/> Oddaj niechciane rzeczy w zaufane ręce
                 </h1>
                 <img src={Decoration} alt="decoration" style={{marginLeft: "180px", marginTop: "20px"}}/>
-                <div>
-                    <a href="#">Oddaj rzeczy</a>
-                    <a href="#">Zorganizuj zbiórkę</a>
+                <div style={{display: "flex"}}>
+                    <a href="#" style={{display: "flex", flexDirection: "column"}}><span>Oddaj</span> <span>rzeczy</span></a>
+                    <a href="#" style={{display: "flex", flexDirection: "column"}}><span>Zorganizuj</span><span>zbiórkę</span></a>
                 </div>
             </div>
         </div>

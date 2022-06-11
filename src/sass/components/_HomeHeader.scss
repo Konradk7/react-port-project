@@ -69,13 +69,17 @@
       font-size: 36px;
       font-weight: lighter;
       color: $color-darkgray;
-      padding: 20px 30px;
+      padding: 15px 40px;
       text-transform: uppercase;
-      border: 1px solid gray;
+      border: 0.75px solid #3C3C3C;
       cursor: pointer;
 
+      &:first-child {
+        text-align: center;
+        width: 200px;
+      }
       &:last-child {
-        margin-left: 30px;
+        margin-left: 40px;
       }
     }
   }
