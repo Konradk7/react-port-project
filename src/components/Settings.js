@@ -45,7 +45,7 @@ function Settings() {
 
             </div>
 
-            <h3 style={{fontSize: "36px", border: "1px solid gray", width: "100px", padding: "10px 30px"}}>Oddaj rzeczy</h3>
+            <a href="#" className="settings__container--footer" >Oddaj rzeczy</a>
         </div>
     );
 }

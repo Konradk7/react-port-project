@@ -16,6 +16,16 @@
     margin: 27px 0 27px 90px;
 
   }
+  &--footer {
+    font-size: 36px;
+    font-family: $font-alt;
+    font-weight: lighter;
+    color: $color-darkgray;
+    border: 1px solid $color-gray;
+    width: 100px;
+    padding: 15px 80px;
+    margin: 50px;
+  }
 
   &--elements {
     display: flex;
@@ -36,15 +46,18 @@
 
       h4 {
         font-family: $font-alt;
+        color: $color-darkgray;
         margin: 3px;
       }
+
       div {
         width: 70px;
         margin: 10px 0 10px 25px;
-        border: 0.02rem solid #707070;
+        border: 0.02rem solid $color-gray;
       }
-      p {
 
+      p {
+        color: $color-darkgray;
       }
     }
   }
