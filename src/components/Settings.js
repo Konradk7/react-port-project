@@ -10,8 +10,8 @@ function Settings() {
         <div className="settings__container">
 
             <div>
-                <h2>Wystarczą 4 proste kroki</h2>
-                <img src={Decoration} alt="decoration"/>
+                <h2 className="settings__container--title">Wystarczą 4 proste kroki</h2>
+                <img className="settings__container--decoration" src={Decoration} alt="decoration"/>
             </div>
 
             <div className="settings__container--elements">
