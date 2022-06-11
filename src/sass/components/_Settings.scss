@@ -11,10 +11,12 @@
     color: $color-darkgray;
 
   }
+
   &--decoration {
     margin: 27px 0 27px 90px;
 
   }
+
   &--elements {
     display: flex;
     justify-content: space-around;
@@ -22,10 +24,27 @@
     width: 100%;
     height: 325px;
     background: $color-white;
+
     section {
       text-align: center;
+      width: 120px;
+
       img {
         height: 83px;
+        margin-bottom: 10px;
+      }
+
+      h4 {
+        font-family: $font-alt;
+        margin: 3px;
+      }
+      div {
+        width: 70px;
+        margin: 10px 0 10px 25px;
+        border: 0.02rem solid #707070;
+      }
+      p {
+
       }
     }
   }

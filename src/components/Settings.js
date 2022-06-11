@@ -18,24 +18,28 @@ function Settings() {
                 <section>
                     <img src={Shirt} alt="shirt photo"/>
                     <h4>Wybierz rzeczy</h4>
+                    <div></div>
                     <p>ubrania, zabawki, sprzęt i inne</p>
                 </section>
 
                 <section>
                     <img src={Package} alt="package photo"/>
                     <h4>Spakuj je</h4>
+                    <div></div>
                     <p>skorzystaj z worków na śmieci</p>
                 </section>
 
                 <section>
                     <img src={Zoom} alt="zoom photo"/>
                     <h4>Zdecyduj komu chcesz pomóc</h4>
+                    <div></div>
                     <p>wybierz zaufane miejsce</p>
                 </section>
 
                 <section>
                     <img src={Refresh} alt="refresh photo"/>
                     <h4>Zamów kuriera</h4>
+                    <div></div>
                     <p>kurier przyjedzie w dogodnym terminie</p>
                 </section>
 
