@@ -6,17 +6,18 @@ import People from "../assets/People.jpg";
 function AboutUs(props) {
     return (
         <div className="about-us__container">
-            <div>
+            <div className="about-us__container--main">
                 <h2>O nas</h2>
                 <img src={Decoration} alt="decoration"/>
                 <p>
                     Nori grape silver beet broccoli kombu beet greens fava bean potato
-                    quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil
-                    turnip greens parsnip.
+                    quandong celery.
                 </p>
+                <p>Bunya nuts black-eyed pea prairie turnip leek lentil
+                    turnip greens parsnip.</p>
                 <img src={Signature} alt="signature"/>
             </div>
-            <img src={People} alt="people"/>
+            <img src={People} alt="people" className="about-us__container--image"/>
         </div>
     );
 }
