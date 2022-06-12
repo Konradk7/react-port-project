@@ -5,6 +5,7 @@ import Settings from "./Settings";
 import Items from "../assets/Hero Image@2x.png"
 import AboutUs from "./AboutUs";
 import AboutWork from "./ AboutWork";
+import Footer from "./Footer";
 
 
 function Home() {
@@ -25,6 +26,7 @@ function Home() {
             <Settings />
             <AboutUs />
             <AboutWork />
+            <Footer />
         </div>
     );
 }
