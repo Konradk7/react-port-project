@@ -9,16 +9,26 @@
     font-size: 38px;
     margin-bottom: 20px;
   }
+
   &--decoration {
     width: 225px;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
   }
+
   &--links {
     margin-bottom: 35px;
     display: flex;
+
     a {
+      font-size: 24px;
       color: $color-darkgray;
       margin: 40px;
+      padding: 10px 20px;
+      border: 1px solid transparent;
+
+      &:hover {
+        border: 1px solid $color-gray;
+      }
     }
   }
 }

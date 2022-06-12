@@ -17,7 +17,7 @@ function Home() {
                          height: "800px",
                          position: "relative",
                          left: "-320px",
-                         width: "930px"
+                         width: "950px"
                 }}/>
                 <HomeHeader/>
             </div>
