@@ -3,7 +3,7 @@ import Decoration from '../assets/Decoration.svg'
 
 function HomeHeader() {
     return (
-        <div style={{position: "relative", right: "100px"}}>
+        <div>
             <nav className="home-nav__container">
                 <ul className="home-nav__container--header">
                     <li><a href="#">Zaloguj</a></li>

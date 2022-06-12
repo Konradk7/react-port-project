@@ -12,7 +12,7 @@ import Copyright from "./Copyright";
 function Home() {
     return (
         <div>
-            <div style={{display: "flex"}}>
+            <div style={{display: "flex", justifyContent: "space-between"}}>
                 <img src={Items}
                      alt="items"
                      style={{
