@@ -1,0 +1,21 @@
+.copyright {
+  position: relative;
+
+  &__container {
+    display: flex;
+    width: 100%;
+    align-items: end;
+    justify-content: space-around;
+    font-family: $font-alt;
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+
+    p {
+      margin-left: 700px;
+    }
+    div {
+      margin-left: 500px;
+    }
+  }
+}
