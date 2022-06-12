@@ -7,7 +7,7 @@
 
   &--title {
     font-size: 38px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   &--decoration {
@@ -21,11 +21,56 @@
 
     a {
       font-size: 24px;
+      font-weight: lighter;
       color: $color-darkgray;
-      margin: 40px;
+      margin: 30px 50px 20px 50px;
       padding: 10px 20px;
       border: 1px solid transparent;
 
+      &:hover {
+        border: 1px solid $color-gray;
+      }
+    }
+  }
+
+  &--main {
+    width: 600px;
+    font-size: 22px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+  }
+
+  section {
+    font-family: $font-base;
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $color-gray;
+    padding: 25px 0;
+    &:last-of-type {
+      border-bottom: 1px solid transparent;
+    }
+
+    h2 {
+      font-size: 26px;
+      font-weight: lighter;
+
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: lighter;
+
+    }
+  }
+  &--footer {
+    margin: 20px;
+    a {
+      padding: 10px;
+      margin: 15px;
+      color: $color-gray;
+      border: 1px solid transparent;
       &:hover {
         border: 1px solid $color-gray;
       }
