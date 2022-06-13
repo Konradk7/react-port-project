@@ -20,7 +20,7 @@ function LogIn() {
                     <label htmlFor="password">Hasło</label>
                     <input type="password" name="password"/>
                 </form>
-                <div>
+                <div className="login__container--footer">
                     <Link to="/register">Załóż konto</Link>
                     <button>Zaloguj się</button>
                 </div>
