@@ -1,0 +1,17 @@
+.login {
+  &--navigation {
+    display: flex;
+    justify-content: end;
+    margin-right: 100px;
+  }
+  &__container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 200px;
+    }
+  }
+}

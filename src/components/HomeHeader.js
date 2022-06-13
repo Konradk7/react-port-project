@@ -3,23 +3,12 @@ import {
     Link
 } from "react-router-dom";
 import Decoration from '../assets/Decoration.svg'
+import Navigation from "./Navigation";
 
 function HomeHeader() {
     return (
         <div>
-            <nav className="home-nav__container">
-                <ul className="home-nav__container--header">
-                    <li><Link to="/login">Zaloguj</Link></li>
-                    <li><Link to="/register">Załóż konto</Link></li>
-                </ul>
-                <ul className="home-nav__container--list">
-                    <li><a href="#">Start</a></li>
-                    <li><a href="#">O co chodzi?</a></li>
-                    <li><a href="#">O nas</a></li>
-                    <li><a href="#">Fundacja i organizacje</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
-            </nav>
+            <Navigation />
             <div className="home-header__container">
                 <h1 className="home-header__container--title">
                     Zacznij pomagać!
