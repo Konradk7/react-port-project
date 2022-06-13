@@ -1,0 +1,64 @@
+.select-things {
+  background-image: url("../../assets/Background-Form@2x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: $font-alt;
+
+  &__container {
+    padding: 35px 100px;
+    h4 {
+      font-size: 24px;
+      font-weight: lighter;
+      color: $color-darkgray;
+      margin-bottom: 60px;
+    }
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+
+      section {
+        margin-bottom: 40px;
+
+
+
+        input {
+          height: 35px;
+          width: 35px;
+          position: relative;
+          margin-right: 30px;
+
+        &:checked::before {
+          content: "";
+          position: absolute;
+          background: $color-lightyellow;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          height: 35px;
+          width: 35px;
+          border: 1px solid $color-darkgray;
+        }
+        }
+        label {
+          font-size: 24px;
+          font-weight: lighter;
+
+        }
+      }
+    }
+    button {
+      font-family: $font-alt;
+      font-size: 24px;
+      font-weight: lighter;
+      margin-top: 110px;
+      padding: 20px 50px;
+    }
+  }
+}
