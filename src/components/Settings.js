@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import Decoration from "../assets/Decoration.svg";
 import Package from "../assets/package@2x.png";
 import Refresh from "../assets/refresh@2x.png";
@@ -45,7 +46,7 @@ function Settings() {
 
             </div>
 
-            <a href="#" className="settings__container--footer" >Oddaj rzeczy</a>
+            <Link to="/give-items" className="settings__container--footer" >Oddaj rzeczy</Link>
         </div>
     );
 }
