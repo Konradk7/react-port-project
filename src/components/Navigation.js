@@ -9,7 +9,7 @@ function Navigation() {
                     <li><Link to="/register">Załóż konto</Link></li>
                 </ul>
                 <ul className="home-nav__container--list">
-                    <li><a href="#">Start</a></li>
+                    <li><Link to="/">Start</Link></li>
                     <li><a href="#">O co chodzi?</a></li>
                     <li><a href="#">O nas</a></li>
                     <li><a href="#">Fundacja i organizacje</a></li>
