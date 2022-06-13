@@ -1,0 +1,18 @@
+.alert {
+  font-family: $font-alt;
+  background: #FAD648;
+  padding: 50px 0;
+
+  &__container {
+    margin-left: 150px;
+
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 22px;
+    }
+  }
+}
