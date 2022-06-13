@@ -1,4 +1,7 @@
 import React from 'react';
+import {
+    Link
+} from "react-router-dom";
 import Decoration from '../assets/Decoration.svg'
 
 function HomeHeader() {
@@ -6,8 +9,8 @@ function HomeHeader() {
         <div>
             <nav className="home-nav__container">
                 <ul className="home-nav__container--header">
-                    <li><a href="#">Zaloguj</a></li>
-                    <li><a href="#">Załóż konto</a></li>
+                    <li><Link to="/login">Zaloguj</Link></li>
+                    <li><Link to="/register">Załóż konto</Link></li>
                 </ul>
                 <ul className="home-nav__container--list">
                     <li><a href="#">Start</a></li>
