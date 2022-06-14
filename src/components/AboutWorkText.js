@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AboutWorkText() {
+function AboutWorkText(key, value, checked) {
 
 
     return (
@@ -31,10 +31,7 @@ function AboutWorkText() {
                 </div>
                 <p>Mi, quis, hendrerit, dolor</p>
             </section>
-            <div className="about-work__container--footer">
-                <a href="#">1</a>
-                <a href="#">2</a>
-            </div>
+
         </>
 
     );

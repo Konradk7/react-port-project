@@ -9,6 +9,7 @@ import Home from "./components/Home";
 import LogIn from "./components/LogIn";
 import Register from "./components/Register";
 import GiveItems from "./components/GiveItems";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path='/login' element={<LogIn/>}/>
             <Route path='/register' element={<Register/>}/>
             <Route path='/give-items' element={<GiveItems/>}/>
+            <Route path='/about-us' element={<AboutUs/>}/>
         </Routes>
     </Router>
   );
