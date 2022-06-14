@@ -19,13 +19,14 @@
     margin-bottom: 35px;
     display: flex;
 
-    a {
+    h3 {
       font-size: 24px;
       font-weight: lighter;
       color: $color-darkgray;
       margin: 30px 50px 20px 50px;
       padding: 10px 20px;
       border: 1px solid transparent;
+      cursor: pointer;
 
       &:hover {
         border: 1px solid $color-gray;
