@@ -17,28 +17,28 @@ function Settings() {
 
             <div className="settings__container--elements">
                 <section>
-                    <img src={Shirt} alt="shirt photo"/>
+                    <img src={Shirt} alt="shirt"/>
                     <h4>Wybierz rzeczy</h4>
                     <div></div>
                     <p>ubrania, zabawki, sprzęt i inne</p>
                 </section>
 
                 <section>
-                    <img src={Package} alt="package photo"/>
+                    <img src={Package} alt="package"/>
                     <h4>Spakuj je</h4>
                     <div></div>
                     <p>skorzystaj z worków na śmieci</p>
                 </section>
 
                 <section>
-                    <img src={Zoom} alt="zoom photo"/>
+                    <img src={Zoom} alt="zoom"/>
                     <h4>Zdecyduj komu chcesz pomóc</h4>
                     <div></div>
                     <p>wybierz zaufane miejsce</p>
                 </section>
 
                 <section>
-                    <img src={Refresh} alt="refresh photo"/>
+                    <img src={Refresh} alt="refresh"/>
                     <h4>Zamów kuriera</h4>
                     <div></div>
                     <p>kurier przyjedzie w dogodnym terminie</p>
