@@ -11,10 +11,10 @@ function Navigation() {
                 </ul>
                 <ul className="home-nav__container--list">
                     <li><Link to="/">Start</Link></li>
-                    <li><a href="#">O co chodzi?</a></li>
+                    <li><Link to="#">O co chodzi?</Link></li>
                     <li><Link to="/about-us">O nas</Link></li>
-                    <li><a href="#">Fundacja i organizacje</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><Link to="#">Fundacja i organizacje</Link></li>
+                    <li><Link to="#">Kontakt</Link></li>
                 </ul>
             </nav>
     );

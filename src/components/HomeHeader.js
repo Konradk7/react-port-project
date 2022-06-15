@@ -17,7 +17,7 @@ function HomeHeader() {
                 <img src={Decoration} alt="decoration" style={{marginLeft: "190px", marginTop: "20px"}}/>
                 <div style={{display: "flex"}}>
                     <Link to="/give-items" style={{display: "flex", flexDirection: "column"}}><span>Oddaj</span> <span>rzeczy</span></Link>
-                    <a href="#" style={{display: "flex", flexDirection: "column"}}><span>Zorganizuj</span><span>zbiórkę</span></a>
+                    <Link to="#" style={{display: "flex", flexDirection: "column"}}><span>Zorganizuj</span><span>zbiórkę</span></Link>
                 </div>
             </div>
         </div>
