@@ -6,7 +6,7 @@ import AboutUs from "./AboutUs";
 import AboutWork from "./ AboutWork";
 import Footer from "./Footer";
 import Copyright from "./Copyright";
-import Items from "../assets/Hero Image@2x.png"
+import Items from "../assets/Hero-Image@2x.png"
 
 
 function Home() {
