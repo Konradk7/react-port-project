@@ -1,12 +1,12 @@
 .home-nav__container {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   width: 900px;
 
   &--header {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 
     li {
       margin: 20px 5px;
@@ -32,7 +32,7 @@
     font-weight: lighter;
     font-size: 18px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 
     li {
       margin: 20px;
