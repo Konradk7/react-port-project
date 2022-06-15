@@ -1,8 +1,6 @@
 import React from 'react';
 import Decoration from "../assets/Decoration.svg";
-import Facebook from "../assets/Facebook.svg";
-import Instagram from "../assets/Instagram.svg";
-import Copyright from "./Copyright";
+
 
 function Footer() {
     return (
