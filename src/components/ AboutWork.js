@@ -4,7 +4,6 @@ import Decoration from '../assets/Decoration.svg';
 
 
 function AboutWork() {
-    const [selected, setSelected] = useState(<AboutWorkText />);
 
 
     return (
@@ -18,7 +17,7 @@ function AboutWork() {
                 <h3 style={{display: "flex", flexDirection: "column"}} ><span>Lokalnym</span>
                     <span>zbiórkom</span></h3>
             </div>
-            {selected}
+            <AboutWorkText />
             <div className="about-work__container--footer">
                 <button>1</button>
                 <button>2</button>
