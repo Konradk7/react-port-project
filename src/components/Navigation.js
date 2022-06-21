@@ -14,9 +14,9 @@ function Navigation() {
                 <ul className="home-nav__container--list">
                     <li><Link to="/">Start</></li>
                     <li><ScrollLink to="settings" smooth={true} duration={1000}>O co chodzi?</ScrollLink></li>
-                    <li><ScrollLink to="/about-us">O nas</ScrollLink></li>
-                    <li><ScrollLink to="#">Fundacja i organizacje</ScrollLink></li>
-                    <li><ScrollLink to="#">Kontakt</ScrollLink></li>
+                    <li><ScrollLink to="about-us" smooth={true} duration={1000}>O nas</ScrollLink></li>
+                    <li><ScrollLink to="about-work" smooth={true} duration={1000}>Fundacja i organizacje</ScrollLink></li>
+                    <li><ScrollLink to="footer-form" smooth={true} duration={1000}>Kontakt</ScrollLink></li>
                 </ul>
             </nav>
     );

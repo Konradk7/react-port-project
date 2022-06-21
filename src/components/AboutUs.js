@@ -5,7 +5,7 @@ import People from "../assets/People.jpg";
 
 function AboutUs(props) {
     return (
-        <div className="about-us__container">
+        <div className="about-us__container" id="about-us">
             <div className="about-us__container--main">
                 <h2>O nas</h2>
                 <img src={Decoration} alt="decoration"/>

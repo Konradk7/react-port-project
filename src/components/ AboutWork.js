@@ -7,7 +7,7 @@ function AboutWork() {
 
 
     return (
-        <div className="about-work__container">
+        <div className="about-work__container" id="about-work">
             <h2 className="about-work__container--title">Komu pomagamy?</h2>
             <img src={Decoration} alt="decoration" className="about-work__container--decoration"/>
             <div className="about-work__container--links">

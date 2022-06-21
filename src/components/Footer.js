@@ -4,7 +4,7 @@ import Decoration from "../assets/Decoration.svg";
 
 function Footer() {
     return (
-        <div className="footer__container">
+        <div className="footer__container" id="footer-form">
             <div className="footer__container--main">
                 <div className="footer__container--header">
                     <h2>Skontaktuj się z nami</h2>
