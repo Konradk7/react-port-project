@@ -8,7 +8,7 @@ import Zoom from "../assets/zoom@2x.png";
 
 function Settings() {
     return (
-        <div className="settings__container">
+        <div className="settings__container" id="settings">
 
             <div>
                 <h2 className="settings__container--title">Wystarczą 4 proste kroki</h2>

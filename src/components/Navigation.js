@@ -1,15 +1,10 @@
 import React from 'react';
 import {Link} from "react-router-dom"
-import * as Scroll from 'react-scroll';
-import { animateScroll as scroll } from 'react-scroll'
+import {Link as ScrollLink} from 'react-scroll';
 
 
 
 function Navigation() {
-    let scroll   = Scroll.animateScroll;
-    const scrollTo = () => {
-        scroll.scrollTo(1000);
-    }
     return (
             <nav className="home-nav__container">
                 <ul className="home-nav__container--header">
@@ -17,11 +12,11 @@ function Navigation() {
                     <li><Link to="/register">Załóż konto</Link></li>
                 </ul>
                 <ul className="home-nav__container--list">
-                    <li><Scroll to="/">Start</></li>
-                    <li><a onClick={scrollTo}>O co chodzi?</a></li>
-                    <li><Scroll to="/about-us">O nas</Scroll></li>
-                    <li><Scroll to="#">Fundacja i organizacje</Scroll></li>
-                    <li><Scroll to="#">Kontakt</Scroll></li>
+                    <li><Link to="/">Start</></li>
+                    <li><ScrollLink to="settings" smooth={true} duration={1000}>O co chodzi?</ScrollLink></li>
+                    <li><ScrollLink to="/about-us">O nas</ScrollLink></li>
+                    <li><ScrollLink to="#">Fundacja i organizacje</ScrollLink></li>
+                    <li><ScrollLink to="#">Kontakt</ScrollLink></li>
                 </ul>
             </nav>
     );
