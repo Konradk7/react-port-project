@@ -6,12 +6,12 @@
     border-bottom: 2px solid rgba(189, 195, 199);
 
     &:last-of-type {
-      margin-left: 20px;
+      margin-left: toRem(20);
     }
   }
 
   label {
-    font-size: 16px;
+    font-size: toRem(16);
     font-family: $font-alt;
     font-weight: 600;
 
@@ -19,10 +19,10 @@
   }
 
   input {
-    font-size: 18px;
+    font-size: toRem(18);
     font-family: $font-alt;
     border: none;
-    margin-top: 15px;
+    margin-top: toRem(15);
     background: transparent;
 
 
@@ -35,36 +35,36 @@
 .footer-form__main {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: toRem(20);
 
 
   label {
-    font-size: 16px;
+    font-size: toRem(16);
     font-family: $font-alt;
     font-weight: 600;
   }
 
   input {
-    font-size: 18px;
+    font-size: toRem(18);
     font-family: $font-alt;
     border: none;
-    margin-top: 15px;
+    margin-top: toRem(15);
     background: transparent;
-    height: 200px;
+    height: toRem(200);
 
   }
 
   textarea {
     background: transparent;
     font-family: $font-alt;
-    font-size: 18px;
+    font-size: toRem(18);
     resize: none;
     width: 100%;
-    height: 100px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    height: toRem(100);
+    margin-top: toRem(20);
+    margin-bottom: toRem(40);
     border: none;
-    border-bottom: 2px solid rgba(189, 195, 199);
+    border-bottom: toRem(2) solid rgba(189, 195, 199);
 
     &::placeholder {
       opacity: 0.3;
@@ -78,12 +78,12 @@
   justify-content: flex-end;
 
   button {
-    padding: 8px 45px;
-    font-size: 18px;
+    padding: toRem(8) toRem(45);
+    font-size: toRem(18);
     font-family: $font-alt;
     font-weight: lighter;
     background: transparent;
-    border: 0.75px solid $color-darkgray;
+    border: toRem(0.75) solid $color-darkgray;
     cursor: pointer;
 
   }

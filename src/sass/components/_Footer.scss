@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 100px;
+  margin-top: toRem(100);
 
   &::before {
     content: "";
@@ -22,21 +22,21 @@
   }
 
   &--main {
-    margin-right: 100px;
+    margin-right: toRem(100);
     z-index: 10;
-    width: 530px;
+    width: toRem(530);
   }
 
   &--header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: toRem(40);
 
     h2 {
-      font-size: 38px;
+      font-size: toRem(38);
       font-family: $font-alt;
-      margin-bottom: 25px;
+      margin-bottom: toRem(25);
     }
   }
 }
