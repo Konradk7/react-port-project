@@ -1,30 +1,30 @@
 .settings__container {
-  margin-top: 40px;
+  margin-top: toRem(40);
   display: flex;
   flex-direction: column;
   align-items: center;
 
 
   &--title {
-    font-size: 38px;
+    font-size: toRem(38);
     font-family: $font-alt;
     color: $color-darkgray;
 
   }
 
   &--decoration {
-    margin: 27px 0 27px 90px;
+    margin: toRem(27) 0 toRem(27) toRem(90);
 
   }
   &--footer {
-    font-size: 36px;
+    font-size: toRem(36);
     font-family: $font-alt;
     font-weight: lighter;
     color: $color-darkgray;
-    border: 1px solid $color-gray;
-    width: 100px;
-    padding: 15px 80px;
-    margin: 50px;
+    border: toRem(1) solid $color-gray;
+    width: toRem(100);
+    padding: toRem(15) toRem(80);
+    margin: toRem(50);
   }
 
   &--elements {
@@ -32,27 +32,27 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 325px;
+    height: toRem(325);
     background: $color-white;
 
     section {
       text-align: center;
-      width: 120px;
+      width: toRem(120);
 
       img {
-        height: 83px;
-        margin-bottom: 10px;
+        height: toRem(83);
+        margin-bottom: toRem(10);
       }
 
       h4 {
         font-family: $font-alt;
         color: $color-darkgray;
-        margin: 3px;
+        margin: toRem(3);
       }
 
       div {
-        width: 70px;
-        margin: 10px 0 10px 25px;
+        width: toRem(70);
+        margin: toRem(10) 0 toRem(10) toRem(25);
         border: 0.02rem solid $color-gray;
       }
 
