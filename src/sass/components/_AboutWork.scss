@@ -16,69 +16,69 @@
   }
 
   &--links {
-    margin-bottom: 35px;
+    margin-bottom: toRem(35);
     display: flex;
 
     h3 {
-      font-size: 24px;
+      font-size: toRem(24);
       font-weight: lighter;
       color: $color-darkgray;
-      margin: 30px 50px 20px 50px;
-      padding: 10px 20px;
-      border: 1px solid transparent;
+      margin: toRem(30) toRem(50) toRem(20) toRem(50);
+      padding: toRem(10) toRem(20);
+      border: toRem(1) solid transparent;
       cursor: pointer;
 
       &:hover {
-        border: 1px solid $color-gray;
+        border: toRem(1) solid $color-gray;
       }
     }
   }
 
   &--main {
-    width: 600px;
-    font-size: 22px;
+    width: toRem(600);
+    font-size: toRem(22);
     font-weight: lighter;
-    margin-bottom: 50px;
+    margin-bottom: toRem(50);
   }
 
   section {
     font-family: $font-base;
-    width: 1280px;
+    width: toRem(1280);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid $color-gray;
-    padding: 25px 0;
+    border-bottom: toRem(1) solid $color-gray;
+    padding: toRem(25) 0;
 
     &:last-of-type {
-      border-bottom: 1px solid transparent;
+      border-bottom: toRem(1) solid transparent;
     }
 
     h2 {
-      font-size: 26px;
+      font-size: toRem(26);
       font-weight: lighter;
 
     }
 
     p {
-      font-size: 18px;
+      font-size: toRem(18);
       font-weight: lighter;
 
     }
   }
 
   &--footer {
-    margin: 20px;
+    margin: toRem(20);
 
     button {
-      padding: 10px;
-      margin: 10px 15px;
+      padding: toRem(10);
+      margin: toRem(10) toRem(15);
       color: $color-gray;
-      border: 1px solid transparent;
+      border: toRem(1) solid transparent;
       background: transparent;
 
       &:hover {
-        border: 1px solid $color-gray;
+        border: toRem(1) solid $color-gray;
       }
     }
   }
