@@ -3,6 +3,7 @@
   justify-content: space-between;
   background-color: $color-white;
   margin-bottom: toRem(40);
+  min-width: toRem(1800);
 
   &--main {
     width: toRem(620);

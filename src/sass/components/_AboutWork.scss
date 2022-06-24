@@ -4,6 +4,7 @@
   align-items: center;
   font-family: $font-alt;
   color: $color-darkgray;
+  min-width: toRem(1800);
 
   &--title {
     font-size: 38px;
