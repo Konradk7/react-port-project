@@ -2,26 +2,26 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 900px;
+  width: toRem(900);
 
   &--header {
     display: flex;
     justify-content: flex-end;
 
     li {
-      margin: 20px 5px;
+      margin: toRem(20) toRem(5);
 
       &:last-child {
-        margin-right: 20px;
+        margin-right: toRem(20);
       }
 
       a {
         color: $color-gray;
-        padding: 10px 10px;
-        border: 1px solid transparent;
+        padding: toRem(10);
+        border: toRem(1) solid transparent;
 
         &:hover {
-          border: 1px solid gold;
+          border: toRem(1) solid gold;
         }
       }
     }
@@ -30,12 +30,12 @@
   &--list {
     font-family: $font-base;
     font-weight: lighter;
-    font-size: 18px;
+    font-size: toRem(18);
     display: flex;
     justify-content: flex-end;
 
     li {
-      margin: 20px;
+      margin: toRem(20);
 
       &:last-child {
         margin-right: 0;
@@ -43,12 +43,12 @@
 
       a {
         color: $color-darkgray;
-        padding: 10px 20px;
-        border: 1px solid transparent;
+        padding: toRem(10) toRem(20);
+        border: toRem(1) solid transparent;
 
 
         &:hover {
-          border: 1px solid $color-gray;
+          border: toRem(1) solid $color-gray;
         }
       }
     }
@@ -58,32 +58,32 @@
 .home-header__container {
   &--title {
     width: 70%;
-    font-size: 38px;
+    font-size: toRem(38);
     text-align: center;
-    margin-right: 300px;
-    margin-top: 150px;
+    margin-right: toRem(300);
+    margin-top: toRem(150);
   }
 
   div {
-    margin-top: 100px;
+    margin-top: toRem(100);
 
     a {
       font-family: $font-alt;
-      font-size: 36px;
+      font-size: toRem(36);
       font-weight: lighter;
       color: $color-darkgray;
-      padding: 15px 40px;
+      padding: toRem(15) toRem(40);
       text-transform: uppercase;
-      border: 0.75px solid #3C3C3C;
+      border: toRem(0.75) solid #3C3C3C;
       cursor: pointer;
 
       &:first-child {
         text-align: center;
-        width: 200px;
-        margin-left: 15px;
+        width: toRem(200);
+        margin-left: toRem(15);
       }
       &:last-child {
-        margin-left: 40px;
+        margin-left: toRem(40);
       }
     }
   }
