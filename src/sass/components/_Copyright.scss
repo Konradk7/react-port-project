@@ -8,14 +8,14 @@
     justify-content: space-around;
     font-family: $font-alt;
     position: absolute;
-    bottom: 10px;
+    bottom: toRem(10);
     z-index: 10;
 
     p {
-      margin-left: 700px;
+      margin-left: toRem(700);
     }
     div {
-      margin-left: 500px;
+      margin-left: toRem(500);
     }
   }
 }
