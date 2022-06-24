@@ -7,7 +7,7 @@ import Copyright from "./Copyright";
 
 function GiveItems() {
     return (
-        <div>
+        <div style={{minWidth: "1800px"}}>
             <GiveItemsHead />
             <Alert />
             <SelectThings />
