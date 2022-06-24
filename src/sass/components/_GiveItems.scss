@@ -24,21 +24,21 @@
 
     h1 {
       font-family: $font-alt;
-      font-size: 38px;
+      font-size: toRem(38);
     }
 
     &--boxes {
-      width: 640px;
+      width: toRem(640);
 
       img {
-        width: 250px;
-        margin: 30px 0;
+        width: toRem(250);
+        margin: toRem(30) 0;
 
       }
 
       h2 {
         font-family: $font-alt;
-        font-size: 40px;
+        font-size: toRem(40);
         font-weight: lighter;
       }
     }
@@ -47,31 +47,30 @@
 .give-items__boxes {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: toRem(30);
 
   section {
-    //padding: 30px 30px;
     font-family: $font-alt;
     font-weight: lighter;
     position: relative;
-    margin: 35px;
+    margin: toRem(35);
 
 
     h3 {
-      font-size: 32px;
-      margin-bottom: 30px;
+      font-size: toRem(32);
+      margin-bottom: toRem(30);
 
     }
     p {
-      font-size: 22px;
+      font-size: toRem(22);
 
     }
     div {
       position: absolute;
-      border: 1px solid $color-gray;
-      height: 140px;
-      width: 140px;
-      right: -25px;
+      border: toRem(1) solid $color-gray;
+      height: toRem(140);
+      width: toRem(140);
+      right: toRem(-25);
       top: 0;
       transform: rotate(45deg);
     }
