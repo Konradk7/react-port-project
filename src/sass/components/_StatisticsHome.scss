@@ -1,5 +1,5 @@
 .statistics__container {
-  height: 384px;
+  height: toRem(384);
   background-image: url("../../assets/OrangeBGC@2x.png");
   background-size: cover;
   background-position: center;
@@ -9,25 +9,25 @@
   text-align: center;
 
   section {
-    height: 334px;
-    width: 252px;
-    margin-top: 95px;
+    height: toRem(334);
+    width: toRem(252);
+    margin-top: toRem(95);
 
     h2 {
-      font-size: 90px;
+      font-size: toRem(90);
       color: $color-yellow;
-      margin-bottom: 16px;
+      margin-bottom: toRem(16);
     }
 
     h3 {
-      font-size: 18px;
+      font-size: toRem(18);
       color: $color-darkgray;
-      margin-bottom: 28px;
+      margin-bottom: toRem(28);
 
     }
 
     p {
-      font-size: 16px;
+      font-size: toRem(16);
       color: $color-darkgray;
 
     }
