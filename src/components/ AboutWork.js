@@ -5,11 +5,7 @@ import Decoration from '../assets/Decoration.svg';
 
 
 function AboutWork() {
-    const [who, setWho] = useState(0);
-    const [pageNumber, setPageNumber] = useState(0);
 
-    const infoPerPage = 3;
-    const pagesVisited = pageNumber * infoPerPage;
     return (
         <div className="about-work__container" id="about-work">
             <h2 className="about-work__container--title">Komu pomagamy?</h2>
@@ -22,10 +18,7 @@ function AboutWork() {
                     <span>zbiórkom</span></h3>
             </div>
             <AboutWorkText />
-            <div className="about-work__container--footer">
-                <button>1</button>
-                <button>2</button>
-            </div>
+
         </div>
     );
 }
