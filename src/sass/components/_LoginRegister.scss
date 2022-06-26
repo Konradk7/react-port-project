@@ -2,7 +2,7 @@
   &--navigation {
     display: flex;
     justify-content: flex-end;
-    margin-right: 100px;
+    margin-right: toRem(100);
   }
 
   &__container {
