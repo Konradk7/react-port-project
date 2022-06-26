@@ -3,7 +3,7 @@
   justify-content: space-between;
 
   section {
-    border-bottom: 2px solid rgba(189, 195, 199);
+    border-bottom: toRem(2) solid rgba(189, 195, 199);
 
     &:last-of-type {
       margin-left: toRem(20);

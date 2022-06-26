@@ -7,13 +7,13 @@
   min-width: toRem(1800);
 
   &--title {
-    font-size: 38px;
-    margin-bottom: 25px;
+    font-size: toRem(38);
+    margin-bottom: toRem(25);
   }
 
   &--decoration {
-    width: 225px;
-    margin-bottom: 10px;
+    width: toRem(225);
+    margin-bottom: toRem(10);
   }
 
   &--links {

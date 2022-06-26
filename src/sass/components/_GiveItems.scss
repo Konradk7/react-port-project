@@ -5,12 +5,12 @@
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
-  padding-bottom: 150px;
+  padding-bottom: toRem(150);
 
   &__header {
     display: flex;
     justify-content: flex-end;
-    margin-right: 50px;
+    margin-right: toRem(50);
 
   }
 
@@ -19,8 +19,8 @@
     flex-direction: column;
     align-items: flex-end;
     text-align: center;
-    margin-right: 300px;
-    margin-top: 100px;
+    margin-right: toRem(300);
+    margin-top: toRem(100);
 
     h1 {
       font-family: $font-alt;
@@ -70,7 +70,7 @@
       border: toRem(1) solid $color-gray;
       height: toRem(140);
       width: toRem(140);
-      right: toRem(-25);
+      right: toRem(-25  );
       top: 0;
       transform: rotate(45deg);
     }
