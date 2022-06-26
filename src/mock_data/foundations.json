@@ -23,18 +23,18 @@
     "id": 4,
     "title": "Organizacja “Lorem Ipsum 4”",
     "text": "Scelerisque in dictum non consectetur a erat nam.",
-    "aside": "Mi, quis, hendrerit, dolor"
+    "aside": "Ut, aliquam, purus, sit, amet"
   },
   {
     "id": 5,
     "title": "Organizacja “Lorem Ipsum 5”",
-    "text": "Scelerisque in dictum non consectetur a erat nam.",
+    "text": "endrerit gravida rutrum quisque non tellus orci ac auctor augue non tellus.",
     "aside": "Mi, quis, hendrerit, dolor"
   },
   {
     "id": 6,
     "title": "Organizacja “Lorem Ipsum 6”",
-    "text": "Scelerisque in dictum non consectetur a erat nam.",
-    "aside": "Mi, quis, hendrerit, dolor"
+    "text": "Scelerisque in dictum non consectetur a erat nam lorem.",
+    "aside": "Egestas, sed, tempus"
   }
 ]

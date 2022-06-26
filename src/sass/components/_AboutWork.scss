@@ -68,19 +68,22 @@
     }
   }
 
-  &--footer {
-    margin: toRem(20);
 
-    button {
-      padding: toRem(10);
-      margin: toRem(10) toRem(15);
-      color: $color-gray;
-      border: toRem(1) solid transparent;
-      background: transparent;
+}
+.about-work__container--footer {
+  margin: toRem(20);
+  display: flex;
 
-      &:hover {
-        border: toRem(1) solid $color-gray;
-      }
+
+  a {
+    padding: toRem(10);
+    margin: toRem(10) toRem(15);
+    color: $color-gray;
+    border: toRem(1) solid transparent;
+    background: transparent;
+
+    &:hover {
+      border: toRem(1) solid $color-gray;
     }
   }
 }
