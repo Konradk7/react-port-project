@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword  } from "firebase/auth";
+import {createUserWithEmailAndPassword} from "firebase/auth";
 import Navigation from "./Navigation";
 import {Link} from "react-router-dom";
-import { useHistory } from "react-router-dom";
 import Decoration from "../assets/Decoration.svg";
+import {auth} from "./Firebase";
 
 function Register() {
     // const Register = () => {
@@ -39,7 +39,16 @@ function Register() {
 
 
     const register = async () => {
-
+        try {
+            const user = await createUserWithEmailAndPassword(
+                auth,
+                registerEmail,
+                registerPassword
+            );
+            console.log(user)
+        } catch (error) {
+            console.log(error.message)
+        }
     }
     const login = async () => {
 
@@ -53,7 +62,7 @@ function Register() {
                 <Navigation/>
             </div>
             <div className="login__container">
-                <div >
+                <div>
                     <h1>Załóż konto</h1>
                     <img src={Decoration} alt="decoration"/>
                 </div>
@@ -85,7 +94,7 @@ function Register() {
                 </form>
                 <div className="login__container--footer">
                     <Link to="/login">Zaloguj się</Link>
-                    <button>Załóż konto</button>
+                    <button onClick={register}>Załóż konto</button>
                 </div>
             </div>
         </div>
