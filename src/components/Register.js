@@ -1,9 +1,38 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword  } from "firebase/auth";
 import Navigation from "./Navigation";
-import Decoration from "../assets/Decoration.svg";
 import {Link} from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import Decoration from "../assets/Decoration.svg";
 
 function Register() {
+    // const Register = () => {
+    //     const [login, setLogin] = useState("");
+    //     const [password, setPassword] = useState("");
+    //     let history = useHistory();
+    //
+    //     const submitHandler = (e) => {
+    //         e.preventDefault();
+    //         const auth = getAuth(app);
+    //         createUserWithEmailAndPassword(auth, login, password)
+    //             .then(() => {
+    //                 signInWithEmailAndPassword(auth, login, password)
+    //                     .then(() => {
+    //                         history.push("/")
+    //                     })
+    //                     .catch((error) => {
+    //                         const errorCode = error.code;
+    //                         const errorMessage = error.message;
+    //                         console.error(errorCode, errorMessage);
+    //                     });
+    //             })
+    //             .catch((error) => {
+    //                 const errorCode = error.code;
+    //                 const errorMessage = error.message;
+    //                 console.error(errorCode, errorMessage)
+    //             });
+    //     }
+    // }
     return (
         <div className="login">
             <div className="login--navigation">
