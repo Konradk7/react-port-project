@@ -33,6 +33,20 @@ function Register() {
     //             });
     //     }
     // }
+    const [registerEmail, setRegisterEmail] = useState("");
+    const [registerPassword, setRegisterPassword] = useState("");
+    const [loginPassword, setLoginPassword] = useState("");
+
+
+    const register = async () => {
+
+    }
+    const login = async () => {
+
+    }
+    const logout = async () => {
+
+    }
     return (
         <div className="login">
             <div className="login--navigation">
@@ -45,11 +59,29 @@ function Register() {
                 </div>
                 <form>
                     <label htmlFor="name">Email</label>
-                    <input type="email" name="email"/>
+                    <input
+                        type="email"
+                        name="email"
+                        onChange={(event) => {
+                            setRegisterEmail(event.target.value)
+                        }}
+                    />
                     <label htmlFor="password">Hasło</label>
-                    <input type="password" name="password"/>
+                    <input
+                        type="password"
+                        name="password"
+                        onChange={(event) => {
+                            setLoginPassword(event.target.value)
+                        }}
+                    />
                     <label htmlFor="repeat-password">Powtórz hasło</label>
-                    <input type="password" name="repeat-password"/>
+                    <input
+                        type="password"
+                        name="repeat-password"
+                        onChange={(event) => {
+                            setRegisterPassword(event.target.value)
+                        }}
+                    />
                 </form>
                 <div className="login__container--footer">
                     <Link to="/login">Zaloguj się</Link>
