@@ -1,8 +1,10 @@
 .login {
+
   &--navigation {
     display: flex;
     justify-content: flex-end;
     margin-right: toRem(100);
+
   }
 
   &__container {

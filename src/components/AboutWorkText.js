@@ -23,7 +23,7 @@ function AboutWorkText() {
                         className="about-work__container--main">
                         {data.main}
                     </p>
-                    <section >
+                    <section>
                         <div>
                             <h2>{data.title}</h2>
                             <p>{data.text}</p>
