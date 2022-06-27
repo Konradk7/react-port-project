@@ -1,0 +1,40 @@
+[
+  {
+    "main": "Lokalna zbiórka, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+    "id": 1,
+    "title": "Zbiórka “Lorem Ipsum 1”",
+    "text": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
+    "aside": "Egestas, sed, tempus"
+  },
+  {
+    "id": 2,
+    "title": "Zbiórka “Lorem Ipsum 2”",
+    "text": "endrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+    "aside": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "id": 3,
+    "title": "Zbiórka “Lorem Ipsum 3”",
+    "text": "Scelerisque in dictum non consectetur a erat nam.",
+    "aside": "Mi, quis, hendrerit, dolor"
+  },
+  {
+    "main": "Lokalna zbiórka, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+    "id": 4,
+    "title": "Zbiórka “Lorem Ipsum 4”",
+    "text": "Scelerisque in dictum non consectetur a erat nam.",
+    "aside": "Ut, aliquam, purus, sit, amet"
+  },
+  {
+    "id": 5,
+    "title": "Zbiórka “Lorem Ipsum 5”",
+    "text": "endrerit gravida rutrum quisque non tellus orci ac auctor augue non tellus.",
+    "aside": "Mi, quis, hendrerit, dolor"
+  },
+  {
+    "id": 6,
+    "title": "Zbiórka “Lorem Ipsum 6”",
+    "text": "Scelerisque in dictum non consectetur a erat nam lorem.",
+    "aside": "Egestas, sed, tempus"
+  }
+]

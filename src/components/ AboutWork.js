@@ -17,7 +17,7 @@ function AboutWork() {
                 <h3 style={{display: "flex", flexDirection: "column"}} onClick={() => {setState(3)}}><span>Lokalnym</span>
                     <span>zbiórkom</span></h3>
             </div>
-            <AboutWorkText />
+            <AboutWorkText state={state}/>
 
         </div>
     );

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import FoundationJson from "../mock_data/foundations.json";
 import ReactPaginate from "react-paginate";
 
-function AboutWorkText() {
+function AboutWorkText(state) {
     const [foundations, setFoundations] = useState(FoundationJson.slice(0, 6));
     const [pageNumber, setPageNumber] = useState(0);
 
