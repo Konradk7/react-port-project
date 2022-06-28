@@ -1,42 +1,24 @@
 import React, {useState} from 'react';
-import {createUserWithEmailAndPassword} from "firebase/auth";
+import {
+    createUserWithEmailAndPassword,
+    onAuthStateChanged,
+} from "firebase/auth";
 import Navigation from "./Navigation";
 import {Link} from "react-router-dom";
 import Decoration from "../assets/Decoration.svg";
 import {auth} from "./Firebase";
 
 function Register() {
-    // const Register = () => {
-    //     const [login, setLogin] = useState("");
-    //     const [password, setPassword] = useState("");
-    //     let history = useHistory();
-    //
-    //     const submitHandler = (e) => {
-    //         e.preventDefault();
-    //         const auth = getAuth(app);
-    //         createUserWithEmailAndPassword(auth, login, password)
-    //             .then(() => {
-    //                 signInWithEmailAndPassword(auth, login, password)
-    //                     .then(() => {
-    //                         history.push("/")
-    //                     })
-    //                     .catch((error) => {
-    //                         const errorCode = error.code;
-    //                         const errorMessage = error.message;
-    //                         console.error(errorCode, errorMessage);
-    //                     });
-    //             })
-    //             .catch((error) => {
-    //                 const errorCode = error.code;
-    //                 const errorMessage = error.message;
-    //                 console.error(errorCode, errorMessage)
-    //             });
-    //     }
-    // }
+
     const [registerEmail, setRegisterEmail] = useState("");
     const [registerPassword, setRegisterPassword] = useState("");
-    const [loginPassword, setLoginPassword] = useState("");
 
+
+    const [user, setUser] = useState({});
+
+    onAuthStateChanged(auth, (currentUser) => {
+        setUser(currentUser)
+    })
 
     const register = async () => {
         try {
@@ -50,12 +32,9 @@ function Register() {
             console.log(error.message)
         }
     }
-    const login = async () => {
 
-    }
-    const logout = async () => {
 
-    }
+
     return (
         <div className="login">
             <div className="login--navigation">
@@ -80,16 +59,13 @@ function Register() {
                         type="password"
                         name="password"
                         onChange={(event) => {
-                            setLoginPassword(event.target.value)
+                            setRegisterPassword(event.target.value)
                         }}
                     />
                     <label htmlFor="repeat-password">Powtórz hasło</label>
                     <input
                         type="password"
                         name="repeat-password"
-                        onChange={(event) => {
-                            setRegisterPassword(event.target.value)
-                        }}
                     />
                 </form>
                 <div className="login__container--footer">
