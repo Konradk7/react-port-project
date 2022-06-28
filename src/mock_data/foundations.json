@@ -36,5 +36,24 @@
     "title": "Organizacja “Lorem Ipsum 6”",
     "text": "Scelerisque in dictum non consectetur a erat nam lorem.",
     "aside": "Egestas, sed, tempus"
+  },
+  {
+    "main": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+    "id": 7,
+    "title": "Organizacja “Lorem Ipsum 7”",
+    "text": "Scelerisque in dictum non consectetur a erat nam lorem.",
+    "aside": "Egestas, sed, tempus"
+  },
+  {
+    "id": 8,
+    "title": "Organizacja “Lorem Ipsum 8”",
+    "text": "Scelerisque in dictum non consectetur a erat nam lorem.",
+    "aside": "Egestas, sed, tempus"
+  },
+  {
+    "id": 9,
+    "title": "Organizacja “Lorem Ipsum 9”",
+    "text": "Scelerisque in dictum non consectetur a erat nam lorem.",
+    "aside": "Egestas, sed, tempus"
   }
 ]

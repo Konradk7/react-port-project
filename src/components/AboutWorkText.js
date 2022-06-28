@@ -5,7 +5,7 @@ import LocalJson from "../mock_data/local.json";
 import ReactPaginate from "react-paginate";
 
 function AboutWorkText(state) {
-    const [foundations, setFoundations] = useState(FoundationJson.slice(0, 6));
+    const [foundations, setFoundations] = useState(FoundationJson.slice(0, 9));
     const [organizations, setOrganizations] = useState(OrganizationJson.slice(0, 6));
     const [local, setLocal] = useState(LocalJson.slice(0, 6));
     const [pageNumber, setPageNumber] = useState(0);
@@ -18,7 +18,7 @@ function AboutWorkText(state) {
         setPageNumber(selected)
     }
 
-    const displayPage = organizations
+    const displayPage = foundations
         .slice(pagesVisited, pagesVisited + infoPerPage)
         .map((data) => {
             return (
