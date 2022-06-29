@@ -13,7 +13,7 @@ function Navigation({user}) {
     return (
         <nav className="home-nav__container">
             <ul className="home-nav__container--header">
-                <li>{user ? <h2>{user.email}</h2> : <Link to="/login">Zaloguj</Link>}</li>
+                <li>{user ? <div className="nav--logout"><button onClick={logout}>Wyloguj</button><h2>{user.email}</h2></div> : <Link to="/login">Zaloguj</Link>}</li>
                 <li><Link to="/register">Załóż konto</Link></li>
             </ul>
             <ul className="home-nav__container--list">

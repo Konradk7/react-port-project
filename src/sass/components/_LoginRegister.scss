@@ -101,3 +101,19 @@
     }
   }
 }
+.nav--logout {
+  display: flex;
+  button {
+    margin-right: toRem(10);
+    font-size: toRem(12);
+    font-weight: bold;
+    border: toRem(1) solid transparent;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: toRem(3);
+    box-shadow: 0 toRem(-1) 0 rgba(0, 0, 0, 0.09), 0 toRem(1) toRem(1) rgba(0, 0, 0, 0.25);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
