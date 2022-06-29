@@ -79,5 +79,18 @@
         border: toRem(1) solid $color-gray;
       }
     }
+    &--google {
+      display: flex;
+      justify-content: center;
+
+      button {
+        background: transparent;
+        padding: toRem(2) toRem(10);
+        border: toRem(1) solid black;
+        img {
+          height: toRem(50);
+        }
+      }
+    }
   }
 }

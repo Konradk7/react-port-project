@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import Navigation from "./Navigation";
-import Decoration from "../assets/Decoration.svg";
 import {Link} from "react-router-dom";
 import {signInWithEmailAndPassword, signOut, onAuthStateChanged} from "firebase/auth";
-import {auth} from "./Firebase";
+import {auth, signInWithGoogle} from "./Firebase";
+import Decoration from "../assets/Decoration.svg";
+import Google from "../assets/google.png";
+
 
 function LogIn() {
 
@@ -63,8 +65,9 @@ function LogIn() {
                     <Link to="/register">Załóż konto</Link>
                     <button onClick={login}>Zaloguj się</button>
                 </div>
-
             </div>
+            <div className="login__container--google"><button onClick={signInWithGoogle}>Zaloguj się przez Google <img src={Google} alt="google"/></button> </div>
+
         </div>
     );
 }
