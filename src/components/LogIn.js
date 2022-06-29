@@ -66,8 +66,9 @@ function LogIn() {
                     <button onClick={login}>Zaloguj się</button>
                 </div>
             </div>
-            <div className="login__container--google"><button onClick={signInWithGoogle}>Zaloguj się przez Google <img src={Google} alt="google"/></button> </div>
-
+            <div className="login__container--google"><button onClick={signInWithGoogle}> <img src={Google} alt="google"/>Zaloguj się przez Google </button> </div>
+            <h4>{localStorage.getItem("name")}</h4>
+            <h4>{localStorage.getItem("email")}</h4>
         </div>
     );
 }

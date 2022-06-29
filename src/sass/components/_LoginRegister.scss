@@ -1,5 +1,6 @@
 .login {
   min-width: toRem(900);
+
   &--navigation {
     display: flex;
     justify-content: flex-end;
@@ -79,6 +80,7 @@
         border: toRem(1) solid $color-gray;
       }
     }
+
     &--google {
       display: flex;
       justify-content: center;
@@ -86,9 +88,14 @@
       button {
         background: transparent;
         padding: toRem(2) toRem(10);
-        border: toRem(1) solid black;
+        border: toRem(1) solid lightgray;
+        border-radius: toRem(3);
+        box-shadow: 0 toRem(-1) 0 rgba(0, 0, 0, 0.04), 0 toRem(1) toRem(1) rgba(0, 0, 0, 0.25);
+        transition: box-shadow 0.3s
+      ;
         img {
           height: toRem(50);
+          margin-right: toRem(7);
         }
       }
     }
