@@ -1,7 +1,7 @@
 import {getAnalytics} from "firebase/analytics";
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
-import {getAuth} from "firebase/auth";
+import {getAuth, GoogleAuthProvider, signInWithPopup} from "firebase/auth";
 
 const firebaseConfig = {
     apiKey: "AIzaSyDcOrhw4CS_QrxrHBk1x2DpydhIrT5wu90",
@@ -25,3 +25,8 @@ async function getCities(db) {
 
 export const auth = getAuth(app)
 
+export const provider = new GoogleAuthProvider()
+
+const signInWithGoogle = () => {
+
+}

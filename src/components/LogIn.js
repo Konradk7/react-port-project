@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Navigation from "./Navigation";
 import Decoration from "../assets/Decoration.svg";
 import {Link} from "react-router-dom";
-import {signInWithEmailAndPassword, signOut} from "firebase/auth";
+import {signInWithEmailAndPassword, signOut, onAuthStateChanged} from "firebase/auth";
 import {auth} from "./Firebase";
 
 function LogIn() {
@@ -10,6 +10,11 @@ function LogIn() {
     const [loginEmail, setLoginEmail] = useState("");
     const [loginPassword, setLoginPassword] = useState("");
 
+    const [user, setUser] = useState({});
+
+    onAuthStateChanged(auth, (currentUser) => {
+        setUser(currentUser)
+    })
     const login = async () => {
         try {
             const user = await signInWithEmailAndPassword(
@@ -29,7 +34,7 @@ function LogIn() {
     return (
         <div className="login">
             <div className="login--navigation">
-                <Navigation/>
+                <Navigation user={user}/>
             </div>
             <div className="login__container">
                 <div>
@@ -58,6 +63,7 @@ function LogIn() {
                     <Link to="/register">Załóż konto</Link>
                     <button onClick={login}>Zaloguj się</button>
                 </div>
+
             </div>
         </div>
     );

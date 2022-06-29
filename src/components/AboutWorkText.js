@@ -10,6 +10,7 @@ function AboutWorkText({org}) {
     const [local, setLocal] = useState(LocalJson.slice(0, 6));
     const [cur, setCur] = useState(foundations);
     const [pageNumber, setPageNumber] = useState(0);
+
     const infoPerPage = 3;
     const pagesVisited = pageNumber * infoPerPage;
     const pageCount = Math.ceil(foundations.length / infoPerPage)

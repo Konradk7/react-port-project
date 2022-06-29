@@ -4,11 +4,11 @@ import {Link as ScrollLink} from 'react-scroll';
 
 
 
-function Navigation() {
+function Navigation({user}) {
     return (
             <nav className="home-nav__container">
                 <ul className="home-nav__container--header">
-                    <li><Link to="/login">Zaloguj</Link></li>
+                    <li>{!user ? <h2>{user?.email}</h2> : <Link to="/login">Zaloguj</Link>}</li>
                     <li><Link to="/register">Załóż konto</Link></li>
                 </ul>
                 <ul className="home-nav__container--list">
