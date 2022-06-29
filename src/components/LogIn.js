@@ -30,9 +30,7 @@ function LogIn() {
         }
     };
 
-    const logout = async () => {
-        await signOut(auth)
-    }
+
     return (
         <div className="login">
             <div className="login--navigation">
@@ -67,8 +65,8 @@ function LogIn() {
                 </div>
             </div>
             <div className="login__container--google"><button onClick={signInWithGoogle}> <img src={Google} alt="google"/>Zaloguj się przez Google </button> </div>
-            <h4>{localStorage.getItem("name")}</h4>
-            <h4>{localStorage.getItem("email")}</h4>
+            {/*<h4>{localStorage.getItem("name")}</h4>*/}
+            {/*<h4>{localStorage.getItem("email")}</h4>*/}
         </div>
     );
 }
