@@ -1,4 +1,6 @@
 import React from 'react';
+import Shirt from "../assets/shirt@2x.png";
+import Refresh from "../assets/refresh@2x.png";
 
 function SelectThings() {
     return (
@@ -80,49 +82,98 @@ function SelectThings() {
                 {/*<button style={{marginRight: "50px"}} className="select-things--btn">Wstecz</button>*/}
                 {/*<button className="select-things--btn">Dalej</button>*/}
 
+                {/*<h4 className="select-things--steps">Krok 4/4</h4>*/}
+                {/*<form className="select-options__container step-fourth">*/}
+                {/*    <h3>Podaj adres oraz termin odbioru rzeczy przez kuriera</h3>*/}
+                {/*    <div className="step-fourth__container">*/}
+                {/*        <div>*/}
+                {/*            <h5>Adres odbioru:</h5>*/}
+                {/*            <section>*/}
+                {/*                <label htmlFor="street">Ulica</label>*/}
+                {/*                <input type="text" name="street"/>*/}
+                {/*            </section>*/}
+                {/*            <section>*/}
+                {/*                <label htmlFor="city">Miasto</label>*/}
+                {/*                <input type="text" name="city"/>*/}
+                {/*            </section>*/}
+                {/*            <section>*/}
+                {/*                <label htmlFor="post-code">Kod pocztowy</label>*/}
+                {/*                <input type="text" name="post-code"/>*/}
+                {/*            </section>*/}
+                {/*            <section>*/}
+                {/*                <label htmlFor="phone-number">Numer telefonu</label>*/}
+                {/*                <input type="text" name="phone-number"/>*/}
+                {/*            </section>*/}
+                {/*        </div>*/}
+                {/*        <div>*/}
+                {/*            <h5>Termin odbioru:</h5>*/}
+                {/*            <section>*/}
+                {/*                <label htmlFor="date">Data</label>*/}
+                {/*                <input type="text" name="date"/>*/}
+                {/*            </section>*/}
+                {/*            <section>*/}
+                {/*                <label htmlFor="hour">Godzina</label>*/}
+                {/*                <input type="text" name="hour"/>*/}
+                {/*            </section>*/}
+                {/*            <section>*/}
+                {/*                <label htmlFor="note"><span style={{display: "block"}}>Uwagi </span>dla kuriera</label>*/}
+                {/*                <textarea name="note" cols="27" rows="8"></textarea>*/}
+                {/*            </section>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</form>*/}
+                {/*<button style={{marginRight: "50px"}} className="select-things--btn">Wstecz</button>*/}
+                {/*<button className="select-things--btn">Dalej</button>*/}
+
                 <h4 className="select-things--steps">Krok 4/4</h4>
-                <form className="select-options__container step-fourth">
-                    <h3>Podaj adres oraz termin odbioru rzeczy przez kuriera</h3>
+                <form className="select-options__container">
+                    <h3>Podsumowanie Twojej darowizny</h3>
+                    <div>
+                        <h4 className="subm">Oddajesz:</h4>
+                        <img src={Shirt} alt="shirt" style={{width: "50px"}}/>
+                        <p>4 worki, ubrania w dobrym stanie, dzieciom</p>
+                        <img src={Refresh} alt="refresh" style={{width: "50px"}}/>
+                        <p>dla lokalizacji: Warszawa</p>
+                    </div>
                     <div className="step-fourth__container">
                         <div>
                             <h5>Adres odbioru:</h5>
                             <section>
-                                <label htmlFor="street">Ulica</label>
-                                <input type="text" name="street"/>
+                                <h6>Ulica</h6>
+                                <p>Prosta 51</p>
                             </section>
                             <section>
-                                <label htmlFor="city">Miasto</label>
-                                <input type="text" name="city"/>
+                                <h6>Miasto</h6>
+                                <p>Warszawa</p>
                             </section>
                             <section>
-                                <label htmlFor="post-code">Kod pocztowy</label>
-                                <input type="text" name="post-code"/>
+                                <h6>Kod pocztowy</h6>
+                                <p>90-209</p>
                             </section>
                             <section>
-                                <label htmlFor="phone-number">Numer telefonu</label>
-                                <input type="text" name="phone-number"/>
+                                <h6>Numer telefonu</h6>
+                                <p>476 652 273</p>
                             </section>
                         </div>
                         <div>
                             <h5>Termin odbioru:</h5>
                             <section>
-                                <label htmlFor="date">Data</label>
-                                <input type="text" name="date"/>
+                                <h6>Data</h6>
+                                <p>17.06.2022</p>
                             </section>
                             <section>
-                                <label htmlFor="hour">Godzina</label>
-                                <input type="text" name="hour"/>
+                                <h6>Godzina</h6>
+                                <p>17:30</p>
                             </section>
                             <section>
-                                <label htmlFor="note"><span style={{display: "block"}}>Uwagi </span>dla kuriera</label>
-                                <textarea name="note" cols="27" rows="8"></textarea>
+                                <h6>Uwagi dla kuriera</h6>
+                                <p></p>
                             </section>
                         </div>
                     </div>
                 </form>
                 <button style={{marginRight: "50px"}} className="select-things--btn">Wstecz</button>
-                <button className="select-things--btn">Dalej</button>
-
+                <button className="select-things--btn">Potwierdzam</button>
 
             </div>
         </div>
