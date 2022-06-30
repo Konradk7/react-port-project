@@ -91,8 +91,8 @@
         border: toRem(1) solid lightgray;
         border-radius: toRem(3);
         box-shadow: 0 toRem(-1) 0 rgba(0, 0, 0, 0.04), 0 toRem(1) toRem(1) rgba(0, 0, 0, 0.25);
-        transition: box-shadow 0.3s
-      ;
+        transition: box-shadow 0.3s;
+
         img {
           height: toRem(50);
           margin-right: toRem(7);
@@ -101,8 +101,10 @@
     }
   }
 }
+
 .nav--logout {
   display: flex;
+
   button {
     margin-right: toRem(10);
     font-size: toRem(12);
@@ -114,6 +116,38 @@
 
     &:hover {
       transform: scale(1.1);
+    }
+  }
+}
+
+.logout__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: toRem(150) 0 toRem(50) 0;
+  text-align: center;
+
+  h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: toRem(40);
+    font-family: $font-alt;
+  }
+
+  img {
+    width: toRem(250);
+    margin: toRem(40);
+  }
+
+  a {
+    font-size: toRem(18);
+    font-family: $font-alt;
+    font-weight: lighter;
+    color: $color-darkgray;
+    border: toRem(1) solid $color-darkgray;
+    padding: toRem(10) toRem(20);
+    &:hover {
+      transform: scale(1.05);
     }
   }
 }

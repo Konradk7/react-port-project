@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import Navigation from "./Navigation";
-import {Link} from "react-router-dom";
-import {signInWithEmailAndPassword, signOut, onAuthStateChanged} from "firebase/auth";
+import {onAuthStateChanged, signInWithEmailAndPassword} from "firebase/auth";
 import {auth, signInWithGoogle} from "./Firebase";
-import Decoration from "../assets/Decoration.svg";
+import {Link} from "react-router-dom";
 import Google from "../assets/google.png";
+import Dec from "../assets/Decoration.svg";
+
 
 
 function LogIn() {
@@ -36,35 +37,42 @@ function LogIn() {
             <div className="login--navigation">
                 <Navigation user={user}/>
             </div>
-            <div className="login__container">
-                <div>
-                    <h1>Zaloguj się</h1>
-                    <img src={Decoration} alt="decoration"/>
-                </div>
-                <form>
-                    <label htmlFor="name">Email</label>
-                    <input
-                        type="email"
-                        name="email"
-                        onChange={(event) => {
-                            setLoginEmail(event.target.value)
-                        }}
-                    />
-                    <label htmlFor="password">Hasło</label>
-                    <input
-                        type="password"
-                        name="password"
-                        onChange={(event) => {
-                            setLoginPassword(event.target.value);
-                        }}
-                    />
-                </form>
-                <div className="login__container--footer">
-                    <Link to="/register">Załóż konto</Link>
-                    <button onClick={login}>Zaloguj się</button>
-                </div>
+            {/*<div className="login__container">*/}
+            {/*    <div>*/}
+            {/*        <h1>Zaloguj się</h1>*/}
+            {/*        <img src={Decoration} alt="decoration"/>*/}
+            {/*    </div>*/}
+            {/*    <form>*/}
+            {/*        <label htmlFor="name">Email</label>*/}
+            {/*        <input*/}
+            {/*            type="email"*/}
+            {/*            name="email"*/}
+            {/*            onChange={(event) => {*/}
+            {/*                setLoginEmail(event.target.value)*/}
+            {/*            }}*/}
+            {/*        />*/}
+            {/*        <label htmlFor="password">Hasło</label>*/}
+            {/*        <input*/}
+            {/*            type="password"*/}
+            {/*            name="password"*/}
+            {/*            onChange={(event) => {*/}
+            {/*                setLoginPassword(event.target.value);*/}
+            {/*            }}*/}
+            {/*        />*/}
+            {/*    </form>*/}
+            {/*    <div className="login__container--footer">*/}
+            {/*        <Link to="/register">Załóż konto</Link>*/}
+            {/*        <button onClick={login}>Zaloguj się</button>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+            <div className="logout__container">
+                <h2>Wylogowanie nastąpiło <span>pomyślnie!</span></h2>
+                <img src={Dec} alt="decoration"/>
+                <Link to="/">Strona główna</Link>
             </div>
-            <div className="login__container--google"><button onClick={signInWithGoogle}> <img src={Google} alt="google"/>Zaloguj się przez Google </button> </div>
+            <div className="login__container--google">
+                <button onClick={signInWithGoogle}><img src={Google} alt="google"/>Zaloguj się przez Google</button>
+            </div>
             {/*<h4>{localStorage.getItem("name")}</h4>*/}
             {/*<h4>{localStorage.getItem("email")}</h4>*/}
         </div>
