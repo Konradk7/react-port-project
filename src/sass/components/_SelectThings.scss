@@ -126,7 +126,7 @@
   }
 }
 
-.step-fourth {
+.step-three {
   margin-bottom: toRem(-25);
   &--title {
     font-size: toRem(36);
@@ -184,4 +184,8 @@
       }
     }
   }
+}
+
+.select-things--steps {
+  opacity: 0.6;
 }
