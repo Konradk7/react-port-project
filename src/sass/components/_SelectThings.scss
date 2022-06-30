@@ -68,36 +68,61 @@
 }
 
 .select-options__container {
+  width: toRem(800);
+
+
+  label {
+    font-size: toRem(24);
+    font-family: $font-alt;
+    font-weight: lighter;
+    position: relative;
+    width: toRem(225);
+    height: toRem(50);
     display: flex;
+    align-items: center;
 
-    label {
-      font-size: toRem(24);
-      font-family: $font-alt;
-      font-weight: lighter;
-      position: relative;
-      width: toRem(700);
+  }
 
-      &::after {
-        content: url("../../assets/Arrow Down@2x.png");
-        width: toRem(10);
+  div {
+    position: relative;
+    display: flex;
+    width: toRem(525);
+    height: toRem(50);
+    overflow: hidden;
+    border-radius: toRem(2);
+    font-size: toRem(24);
+    font-family: $font-alt;
+    font-weight: lighter;
+    margin-bottom: toRem(250);
 
+
+    &::after {
+      content: url("../../assets/Arrow Down.png");
+      position: absolute;
+      top: toRem(12);
+      right: 0;
+      cursor: pointer;
+      pointer-events: none;
+
+      &:active {
+        transform: rotate(90deg);
       }
     }
 
     select {
-      width: toRem(300);
-      margin-left: toRem(20);
-      padding: toRem(10) toRem(20);
-      margin-bottom: toRem(250);
       appearance: none;
       outline: 0;
       box-shadow: none;
-      border: toRem(1) solid black;
-      background: 0;
-      border-radius: toRem(2);
+      border: toRem(1) solid $color-darkgray;
+      flex: 1;
+      padding: 0 toRem(15);
+      color: $color-darkgray;
+      background: transparent;
+      cursor: pointer;
 
       select::-ms-expand {
         display: none;
       }
     }
+  }
 }

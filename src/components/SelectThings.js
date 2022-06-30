@@ -32,9 +32,11 @@ function SelectThings() {
                 <h4>Krok 2/4</h4>
                 <h2>Podaj liczbę 60l worków, w które spakowałeś/aś rzeczy:</h2>
                 <form className="select-options__container">
-                    <label htmlFor="select-bar">Liczba 60l worków:
-                        <select id="select-bar">
-                            <option disabled>-wybierz-</option>
+                    <div>
+                        <label htmlFor="select-bar">Liczba 60l worków:</label>
+
+                        <select id="select-bar" defaultValue={"default"}>
+                            <option value="default" disabled>-- wybierz --</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -42,7 +44,8 @@ function SelectThings() {
                             <option value="5">5</option>
                             <option value="więcej">Więcej</option>
                         </select>
-                    </label>
+                    </div>
+
                 </form>
                 <button style={{marginRight: "50px"}}>Wstecz</button>
                 <button>Dalej</button>
