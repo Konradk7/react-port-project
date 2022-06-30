@@ -29,23 +29,50 @@ function SelectThings() {
                 {/*    </section>*/}
                 {/*</form>*/}
                 {/*<button>Dalej</button>*/}
-                <h4>Krok 2/4</h4>
-                <h2>Podaj liczbę 60l worków, w które spakowałeś/aś rzeczy:</h2>
-                <form className="select-options__container">
-                    <div>
-                        <label htmlFor="select-bar">Liczba 60l worków:</label>
+                {/*<h4>Krok 2/4</h4>*/}
+                {/*<h2>Podaj liczbę 60l worków, w które spakowałeś/aś rzeczy:</h2>*/}
+                {/*<form className="select-options__container">*/}
+                {/*    <div>*/}
+                {/*        <label htmlFor="select-bar">Liczba 60l worków:</label>*/}
 
+                {/*        <select id="select-bar" defaultValue={"default"}>*/}
+                {/*            <option value="default" disabled>-- wybierz --</option>*/}
+                {/*            <option value="1">1</option>*/}
+                {/*            <option value="2">2</option>*/}
+                {/*            <option value="3">3</option>*/}
+                {/*            <option value="4">4</option>*/}
+                {/*            <option value="5">5</option>*/}
+                {/*        </select>*/}
+                {/*    </div>*/}
+
+                {/*</form>*/}
+                {/*<button style={{marginRight: "50px", marginTop: "400px"}}>Wstecz</button>*/}
+                {/*<button>Dalej</button>*/}
+                <h4>Krok 3/4</h4>
+                <form className="select-options__container">
+                    <label htmlFor="select-bar">Lokalizacja</label>
+                    <div className="select-options__container--main">
                         <select id="select-bar" defaultValue={"default"}>
                             <option value="default" disabled>-- wybierz --</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="więcej">Więcej</option>
+                            <option value="1">Poznań</option>
+                            <option value="2">Warszawa</option>
+                            <option value="3">Kraków</option>
+                            <option value="4">Wrocław</option>
+                            <option value="5">Katowice</option>
                         </select>
                     </div>
-
+                    <h3>Komu chcesz pomóc?</h3>
+                    <section>
+                        <button>dzieciom</button>
+                        <button>samotnym matkom</button>
+                        <button>bezdomnym</button>
+                        <button>niepełnosprawnym</button>
+                        <button>osobom starszym</button>
+                    </section>
+                    <section>
+                        <label htmlFor="organization">Wpisz nazwę konkretnej organizacji (opcjonalnie)</label>
+                        <input type="text" name="organization"/>
+                    </section>
                 </form>
                 <button style={{marginRight: "50px"}}>Wstecz</button>
                 <button>Dalej</button>

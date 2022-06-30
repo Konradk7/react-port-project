@@ -83,7 +83,7 @@
 
   }
 
-  div {
+  &--main {
     position: relative;
     display: flex;
     width: toRem(525);
@@ -93,7 +93,6 @@
     font-size: toRem(24);
     font-family: $font-alt;
     font-weight: lighter;
-    margin-bottom: toRem(250);
 
 
     &::after {
