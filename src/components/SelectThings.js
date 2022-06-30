@@ -29,6 +29,7 @@ function SelectThings() {
                 {/*    </section>*/}
                 {/*</form>*/}
                 {/*<button className="select-things--btn">Dalej</button>*/}
+
                 {/*<h4 className="select-things--steps">Krok 2/4</h4>*/}
                 {/*<h2>Podaj liczbę 60l worków, w które spakowałeś/aś rzeczy:</h2>*/}
                 {/*<form className="select-options__container">*/}
@@ -78,6 +79,7 @@ function SelectThings() {
                 {/*</form>*/}
                 {/*<button style={{marginRight: "50px"}} className="select-things--btn">Wstecz</button>*/}
                 {/*<button className="select-things--btn">Dalej</button>*/}
+
                 <h4 className="select-things--steps">Krok 4/4</h4>
                 <form className="select-options__container step-fourth">
                     <h3>Podaj adres oraz termin odbioru rzeczy przez kuriera</h3>
@@ -120,6 +122,8 @@ function SelectThings() {
                 </form>
                 <button style={{marginRight: "50px"}} className="select-things--btn">Wstecz</button>
                 <button className="select-things--btn">Dalej</button>
+
+
             </div>
         </div>
     );

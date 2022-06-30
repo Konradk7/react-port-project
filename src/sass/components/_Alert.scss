@@ -9,6 +9,9 @@
     h2 {
       font-size: toRem(36);
       font-weight: toRem(600);
+      margin-bottom: toRem(10);
+      font-family: $font-alt;
+      font-weight: bold;
     }
 
     p {
