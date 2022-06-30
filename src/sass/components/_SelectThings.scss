@@ -189,3 +189,15 @@
 .select-things--steps {
   opacity: 0.6;
 }
+
+.step-fourth {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    section {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
