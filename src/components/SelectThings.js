@@ -93,12 +93,12 @@ function SelectThings() {
                                 <input type="text" name="city"/>
                             </section>
                             <section>
-                                <label htmlFor="code">Kod pocztowy</label>
-                                <input type="text" name="code"/>
+                                <label htmlFor="post-code">Kod pocztowy</label>
+                                <input type="text" name="post-code"/>
                             </section>
                             <section>
-                                <label htmlFor="phone">Numer telefonu</label>
-                                <input type="text" name="phone"/>
+                                <label htmlFor="phone-number">Numer telefonu</label>
+                                <input type="text" name="phone-number"/>
                             </section>
                         </div>
                         <div>
@@ -112,8 +112,8 @@ function SelectThings() {
                                 <input type="text" name="hour"/>
                             </section>
                             <section>
-                                <label htmlFor="note">Uwagi dla kuriera</label>
-                                <textarea name="note" id="" cols="30" rows="10"></textarea>
+                                <label htmlFor="note"><span style={{display: "block"}}>Uwagi </span>dla kuriera</label>
+                                <textarea name="note" cols="27" rows="8"></textarea>
                             </section>
                         </div>
                     </div>
