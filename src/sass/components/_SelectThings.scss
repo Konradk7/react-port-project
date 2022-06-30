@@ -66,3 +66,38 @@
     }
   }
 }
+
+.select-options__container {
+    display: flex;
+
+    label {
+      font-size: toRem(24);
+      font-family: $font-alt;
+      font-weight: lighter;
+      position: relative;
+      width: toRem(700);
+
+      &::after {
+        content: url("../../assets/Arrow Down@2x.png");
+        width: toRem(10);
+
+      }
+    }
+
+    select {
+      width: toRem(300);
+      margin-left: toRem(20);
+      padding: toRem(10) toRem(20);
+      margin-bottom: toRem(250);
+      appearance: none;
+      outline: 0;
+      box-shadow: none;
+      border: toRem(1) solid black;
+      background: 0;
+      border-radius: toRem(2);
+
+      select::-ms-expand {
+        display: none;
+      }
+    }
+}

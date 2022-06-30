@@ -37,39 +37,43 @@ function LogIn() {
             <div className="login--navigation">
                 <Navigation user={user}/>
             </div>
-            {/*<div className="login__container">*/}
-            {/*    <div>*/}
-            {/*        <h1>Zaloguj się</h1>*/}
-            {/*        <img src={Decoration} alt="decoration"/>*/}
+            {/*{user?.email ?*/}
+            {/*    <div className="logout__container">*/}
+            {/*        <h2>Wylogowanie nastąpiło <span>pomyślnie!</span></h2>*/}
+            {/*        <img src={Dec} alt="decoration"/>*/}
+            {/*        <Link to="/">Strona główna</Link>*/}
             {/*    </div>*/}
-            {/*    <form>*/}
-            {/*        <label htmlFor="name">Email</label>*/}
-            {/*        <input*/}
-            {/*            type="email"*/}
-            {/*            name="email"*/}
-            {/*            onChange={(event) => {*/}
-            {/*                setLoginEmail(event.target.value)*/}
-            {/*            }}*/}
-            {/*        />*/}
-            {/*        <label htmlFor="password">Hasło</label>*/}
-            {/*        <input*/}
-            {/*            type="password"*/}
-            {/*            name="password"*/}
-            {/*            onChange={(event) => {*/}
-            {/*                setLoginPassword(event.target.value);*/}
-            {/*            }}*/}
-            {/*        />*/}
-            {/*    </form>*/}
-            {/*    <div className="login__container--footer">*/}
-            {/*        <Link to="/register">Załóż konto</Link>*/}
-            {/*        <button onClick={login}>Zaloguj się</button>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            <div className="logout__container">
-                <h2>Wylogowanie nastąpiło <span>pomyślnie!</span></h2>
-                <img src={Dec} alt="decoration"/>
-                <Link to="/">Strona główna</Link>
+            {/*:*/}
+                <div className="login__container">
+                <div>
+                    <h1>Zaloguj się</h1>
+                    <img src={Dec} alt="decoration"/>
+                </div>
+                <form>
+                    <label htmlFor="name">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        onChange={(event) => {
+                            setLoginEmail(event.target.value)
+                        }}
+                    />
+                    <label htmlFor="password">Hasło</label>
+                    <input
+                        type="password"
+                        name="password"
+                        onChange={(event) => {
+                            setLoginPassword(event.target.value);
+                        }}
+                    />
+                </form>
+                <div className="login__container--footer">
+                    <Link to="/register">Załóż konto</Link>
+                    <button onClick={login}>Zaloguj się</button>
+                </div>
             </div>
+            {/*}*/}
+
             <div className="login__container--google">
                 <button onClick={signInWithGoogle}><img src={Google} alt="google"/>Zaloguj się przez Google</button>
             </div>
