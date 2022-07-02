@@ -65,6 +65,8 @@
   font-weight: lighter;
   margin-top: toRem(110);
   padding: toRem(20) toRem(50);
+  background: transparent;
+  border: toRem(1) solid $color-darkgray;
 }
 
 .select-options__container {
@@ -211,6 +213,7 @@
       display: flex;
       justify-content: space-between;
       align-items: end;
+
       &:last-of-type {
         align-items: start;
       }
@@ -221,6 +224,7 @@
         margin-left: toRem(20);
         padding: 0 toRem(100);
       }
+
       textarea {
         background: transparent;
         resize: none;
@@ -236,5 +240,43 @@
       margin-bottom: toRem(30);
     }
   }
+}
+
+.select-submit--header {
+  margin-top: toRem(40);
+
+  h3 {
+    font-family: $font-alt;
+    font-weight: 600;
+    font-size: toRem(36);
+    margin-bottom: toRem(50);
+  }
+
+  h4 {
+    font-family: $font-alt;
+    font-weight: 600;
+    font-size: toRem(24);
+    margin-bottom: toRem(15);
+  }
+
+  .select-submit--title {
+    display: flex;
+    align-items: center;
+    margin-bottom: toRem(20);
+
+    &:last-child {
+      margin-bottom: toRem(40);
+    }
+
+    img {
+      height: toRem(40);
+      width: toRem(40);
+      margin-right: toRem(15);
+    }
+  }
+}
+
+.submit--btn {
+  margin-top: toRem(15);
 
 }

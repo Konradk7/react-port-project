@@ -5,14 +5,18 @@ import Refresh from "../../assets/refresh@2x.png";
 function SelectThingsSubmit() {
     return (
         <>
-            <form className="select-options__container">
+            <form className="select-options__container select-submit--header">
                 <h3>Podsumowanie Twojej darowizny</h3>
                 <div>
-                    <h4 className="subm">Oddajesz:</h4>
-                    <img src={Shirt} alt="shirt" style={{width: "50px"}}/>
-                    <p>4 worki, ubrania w dobrym stanie, dzieciom</p>
-                    <img src={Refresh} alt="refresh" style={{width: "50px"}}/>
-                    <p>dla lokalizacji: Warszawa</p>
+                    <h4>Oddajesz:</h4>
+                    <div className="select-submit--title">
+                        <img src={Shirt} alt="shirt"/>
+                        <p>4 worki, ubrania w dobrym stanie, dzieciom</p>
+                    </div>
+                    <div className="select-submit--title">
+                        <img src={Refresh} alt="refresh"/>
+                        <p>dla lokalizacji: Warszawa</p>
+                    </div>
                 </div>
                 <div className="step-fourth__container">
                     <div>
@@ -51,8 +55,8 @@ function SelectThingsSubmit() {
                     </div>
                 </div>
             </form>
-            <button style={{marginRight: "50px"}} className="select-things--btn">Wstecz</button>
-            <button type="submit" className="select-things--btn">Potwierdzam</button>
+            <button style={{marginRight: "50px"}} className="select-things--btn submit--btn">Wstecz</button>
+            <button type="submit" className="select-things--btn submit--btn">Potwierdzam</button>
         </>
     );
 }
