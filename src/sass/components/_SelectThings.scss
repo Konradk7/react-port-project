@@ -204,15 +204,20 @@
     margin-bottom: toRem(60);
   }
 
+
   &__container {
     display: flex;
     justify-content: space-between;
 
+    &--constrict {
+      width: toRem(20);
+    }
 
     section {
       display: flex;
       justify-content: space-between;
-      align-items: end;
+      align-items: center !important;
+
 
       &:last-of-type {
         align-items: start;

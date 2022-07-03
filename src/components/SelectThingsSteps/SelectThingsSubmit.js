@@ -30,11 +30,11 @@ function SelectThingsSubmit() {
                             <p>Warszawa</p>
                         </section>
                         <section>
-                            <h6>Kod pocztowy</h6>
+                            <h6 className="step-fourth__container--constrict">Kod pocztowy</h6>
                             <p>90-209</p>
                         </section>
                         <section>
-                            <h6>Numer telefonu</h6>
+                            <h6 className="step-fourth__container--constrict">Numer telefonu</h6>
                             <p>476 652 273</p>
                         </section>
                     </div>
