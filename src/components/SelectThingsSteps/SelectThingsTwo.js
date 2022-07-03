@@ -7,21 +7,22 @@ function SelectThingsTwo() {
             <h2>Podaj liczbę 60l worków, w które spakowałeś/aś rzeczy:</h2>
             <form className="select-options__container">
                 <div>
-                    <label htmlFor="select-bar" className="select-options__container--label">Liczba 60l worków:</label>
-
-                    <select id="select-bar" defaultValue={"default"}>
-                        <option value="default" disabled>-- wybierz --</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
+                    <div className="select-options__container--main" style={{width: "500px"}}>
+                        <label htmlFor="select-bar" className="select-options__container--label">Liczba 60l worków:</label>
+                        <select id="select-bar" defaultValue={"default"}>
+                            <option value="default" disabled>-- wybierz --</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
                 </div>
 
             </form>
-            <button style={{marginRight: "50px", marginTop: "400px"}}>Wstecz</button>
-            <button>Dalej</button>
+            <button className="select-things--btn" style={{marginRight: "50px", marginTop: "400px"}}>Wstecz</button>
+            <button className="select-things--btn">Dalej</button>
         </>
     );
 }

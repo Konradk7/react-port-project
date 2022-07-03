@@ -10,10 +10,10 @@ function SelectThings() {
         <div className="select-things">
             <div className="select-things__container">
                 {/*<SelectThingsOne />*/}
-                {/*<SelectThingsTwo />*/}
+                <SelectThingsTwo />
                 {/*<SelectThingsThree />*/}
                 {/*<SelectThingsFour />*/}
-                <SelectThingsSubmit />
+                {/*<SelectThingsSubmit />*/}
 
 
 
