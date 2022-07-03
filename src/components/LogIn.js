@@ -37,13 +37,13 @@ function LogIn() {
             <div className="login--navigation">
                 <Navigation user={user}/>
             </div>
-            {/*{user?.email ?*/}
-            {/*    <div className="logout__container">*/}
-            {/*        <h2>Wylogowanie nastąpiło <span>pomyślnie!</span></h2>*/}
-            {/*        <img src={Dec} alt="decoration"/>*/}
-            {/*        <Link to="/">Strona główna</Link>*/}
-            {/*    </div>*/}
-            {/*:*/}
+            {user?.email ?
+                <div className="logout__container">
+                    <h2>Zalogowanie nastąpiło <span>pomyślnie!</span></h2>
+                    <img src={Dec} alt="decoration"/>
+                    <Link to="/">Strona główna</Link>
+                </div>
+            :
                 <div className="login__container">
                 <div>
                     <h1>Zaloguj się</h1>
@@ -72,7 +72,7 @@ function LogIn() {
                     <button onClick={login}>Zaloguj się</button>
                 </div>
             </div>
-            {/*}*/}
+            }
 
             <div className="login__container--google">
                 <button onClick={signInWithGoogle}><img src={Google} alt="google"/>Zaloguj się przez Google</button>

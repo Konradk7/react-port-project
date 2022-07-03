@@ -9,8 +9,8 @@ function SelectThings() {
     return (
         <div className="select-things">
             <div className="select-things__container">
-                {/*<SelectThingsOne />*/}
-                <SelectThingsTwo />
+                <SelectThingsOne />
+                {/*<SelectThingsTwo />*/}
                 {/*<SelectThingsThree />*/}
                 {/*<SelectThingsFour />*/}
                 {/*<SelectThingsSubmit />*/}
