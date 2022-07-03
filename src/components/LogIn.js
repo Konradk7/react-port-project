@@ -12,6 +12,7 @@ function LogIn() {
 
     const [loginEmail, setLoginEmail] = useState("");
     const [loginPassword, setLoginPassword] = useState("");
+    const [err, setErr] = useState(false);
 
     const [user, setUser] = useState({});
 
@@ -28,6 +29,7 @@ function LogIn() {
             console.log(user);
         } catch (error) {
             console.log(error.message);
+            setErr(true);
         }
     };
 
@@ -66,6 +68,7 @@ function LogIn() {
                             setLoginPassword(event.target.value);
                         }}
                     />
+                    <div className="error-message">Nieprawidłowy email lub hasło</div>
                 </form>
                 <div className="login__container--footer">
                     <Link to="/register">Załóż konto</Link>

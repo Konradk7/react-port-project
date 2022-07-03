@@ -151,3 +151,14 @@
     }
   }
 }
+
+.error-message {
+  font-family: $font-base;
+  font-size: toRem(15);
+  font-weight: 700;
+  margin-top: toRem(10);
+  transform: scale(1.5);
+  box-shadow: 0 0 toRem(7) 0 red;
+  background: red;
+  padding: toRem(5);
+}
