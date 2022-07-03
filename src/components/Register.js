@@ -12,9 +12,10 @@ function Register() {
 
     const [registerEmail, setRegisterEmail] = useState("");
     const [registerPassword, setRegisterPassword] = useState("");
-
-
+    const [confirmPassword, setConfirmPassword] = useState(false);
     const [user, setUser] = useState({});
+    const [err, setErr] = useState("");
+
 
     onAuthStateChanged(auth, (currentUser) => {
         setUser(currentUser)
@@ -30,6 +31,14 @@ function Register() {
             console.log(user)
         } catch (error) {
             console.log(error.message)
+
+            if (registerEmail.length === 0) {
+                setErr("Wpisz poprawny email");
+            } else if (registerPassword.length <= 6) {
+                setErr("Hasło jest zbyt krótkie");
+            } else if (registerPassword !== confirmPassword) {
+                setErr("Hasła nie zgadzają się");
+            }
         }
     }
 
@@ -66,7 +75,11 @@ function Register() {
                     <input
                         type="password"
                         name="repeat-password"
+                        onChange={(event) => {
+                            setConfirmPassword(event.target.value)
+                        }}
                     />
+                    {err ? <div className="error-message">{err}</div> : ""}
                 </form>
                 <div className="login__container--footer">
                     <Link to="/login">Zaloguj się</Link>
