@@ -5,10 +5,8 @@ import {signOut} from "firebase/auth";
 import {auth} from "./Firebase";
 
 
-function Navigation({user}) {
-    const logout = async () => {
-        await signOut(auth)
-    }
+function Navigation({user, logout}) {
+
 
     return (
         <nav className="home-nav__container">

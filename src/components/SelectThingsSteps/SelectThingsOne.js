@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function SelectThingsOne({next}) {
+    const [clothes, setClothes] = useState(false);
+    const [badClothes, setBadClothes] = useState(false);
+    const [toys, setToys] = useState(false);
+    const [books, setBooks] = useState(false);
+    const [another, setAnother] = useState(false);
+
     return (
         <>
             <h4 className="select-things--steps">Krok 1/4</h4>
             <h2>Zaznacz co chcesz oddać:</h2>
             <form>
                 <section>
-                    <input type="checkbox" name="first-input"/>
+                    <input type="checkbox" name="first-input" onClick={() => setClothes(true)}/>
                     <label htmlFor="first-input">ubrania, które nadają się do ponownego użycia</label>
                 </section>
                 <section>

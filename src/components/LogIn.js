@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Navigation from "./Navigation";
-import {onAuthStateChanged, signInWithEmailAndPassword} from "firebase/auth";
+import {onAuthStateChanged, signInWithEmailAndPassword, signOut} from "firebase/auth";
 import {auth, signInWithGoogle} from "./Firebase";
 import {Link} from "react-router-dom";
 import Google from "../assets/google.png";
@@ -13,6 +13,7 @@ function LogIn() {
     const [loginEmail, setLoginEmail] = useState("");
     const [loginPassword, setLoginPassword] = useState("");
     const [err, setErr] = useState(false);
+    const [logoutUser, setLogoutUser] = useState(false);
 
     const [user, setUser] = useState({});
 
@@ -33,19 +34,24 @@ function LogIn() {
         }
     };
 
+    const logout = async () => {
+        await signOut(auth)
+        setLogoutUser(true)
+    }
 
     return (
         <div className="login">
             <div className="login--navigation">
-                <Navigation user={user}/>
+                <Navigation user={user} logout={logout}/>
             </div>
-            {user?.email ?
+            {logoutUser ?
                 <div className="logout__container">
-                    <h2>Zalogowanie nastąpiło <span>pomyślnie!</span></h2>
+                    <h2>Wylogowanie nastąpiło <span>pomyślnie!</span></h2>
                     <img src={Dec} alt="decoration"/>
                     <Link to="/">Strona główna</Link>
                 </div>
             :
+
                 <div className="login__container">
                 <div>
                     <h1>Zaloguj się</h1>
