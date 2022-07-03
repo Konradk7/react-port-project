@@ -68,7 +68,7 @@ function LogIn() {
                             setLoginPassword(event.target.value);
                         }}
                     />
-                    <div className="error-message">Nieprawidłowy email lub hasło</div>
+                    {err && <div className="error-message">Nieprawidłowy email lub hasło</div>}
                 </form>
                 <div className="login__container--footer">
                     <Link to="/register">Załóż konto</Link>
