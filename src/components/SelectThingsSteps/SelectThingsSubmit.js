@@ -2,7 +2,7 @@ import React from 'react';
 import Shirt from "../../assets/shirt@2x.png";
 import Refresh from "../../assets/refresh@2x.png";
 
-function SelectThingsSubmit() {
+function SelectThingsSubmit({prev, submit}) {
     return (
         <>
             <form className="select-options__container select-submit--header">
@@ -55,7 +55,7 @@ function SelectThingsSubmit() {
                     </div>
                 </div>
             </form>
-            <button style={{marginRight: "50px"}} className="select-things--btn submit--btn">Wstecz</button>
+            <button onClick={prev} style={{marginRight: "50px"}} className="select-things--btn submit--btn">Wstecz</button>
             <button type="submit" className="select-things--btn submit--btn">Potwierdzam</button>
         </>
     );

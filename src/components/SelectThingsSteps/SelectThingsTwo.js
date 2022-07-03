@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SelectThingsTwo() {
+function SelectThingsTwo({prev, next}) {
     return (
         <>
             <h4 className="select-things--steps">Krok 2/4</h4>
@@ -21,8 +21,8 @@ function SelectThingsTwo() {
                 </div>
 
             </form>
-            <button className="select-things--btn" style={{marginRight: "50px", marginTop: "400px"}}>Wstecz</button>
-            <button className="select-things--btn">Dalej</button>
+            <button onClick={prev} className="select-things--btn" style={{marginRight: "50px", marginTop: "400px"}}>Wstecz</button>
+            <button onClick={next} className="select-things--btn">Dalej</button>
         </>
     );
 }

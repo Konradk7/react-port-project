@@ -7,18 +7,30 @@ import SelectThingsSubmit from "./SelectThingsSteps/SelectThingsSubmit";
 
 function SelectThings() {
     const [step, setStep] = useState(1);
+    const [submitForm, setSubmitForm] = useState({});
+
+    const handleNextStep = () => {
+        setStep(prevState => prevState + 1)
+    }
+    const handlePrevStep = () => {
+        setStep(prevState => prevState - 1)
+    }
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+    }
 
     let show;
     if(step === 1) {
-        show = <SelectThingsOne step={step}/>
+        show = <SelectThingsOne next={handleNextStep}/>
     }  else if(step === 2) {
-        show = <SelectThingsTwo step={step}/>
+        show = <SelectThingsTwo next={handleNextStep} prev={handlePrevStep}/>
     } else if(step === 3) {
-        show = <SelectThingsThree step={step}/>
+        show = <SelectThingsThree next={handleNextStep} prev={handlePrevStep}/>
     } else if(step === 4) {
-        show = <SelectThingsFour step={step}/>
+        show = <SelectThingsFour next={handleNextStep} prev={handlePrevStep}/>
     } else if(step === 5) {
-        show = <SelectThingsSubmit step={step}/>
+        show = <SelectThingsSubmit prev={handlePrevStep} submit={handleSubmit}/>
     }
 
     return (

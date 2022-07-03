@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SelectThingsOne() {
+function SelectThingsOne({next}) {
     return (
         <>
             <h4 className="select-things--steps">Krok 1/4</h4>
@@ -27,7 +27,7 @@ function SelectThingsOne() {
                     <label htmlFor="fifth-input">inne</label>
                 </section>
             </form>
-            <button className="select-things--btn">Dalej</button>
+            <button className="select-things--btn" onClick={next}>Dalej</button>
         </>
     );
 }
