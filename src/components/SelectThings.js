@@ -15,7 +15,7 @@ function SelectThings() {
     const [books, setBooks] = useState(false);
     const [another, setAnother] = useState(false);
 
-    const [bags, setBags] = useState("1");
+    const [bags, setBags] = useState(null);
 
     const [localization, setLocalization] = useState("");
     const [who, setWho] = useState("");
@@ -45,11 +45,11 @@ function SelectThings() {
     if (step === 1) {
         show = <SelectThingsOne
             next={handleNextStep}
-            clothes={setClothes}
-            badClothes={setBadClothes}
-            toys={setToys}
-            books={setBooks}
-            another={setAnother}
+            clothes={() => setClothes(!clothes)}
+            badClothes={() => setBadClothes(!badClothes)}
+            toys={() => setToys(!toys)}
+            books={() => setBooks(!books)}
+            another={() => setAnother(!another)}
         />
     } else if (step === 2) {
         show = <SelectThingsTwo next={handleNextStep} prev={handlePrevStep} bags={setBags}/>
@@ -57,9 +57,9 @@ function SelectThings() {
         show = <SelectThingsThree
             next={handleNextStep}
             prev={handlePrevStep}
-            localization={localization}
-            who={who}
-            orgName={orgName}
+            localization={setLocalization}
+            who={setWho}
+            orgName={setOrgName}
         />
     } else if (step === 4) {
         show = <SelectThingsFour

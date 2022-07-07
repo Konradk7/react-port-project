@@ -1,6 +1,9 @@
 import React from 'react';
 
-function SelectThingsThree({prev, next}) {
+function SelectThingsThree({prev, next, localization, who, orgName}) {
+    const handleCity = (e) => {
+        localization(e.target.value)
+    }
     return (
         <div>
             <h4 className="select-things--steps">Krok 3/4</h4>
@@ -9,11 +12,11 @@ function SelectThingsThree({prev, next}) {
                 <div className="select-options__container--main step-three__header">
                     <select id="select-bar" defaultValue={"default"}>
                         <option value="default" disabled>-- wybierz --</option>
-                        <option value="1">Poznań</option>
-                        <option value="2">Warszawa</option>
-                        <option value="3">Kraków</option>
-                        <option value="4">Wrocław</option>
-                        <option value="5">Katowice</option>
+                        <option value="Poznań" onClick={handleCity}>Poznań</option>
+                        <option value="Warszawa" onClick={handleCity}>Warszawa</option>
+                        <option value="Kraków" onClick={handleCity}>Kraków</option>
+                        <option value="Wrocław" onClick={handleCity}>Wrocław</option>
+                        <option value="Katowice" onClick={handleCity}>Katowice</option>
                     </select>
                 </div>
                 <div className="step-three__container">
