@@ -51,7 +51,7 @@ function AboutWorkText({org}) {
         }
         else if (org === 3) {
             setCur(local);
-            setNumber(1)
+            setNumber(0)
         }
     }, [org]);
 

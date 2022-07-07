@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+    import React, {useState} from 'react';
 import SelectThingsOne from "./SelectThingsSteps/SelectThingsOne";
 import SelectThingsTwo from "./SelectThingsSteps/SelectThingsTwo";
 import SelectThingsThree from "./SelectThingsSteps/SelectThingsThree";
@@ -8,6 +8,24 @@ import SelectThingsSubmit from "./SelectThingsSteps/SelectThingsSubmit";
 function SelectThings() {
     const [step, setStep] = useState(1);
     const [submitForm, setSubmitForm] = useState({});
+
+    const [clothes, setClothes] = useState(false);
+    const [badClothes, setBadClothes] = useState(false);
+    const [toys, setToys] = useState(false);
+    const [books, setBooks] = useState(false);
+    const [another, setAnother] = useState(false);
+    const [bags, setBags] = useState("1");
+    const [localization, setLocalization] = useState("");
+    const [who, setWho] = useState("");
+    const [orgName, setOrgName] = useState("");
+    const [street, setStreet] = useState("");
+    const [city, setCity] = useState("");
+    const [postCode, setPostCode] = useState("");
+    const [phone, setPhone] = useState("");
+    const [date, setDate] = useState("");
+    const [hour, setHour] = useState("");
+    const [comments, setComments] = useState("");
+
 
     const handleNextStep = () => {
         setStep(prevState => prevState + 1)
