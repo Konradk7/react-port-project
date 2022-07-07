@@ -48,10 +48,9 @@ function SelectThings() {
         const selectedLoc = e.target.value;
         setLocalization(selectedLoc)
     }
-    // const handleForWho = (e) => {
-    //     e.preventDefault();
-    //     setWho(getCurrentContent)
-    // }
+    const handleSelectWho = (e) => {
+        setWho(e.target.value)
+    }
 
     let show;
     if (step === 1) {
@@ -70,7 +69,7 @@ function SelectThings() {
             next={handleNextStep}
             prev={handlePrevStep}
             localization={handleLocalization}
-            who={setWho}
+            who={handleSelectWho}
             orgName={setOrgName}
         />
     } else if (step === 4) {

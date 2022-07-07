@@ -1,6 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function SelectThingsThree({prev, next, localization, who, orgName}) {
+    const [firstOptions, setFirstOptions] = useState([
+        "dzieciom",
+        "samotnym matkom",
+        "bezdomnym"
+    ])
+    const [secondOptions, setSecondOptions] = useState([
+        "niepełnosprawnym",
+        "osobom starszym"
+
+    ])
+    const [style, setStyle] = useState({});
+
 
     return (
         <div>
@@ -21,13 +33,14 @@ function SelectThingsThree({prev, next, localization, who, orgName}) {
                     <h3>Komu chcesz pomóc?</h3>
                     <section className="step-three__container--buttons">
                         <section>
-                            <div>dzieciom</div>
-                            <div>samotnym matkom</div>
-                            <div>bezdomnym</div>
+                            {firstOptions.map((val, idx) => {
+                                return <div key={idx}>{val}</div>
+                            })}
                         </section>
                         <section>
-                            <div>niepełnosprawnym</div>
-                            <div>osobom starszym</div>
+                            {secondOptions.map((val, idx) => {
+                                return <div key={idx}>{val}</div>
+                            })}
                         </section>
                     </section>
                     <section className="step-three__container--footer">

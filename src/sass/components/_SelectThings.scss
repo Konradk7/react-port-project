@@ -157,6 +157,7 @@
         display: flex;
         height: toRem(120);
         align-items: center;
+
         &:first-of-type {
           margin-bottom: toRem(-40);
         }
@@ -176,13 +177,16 @@
             flex-direction: column;
           }
 
-          &:hover, &:active {
+          &:hover {
+            transition: 250ms;
+            transform: scale(1.05);
             background: $color-lightyellow;
             border: toRem(1) solid $color-darkgray;
           }
         }
       }
     }
+
     &--footer {
       width: toRem(1000);
       display: flex;
