@@ -1,4 +1,4 @@
-    import React, {useState} from 'react';
+import React, {useState} from 'react';
 import SelectThingsOne from "./SelectThingsSteps/SelectThingsOne";
 import SelectThingsTwo from "./SelectThingsSteps/SelectThingsTwo";
 import SelectThingsThree from "./SelectThingsSteps/SelectThingsThree";
@@ -14,10 +14,13 @@ function SelectThings() {
     const [toys, setToys] = useState(false);
     const [books, setBooks] = useState(false);
     const [another, setAnother] = useState(false);
+
     const [bags, setBags] = useState("1");
+
     const [localization, setLocalization] = useState("");
     const [who, setWho] = useState("");
     const [orgName, setOrgName] = useState("");
+
     const [street, setStreet] = useState("");
     const [city, setCity] = useState("");
     const [postCode, setPostCode] = useState("");
@@ -39,16 +42,57 @@ function SelectThings() {
     }
 
     let show;
-    if(step === 1) {
-        show = <SelectThingsOne next={handleNextStep}/>
-    }  else if(step === 2) {
-        show = <SelectThingsTwo next={handleNextStep} prev={handlePrevStep}/>
-    } else if(step === 3) {
-        show = <SelectThingsThree next={handleNextStep} prev={handlePrevStep}/>
-    } else if(step === 4) {
-        show = <SelectThingsFour next={handleNextStep} prev={handlePrevStep}/>
-    } else if(step === 5) {
-        show = <SelectThingsSubmit prev={handlePrevStep} submit={handleSubmit}/>
+    if (step === 1) {
+        show = <SelectThingsOne
+            next={handleNextStep}
+            clothes={clothes}
+            badClothes={badClothes}
+            toys={toys}
+            books={books}
+            another={another}
+        />
+    } else if (step === 2) {
+        show = <SelectThingsTwo next={handleNextStep} prev={handlePrevStep} bags={bags}/>
+    } else if (step === 3) {
+        show = <SelectThingsThree
+            next={handleNextStep}
+            prev={handlePrevStep}
+            localization={localization}
+            who={who}
+            orgName={orgName}
+        />
+    } else if (step === 4) {
+        show = <SelectThingsFour
+            next={handleNextStep}
+            prev={handlePrevStep}
+            street={street}
+            city={city}
+            postCode={postCode}
+            phone={phone}
+            hour={hour}
+            date={date}
+            comments={comments}
+        />
+    } else if (step === 5) {
+        show = <SelectThingsSubmit
+            prev={handlePrevStep}
+            submit={handleSubmit}
+            clothes={clothes}
+            badClothes={badClothes}
+            toys={toys}
+            books={books}
+            another={another}
+            localization={localization}
+            who={who}
+            orgName={orgName}
+            street={street}
+            city={city}
+            postCode={postCode}
+            phone={phone}
+            hour={hour}
+            date={date}
+            comments={comments}
+        />
     }
 
     return (
