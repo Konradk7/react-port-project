@@ -30,6 +30,7 @@
     &--boxes {
       width: toRem(640);
 
+
       img {
         width: toRem(250);
         margin: toRem(30) 0;
@@ -40,14 +41,17 @@
         font-family: $font-alt;
         font-size: toRem(40);
         font-weight: lighter;
+
       }
     }
   }
 }
+
 .give-items__boxes {
   display: flex;
   justify-content: center;
   margin-top: toRem(30);
+
 
   section {
     font-family: $font-alt;
@@ -56,21 +60,27 @@
     margin: toRem(35);
 
 
+    &:last-of-type {
+      margin-left: toRem(50);
+    }
+
     h3 {
       font-size: toRem(32);
       margin-bottom: toRem(30);
 
     }
+
     p {
       font-size: toRem(22);
 
     }
+
     div {
       position: absolute;
       border: toRem(1) solid $color-gray;
       height: toRem(140);
       width: toRem(140);
-      right: toRem(-25  );
+      right: toRem(-25);
       top: 0;
       transform: rotate(45deg);
     }
