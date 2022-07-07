@@ -52,7 +52,7 @@ function SelectThings() {
             another={setAnother}
         />
     } else if (step === 2) {
-        show = <SelectThingsTwo next={handleNextStep} prev={handlePrevStep} bags={bags}/>
+        show = <SelectThingsTwo next={handleNextStep} prev={handlePrevStep} bags={setBags}/>
     } else if (step === 3) {
         show = <SelectThingsThree
             next={handleNextStep}
