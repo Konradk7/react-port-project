@@ -153,22 +153,36 @@
     }
 
     &--buttons {
+      section {
+        display: flex;
+        height: toRem(120);
+        align-items: center;
+        &:first-of-type {
+          margin-bottom: toRem(-40);
+        }
 
-      button {
-        padding: toRem(15) toRem(22);
-        margin: toRem(20) toRem(20) toRem(20) 0;
-        font-size: toRem(24);
-        font-family: $font-alt;
-        font-weight: lighter;
-        border: toRem(1) solid $color-darkgray;
-
-        &:hover, &:active {
-          background: $color-lightyellow;
+        div {
+          padding: toRem(15) toRem(12);
+          margin: toRem(0) toRem(20) toRem(0) 0;
+          width: toRem(300);
+          text-align: center;
+          font-size: toRem(24);
+          font-family: $font-alt;
+          font-weight: lighter;
           border: toRem(1) solid $color-darkgray;
+
+          section {
+            display: flex;
+            flex-direction: column;
+          }
+
+          &:hover, &:active {
+            background: $color-lightyellow;
+            border: toRem(1) solid $color-darkgray;
+          }
         }
       }
     }
-
     &--footer {
       width: toRem(1000);
       display: flex;

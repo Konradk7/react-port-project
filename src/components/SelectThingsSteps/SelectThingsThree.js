@@ -1,32 +1,34 @@
 import React from 'react';
 
 function SelectThingsThree({prev, next, localization, who, orgName}) {
-    const handleCity = (e) => {
-        localization(e.target.value)
-    }
+
     return (
         <div>
             <h4 className="select-things--steps">Krok 3/4</h4>
             <form className="select-options__container step-three">
                 <label htmlFor="select-bar" className="step-three--title">Lokalizacja:</label>
                 <div className="select-options__container--main step-three__header">
-                    <select id="select-bar" defaultValue={"default"}>
+                    <select id="select-bar" defaultValue={"default"} onChange={localization}>
                         <option value="default" disabled>-- wybierz --</option>
-                        <option value="Poznań" onClick={handleCity}>Poznań</option>
-                        <option value="Warszawa" onClick={handleCity}>Warszawa</option>
-                        <option value="Kraków" onClick={handleCity}>Kraków</option>
-                        <option value="Wrocław" onClick={handleCity}>Wrocław</option>
-                        <option value="Katowice" onClick={handleCity}>Katowice</option>
+                        <option value="Poznań">Poznań</option>
+                        <option value="Warszawa">Warszawa</option>
+                        <option value="Kraków">Kraków</option>
+                        <option value="Wrocław">Wrocław</option>
+                        <option value="Katowice">Katowice</option>
                     </select>
                 </div>
                 <div className="step-three__container">
                     <h3>Komu chcesz pomóc?</h3>
                     <section className="step-three__container--buttons">
-                        <button>dzieciom</button>
-                        <button>samotnym matkom</button>
-                        <button>bezdomnym</button>
-                        <button>niepełnosprawnym</button>
-                        <button>osobom starszym</button>
+                        <section>
+                            <div>dzieciom</div>
+                            <div>samotnym matkom</div>
+                            <div>bezdomnym</div>
+                        </section>
+                        <section>
+                            <div>niepełnosprawnym</div>
+                            <div>osobom starszym</div>
+                        </section>
                     </section>
                     <section className="step-three__container--footer">
                         <label htmlFor="organization">Wpisz nazwę konkretnej organizacji (opcjonalnie)</label>

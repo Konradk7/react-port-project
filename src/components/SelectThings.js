@@ -44,6 +44,14 @@ function SelectThings() {
         const selectedBags = e.target.value;
         setBags(selectedBags)
     }
+    const handleLocalization = (e) => {
+        const selectedLoc = e.target.value;
+        setLocalization(selectedLoc)
+    }
+    // const handleForWho = (e) => {
+    //     e.preventDefault();
+    //     setWho(getCurrentContent)
+    // }
 
     let show;
     if (step === 1) {
@@ -61,7 +69,7 @@ function SelectThings() {
         show = <SelectThingsThree
             next={handleNextStep}
             prev={handlePrevStep}
-            localization={setLocalization}
+            localization={handleLocalization}
             who={setWho}
             orgName={setOrgName}
         />
