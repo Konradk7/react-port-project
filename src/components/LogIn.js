@@ -8,18 +8,13 @@ import Dec from "../assets/Decoration.svg";
 
 
 
-function LogIn() {
+function LogIn({logout, logoutUser, user}) {
 
     const [loginEmail, setLoginEmail] = useState("");
     const [loginPassword, setLoginPassword] = useState("");
     const [err, setErr] = useState(false);
-    const [logoutUser, setLogoutUser] = useState(false);
 
-    const [user, setUser] = useState({});
 
-    onAuthStateChanged(auth, (currentUser) => {
-        setUser(currentUser)
-    })
     const login = async () => {
         try {
             const user = await signInWithEmailAndPassword(
@@ -34,10 +29,7 @@ function LogIn() {
         }
     };
 
-    const logout = async () => {
-        await signOut(auth)
-        setLogoutUser(true)
-    }
+
 
     return (
         <div className="login">
