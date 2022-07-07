@@ -9,7 +9,7 @@ import Copyright from "./Copyright";
 import Items from "../assets/Hero-Image@2x.png"
 
 
-function Home() {
+function Home({user, logout}) {
     return (
         <div>
             <div style={{display: "flex", justifyContent: "space-between"}}>
@@ -21,7 +21,7 @@ function Home() {
                          left: "-320px",
                          width: "900px"
                 }}/>
-                <HomeHeader/>
+                <HomeHeader user={user} logout={logout}/>
             </div>
             <StatisticsHome/>
             <Settings />

@@ -29,11 +29,11 @@ function App() {
   return (
     <Router>
         <Routes>
-            <Route path='/' element={<Home/>}/>
+            <Route path='/' element={<Home user={user} logout={logout}/>}/>
             <Route path='/login' element={<LogIn logout={logout} logoutUser={logoutUser} user={user}/>}/>
-            <Route path='/register' element={<Register/>}/>
-            <Route path='/give-items' element={<GiveItems/>}/>
-            <Route path='/about-us' element={<AboutUs/>}/>
+            <Route path='/register' element={<Register user={user} logout={logout}/>}/>
+            <Route path='/give-items' element={<GiveItems user={user} logout={logout}/>}/>
+            {/*<Route path='/about-us' element={<AboutUs/>}/>*/}
         </Routes>
     </Router>
   );

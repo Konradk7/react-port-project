@@ -5,10 +5,10 @@ import {
 import Decoration from '../assets/Decoration.svg'
 import Navigation from "./Navigation";
 
-function HomeHeader() {
+function HomeHeader({user, logout}) {
     return (
         <div>
-            <Navigation />
+            <Navigation user={user} logout={logout}/>
             <div className="home-header__container">
                 <h1 className="home-header__container--title">
                     Zacznij pomagać!
