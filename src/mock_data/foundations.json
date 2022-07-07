@@ -1,59 +1,53 @@
 [
   {
-    "main": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+    "main": "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
     "id": 1,
-    "title": "Organizacja “Lorem Ipsum 1”",
-    "text": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
-    "aside": "Egestas, sed, tempus"
+    "title": "Fundacja “Dbam o Zdrowie”",
+    "text": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
+    "aside": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
   },
   {
     "id": 2,
-    "title": "Organizacja “Lorem Ipsum 2”",
-    "text": "endrerit gravida rutrum quisque non tellus orci ac auctor augue.",
-    "aside": "Ut, aliquam, purus, sit, amet"
+    "title": "Fundacja “Dla dzieci”",
+    "text": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
+    "aside": "ubrania, meble, zabawki"
   },
   {
     "id": 3,
-    "title": "Organizacja “Lorem Ipsum 3”",
-    "text": "Scelerisque in dictum non consectetur a erat nam.",
-    "aside": "Mi, quis, hendrerit, dolor"
+    "title": "Fundacja “Bez domu”",
+    "text": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania.",
+    "aside": "ubrania, jedzenie, ciepłe koce"
   },
   {
-    "main": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+    "main": "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
     "id": 4,
-    "title": "Organizacja “Lorem Ipsum 4”",
+    "title": "Fundacja “Żabka”",
     "text": "Scelerisque in dictum non consectetur a erat nam.",
-    "aside": "Ut, aliquam, purus, sit, amet"
+    "aside": "statki, pieski"
   },
   {
     "id": 5,
-    "title": "Organizacja “Lorem Ipsum 5”",
+    "title": "Fundacja “Natalia”",
     "text": "endrerit gravida rutrum quisque non tellus orci ac auctor augue non tellus.",
     "aside": "Mi, quis, hendrerit, dolor"
   },
   {
     "id": 6,
-    "title": "Organizacja “Lorem Ipsum 6”",
-    "text": "Scelerisque in dictum non consectetur a erat nam lorem.",
+    "title": "Fundacja “Dla młodzieży”",
+    "text": "Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
     "aside": "Egestas, sed, tempus"
   },
   {
-    "main": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-    "id": 7,
-    "title": "Organizacja “Lorem Ipsum 7”",
-    "text": "Scelerisque in dictum non consectetur a erat nam lorem.",
-    "aside": "Egestas, sed, tempus"
+    "main": "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
+    "id": 4,
+    "title": "Funfacja “Lorem Ipsum”",
+    "text": "Scelerisque in dictum non consectetur a erat nam.",
+    "aside": "ubrania, meble, zabawki"
   },
   {
-    "id": 8,
-    "title": "Organizacja “Lorem Ipsum 8”",
-    "text": "Scelerisque in dictum non consectetur a erat nam lorem.",
-    "aside": "Egestas, sed, tempus"
-  },
-  {
-    "id": 9,
-    "title": "Organizacja “Lorem Ipsum 9”",
-    "text": "Scelerisque in dictum non consectetur a erat nam lorem.",
-    "aside": "Egestas, sed, tempus"
+    "id": 5,
+    "title": "Fundacja “Oskar Margas”",
+    "text": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
+    "aside": "ubrania, jedzenie, ciepłe koce"
   }
 ]

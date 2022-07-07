@@ -10,6 +10,7 @@ function AboutWorkText({org}) {
     const [local, setLocal] = useState(LocalJson.slice(0, 6));
     const [cur, setCur] = useState(foundations);
     const [pageNumber, setPageNumber] = useState(0);
+    const [number, setNumber] = useState(3)
 
     const infoPerPage = 3;
     const pagesVisited = pageNumber * infoPerPage;
@@ -42,12 +43,15 @@ function AboutWorkText({org}) {
     useEffect(() => {
         if(org === 1) {
             setCur(foundations);
+            setNumber(3)
         }
         else if (org === 2) {
             setCur(organizations);
+            setNumber(2)
         }
         else if (org === 3) {
             setCur(local);
+            setNumber(1)
         }
     }, [org]);
 
@@ -57,7 +61,7 @@ function AboutWorkText({org}) {
             <ReactPaginate
                 previousLabel={""}
                 nextLabel={""}
-                pageCount={pageCount}
+                pageCount={number}
                 onPageChange={changePage}
                 containerClassName={"about-work__container--footer"}
             />
