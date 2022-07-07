@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-function SelectThingsOne({next}) {
+function SelectThingsOne({next, clothes, badClothes, toys, books, another}) {
 
 
     return (
@@ -9,24 +9,23 @@ function SelectThingsOne({next}) {
             <h2>Zaznacz co chcesz oddać:</h2>
             <form>
                 <section>
-                    <input type="checkbox" name="first-input" />
-                    {/*onClick={() => setClothes(true)}*/}
+                    <input type="checkbox" name="first-input" onClick={() => clothes(!clothes)}/>
                     <label htmlFor="first-input">ubrania, które nadają się do ponownego użycia</label>
                 </section>
                 <section>
-                    <input type="checkbox" name="second-input"/>
+                    <input type="checkbox" name="second-input" onClick={() => badClothes(!badClothes)}/>
                     <label htmlFor="second-input">ubrania, do wyrzucenia</label>
                 </section>
                 <section>
-                    <input type="checkbox" name="third-input"/>
+                    <input type="checkbox" name="third-input" onClick={() => toys(!toys)}/>
                     <label htmlFor="third-input">zabawki</label>
                 </section>
                 <section>
-                    <input type="checkbox" name="fourth-input"/>
+                    <input type="checkbox" name="fourth-input" onClick={() => books(!books)}/>
                     <label htmlFor="fourth-input">książki</label>
                 </section>
                 <section>
-                    <input type="checkbox" name="fifth-input"/>
+                    <input type="checkbox" name="fifth-input" onClick={() => another(!another)}/>
                     <label htmlFor="fifth-input">inne</label>
                 </section>
             </form>

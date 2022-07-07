@@ -31,8 +31,10 @@ function SelectThingsThree({prev, next}) {
                     </section>
                 </div>
             </form>
-            <button onClick={prev} style={{marginRight: "50px"}} className="select-things--btn">Wstecz</button>
-            <button onClick={next} className="select-things--btn">Dalej</button>
+            <div style={{marginTop: "-102.5px"}}>
+                <button onClick={prev} style={{marginRight: "50px"}} className="select-things--btn">Wstecz</button>
+                <button onClick={next} className="select-things--btn">Dalej</button>
+            </div>
         </div>
     );
 }

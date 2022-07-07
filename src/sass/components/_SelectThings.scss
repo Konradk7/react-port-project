@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-position: center;
   font-family: $font-alt;
+  height: toRem(800);
 
   &__container {
     padding: toRem(35) toRem(100);

@@ -45,11 +45,11 @@ function SelectThings() {
     if (step === 1) {
         show = <SelectThingsOne
             next={handleNextStep}
-            clothes={clothes}
-            badClothes={badClothes}
-            toys={toys}
-            books={books}
-            another={another}
+            clothes={setClothes}
+            badClothes={setBadClothes}
+            toys={setToys}
+            books={setBooks}
+            another={setAnother}
         />
     } else if (step === 2) {
         show = <SelectThingsTwo next={handleNextStep} prev={handlePrevStep} bags={bags}/>
