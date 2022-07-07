@@ -40,6 +40,10 @@ function SelectThings() {
         e.preventDefault()
 
     }
+    const handleBags = (e) => {
+        const selectedBags = e.target.value;
+        setBags(selectedBags)
+    }
 
     let show;
     if (step === 1) {
@@ -52,7 +56,7 @@ function SelectThings() {
             another={() => setAnother(!another)}
         />
     } else if (step === 2) {
-        show = <SelectThingsTwo next={handleNextStep} prev={handlePrevStep} bags={setBags}/>
+        show = <SelectThingsTwo next={handleNextStep} prev={handlePrevStep} bags={handleBags}/>
     } else if (step === 3) {
         show = <SelectThingsThree
             next={handleNextStep}

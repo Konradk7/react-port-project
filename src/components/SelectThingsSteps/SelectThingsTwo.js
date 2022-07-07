@@ -9,13 +9,13 @@ function SelectThingsTwo({prev, next, bags}) {
                 <div>
                     <div className="select-options__container--main" style={{width: "500px"}}>
                         <label htmlFor="select-bar" className="select-options__container--label">Liczba 60l worków:</label>
-                        <select id="select-bar" defaultValue={"default"}>
+                        <select id="select-bar" defaultValue={"default"} onChange={bags}>
                             <option value="default" disabled>-- wybierz --</option>
-                            <option value="1" onClick={() => bags(1)}>1</option>
-                            <option value="2" onClick={() => bags(2)}>2</option>
-                            <option value="3" onClick={() => bags(3)}>3</option>
-                            <option value="4" onClick={() => bags(4)}>4</option>
-                            <option value="5" onClick={() => bags(5)}>5</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
                         </select>
                     </div>
                 </div>
