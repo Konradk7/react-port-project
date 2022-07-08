@@ -145,17 +145,20 @@
   }
 
   &__container {
-    h3 {
+      h3 {
       font-family: $font-alt;
       font-size: toRem(24);
       font-weight: 600;
-      margin-bottom: toRem(20);
+      margin-bottom: toRem(30);
     }
 
     &--buttons {
+
       section {
         display: flex;
-        height: toRem(120);
+        flex-wrap: wrap;
+        height: toRem(175);
+        width: toRem(1000);
         align-items: center;
 
         &:first-of-type {
@@ -163,19 +166,14 @@
         }
 
         div {
-          padding: toRem(15) toRem(12);
+          padding: toRem(20) toRem(12);
           margin: toRem(0) toRem(20) toRem(0) 0;
-          width: toRem(300);
+          width: toRem(250);
           text-align: center;
           font-size: toRem(24);
           font-family: $font-alt;
           font-weight: lighter;
           border: toRem(1) solid $color-darkgray;
-
-          section {
-            display: flex;
-            flex-direction: column;
-          }
 
           &:hover {
             transition: 250ms;
@@ -191,6 +189,7 @@
       width: toRem(1000);
       display: flex;
       flex-direction: column;
+      margin-top: toRem(95);
 
       label {
         font-family: $font-alt !important;

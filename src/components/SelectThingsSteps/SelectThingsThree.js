@@ -1,9 +1,7 @@
 import React, {useState} from 'react';
 
 function SelectThingsThree({prev, next, localization, who, orgName}) {
-    const [options, setOptions] = useState(Options)
-
-    const Options = [
+    const [options, setOptions] = useState([
         {
             name: "dzieciom",
             id: "Dzieciom"
@@ -24,10 +22,9 @@ function SelectThingsThree({prev, next, localization, who, orgName}) {
             name: "osobom starszym",
             id: "Osobom starszym"
         }
-    ]
-    // const renderOptions = ({item, idx}) => {
-    //     const
-    //         }
+    ])
+
+
 
 
     return (
@@ -49,8 +46,8 @@ function SelectThingsThree({prev, next, localization, who, orgName}) {
                     <h3>Komu chcesz pomóc?</h3>
                     <section className="step-three__container--buttons">
                         <section>
-                            {options.map((val, idx) => {
-                                return <div key={idx}>{val}</div>
+                            {options.map(({name, id}) => {
+                                return <div key={id}>{name}</div>
                             })}
                         </section>
 
