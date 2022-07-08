@@ -39,15 +39,21 @@
   },
   {
     "main": "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
-    "id": 4,
-    "title": "Funfacja “Lorem Ipsum”",
+    "id": 7,
+    "title": "Fundacja “Lorem Ipsum”",
     "text": "Scelerisque in dictum non consectetur a erat nam.",
     "aside": "ubrania, meble, zabawki"
   },
   {
-    "id": 5,
+    "id": 8,
     "title": "Fundacja “Oskar Margas”",
     "text": "Cel i misja: Pomoc dzieciom z ubogich rodzin.",
     "aside": "ubrania, jedzenie, ciepłe koce"
+  },
+  {
+    "id": 9,
+    "title": "...",
+    "text": "...",
+    "aside": "..."
   }
 ]

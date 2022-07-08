@@ -1,17 +1,33 @@
 import React, {useState} from 'react';
 
 function SelectThingsThree({prev, next, localization, who, orgName}) {
-    const [firstOptions, setFirstOptions] = useState([
-        "dzieciom",
-        "samotnym matkom",
-        "bezdomnym"
-    ])
-    const [secondOptions, setSecondOptions] = useState([
-        "niepełnosprawnym",
-        "osobom starszym"
+    const [options, setOptions] = useState(Options)
 
-    ])
-    const [style, setStyle] = useState({});
+    const Options = [
+        {
+            name: "dzieciom",
+            id: "Dzieciom"
+        },
+        {
+            name: "samotnym matkom",
+            id: "Samotnym matkom"
+        },
+        {
+            name: "bezdomnym",
+            id: "Bezdomnym"
+        },
+        {
+            name: "niepełnosprawnym",
+            id: "Niepełnosprawnym"
+        },
+        {
+            name: "osobom starszym",
+            id: "Osobom starszym"
+        }
+    ]
+    // const renderOptions = ({item, idx}) => {
+    //     const
+    //         }
 
 
     return (
@@ -33,15 +49,11 @@ function SelectThingsThree({prev, next, localization, who, orgName}) {
                     <h3>Komu chcesz pomóc?</h3>
                     <section className="step-three__container--buttons">
                         <section>
-                            {firstOptions.map((val, idx) => {
+                            {options.map((val, idx) => {
                                 return <div key={idx}>{val}</div>
                             })}
                         </section>
-                        <section>
-                            {secondOptions.map((val, idx) => {
-                                return <div key={idx}>{val}</div>
-                            })}
-                        </section>
+
                     </section>
                     <section className="step-three__container--footer">
                         <label htmlFor="organization">Wpisz nazwę konkretnej organizacji (opcjonalnie)</label>
