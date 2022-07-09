@@ -56,7 +56,7 @@ function SelectThingsSubmit({prev, submit, localization, who, orgName, street, c
                 </div>
             </form>
             <button onClick={prev} style={{marginRight: "50px"}} className="select-things--btn submit--btn">Wstecz</button>
-            <button type="submit" className="select-things--btn submit--btn">Potwierdzam</button>
+            <button type="submit" className="select-things--btn submit--btn" onClick={submit}>Potwierdzam</button>
         </>
     );
 }

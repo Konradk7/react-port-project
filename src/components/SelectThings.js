@@ -4,6 +4,7 @@ import SelectThingsTwo from "./SelectThingsSteps/SelectThingsTwo";
 import SelectThingsThree from "./SelectThingsSteps/SelectThingsThree";
 import SelectThingsFour from "./SelectThingsSteps/SelectThingsFour";
 import SelectThingsSubmit from "./SelectThingsSteps/SelectThingsSubmit";
+import SelectThingsEnd from "./SelectThingsSteps/SelectThingsEnd";
 
 function SelectThings() {
     const [step, setStep] = useState(1);
@@ -18,7 +19,7 @@ function SelectThings() {
     const [bags, setBags] = useState(null);
 
     const [localization, setLocalization] = useState("");
-    const [who, setWho] = useState("dzieciom");
+    const [who, setWho] = useState("wszystkim potrzebującym");
     const [orgName, setOrgName] = useState("");
 
     const [street, setStreet] = useState("");
@@ -53,7 +54,7 @@ function SelectThings() {
     }
     const handleSubmit = (e) => {
         e.preventDefault()
-
+        setStep(prevState => prevState + 1)
     }
     let showItems;
     if (clothes) {
@@ -122,8 +123,9 @@ function SelectThings() {
             date={date}
             comments={comments}
         />
+    } else if (step === 6) {
+        show = <SelectThingsEnd />
     }
-
     return (
         <div className="select-things">
             <div className="select-things__container">

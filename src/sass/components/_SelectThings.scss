@@ -307,3 +307,18 @@
   margin-top: toRem(15);
 
 }
+
+.select-things__container--end {
+  height: toRem(700);
+  width: toRem(900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  div {
+    width: toRem(650);
+    text-align: center;
+
+  }
+
+}
