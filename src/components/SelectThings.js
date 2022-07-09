@@ -79,13 +79,13 @@ function SelectThings() {
         show = <SelectThingsFour
             next={handleNextStep}
             prev={handlePrevStep}
-            street={street}
-            city={city}
-            postCode={postCode}
-            phone={phone}
-            hour={hour}
-            date={date}
-            comments={comments}
+            street={(e) => setStreet(e.target.value)}
+            city={(e) => setCity(e.target.value)}
+            postCode={(e) => setPostCode(e.target.value)}
+            phone={(e) => setPhone(e.target.value)}
+            hour={(e) => setHour(e.target.value)}
+            date={(e) => setDate(e.target.value)}
+            comments={(e) => setComments(e.target.value)}
         />
     } else if (step === 5) {
         show = <SelectThingsSubmit

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SelectThingsFour({prev, next}) {
+function SelectThingsFour({prev, next, street, city, postCode, hour, date, phone, comments}) {
     return (
         <>
             <h4 className="select-things--steps">Krok 4/4</h4>
@@ -11,34 +11,34 @@ function SelectThingsFour({prev, next}) {
                         <h5>Adres odbioru:</h5>
                         <section>
                             <label htmlFor="street">Ulica</label>
-                            <input type="text" name="street"/>
+                            <input type="text" name="street" onChange={street}/>
                         </section>
                         <section>
                             <label htmlFor="city">Miasto</label>
-                            <input type="text" name="city"/>
+                            <input type="text" name="city" onChange={city}/>
                         </section>
                         <section>
                             <label htmlFor="post-code">Kod pocztowy</label>
-                            <input type="text" name="post-code"/>
+                            <input type="text" name="post-code" onChange={postCode}/>
                         </section>
                         <section>
                             <label htmlFor="phone-number">Numer telefonu</label>
-                            <input type="text" name="phone-number"/>
+                            <input type="text" name="phone-number" onChange={phone}/>
                         </section>
                     </div>
                     <div>
                         <h5>Termin odbioru:</h5>
                         <section>
                             <label htmlFor="date">Data</label>
-                            <input type="text" name="date"/>
+                            <input type="text" name="date" onChange={date}/>
                         </section>
                         <section>
                             <label htmlFor="hour">Godzina</label>
-                            <input type="text" name="hour"/>
+                            <input type="text" name="hour" onChange={hour}/>
                         </section>
                         <section>
                             <label htmlFor="note"><span style={{display: "block"}}>Uwagi </span>dla kuriera</label>
-                            <textarea name="note" cols="27" rows="8"></textarea>
+                            <textarea name="note" cols="27" rows="8" onChange={comments}></textarea>
                         </section>
                     </div>
                 </div>
