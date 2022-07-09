@@ -5,6 +5,7 @@ import SelectThingsThree from "./SelectThingsSteps/SelectThingsThree";
 import SelectThingsFour from "./SelectThingsSteps/SelectThingsFour";
 import SelectThingsSubmit from "./SelectThingsSteps/SelectThingsSubmit";
 import SelectThingsEnd from "./SelectThingsSteps/SelectThingsEnd";
+import Alert from "./Alert";
 
 function SelectThings() {
     const [step, setStep] = useState(1);
@@ -65,7 +66,7 @@ function SelectThings() {
         showItems = "zabawki"
     } else if (books) {
         showItems = "książki"
-    }  else if (another) {
+    } else if (another) {
         showItems = "różne rzeczy"
     }
 
@@ -124,12 +125,15 @@ function SelectThings() {
             comments={comments}
         />
     } else if (step === 6) {
-        show = <SelectThingsEnd />
+        show = <SelectThingsEnd/>
     }
     return (
-        <div className="select-things">
-            <div className="select-things__container">
-                {show}
+        <div>
+            <Alert steps={step} />
+            <div className="select-things">
+                <div className="select-things__container">
+                    {show}
+                </div>
             </div>
         </div>
     );

@@ -9,7 +9,6 @@ function GiveItems() {
     return (
         <div style={{minWidth: "1800px"}}>
             <GiveItemsHead />
-            <Alert />
             <SelectThings />
             <Footer />
             <Copyright />
