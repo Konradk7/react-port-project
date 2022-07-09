@@ -18,11 +18,11 @@ function SelectThingsFour({prev, next, street, city, postCode, hour, date, phone
                             <input type="text" name="city" onChange={city}/>
                         </section>
                         <section>
-                            <label htmlFor="post-code">Kod pocztowy</label>
+                            <label htmlFor="post-code">Kod <p>pocztowy</p></label>
                             <input type="text" name="post-code" onChange={postCode}/>
                         </section>
                         <section>
-                            <label htmlFor="phone-number">Numer telefonu</label>
+                            <label htmlFor="phone-number">Numer <p>telefonu</p></label>
                             <input type="text" name="phone-number" onChange={phone}/>
                         </section>
                     </div>

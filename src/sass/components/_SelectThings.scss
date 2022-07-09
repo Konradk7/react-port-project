@@ -213,7 +213,7 @@
 }
 
 .step-fourth {
-  width: toRem(950);
+  width: toRem(910);
 
   h3 {
     font-family: $font-alt;
@@ -229,6 +229,7 @@
 
     &--constrict {
       width: toRem(20);
+
     }
 
     section {
@@ -244,8 +245,11 @@
         background: transparent;
         border: toRem(1) solid $color-darkgray;
         margin-left: toRem(20);
-        padding: 0 toRem(100);
+        padding: 0 toRem(10);
+        width: toRem(250) !important;
+        text-align: center;
       }
+
 
       textarea {
         background: transparent;
@@ -260,6 +264,7 @@
       font-weight: 600;
       font-size: toRem(24);
       margin-bottom: toRem(30);
+
     }
   }
 }
