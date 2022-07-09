@@ -36,10 +36,7 @@ function SelectThings() {
     const handlePrevStep = () => {
         setStep(prevState => prevState - 1)
     }
-    const handleSubmit = (e) => {
-        e.preventDefault()
 
-    }
     const handleBags = (e) => {
         const selectedBags = e.target.value;
         setBags(selectedBags)
@@ -53,6 +50,22 @@ function SelectThings() {
     }
     const handleOrgName = (e) => {
         setOrgName(e.target.value)
+    }
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+    }
+    let showItems;
+    if (clothes) {
+        showItems = "ubrania w dobrym stanie"
+    } else if (badClothes) {
+        showItems = "ubrania w złym stanie"
+    } else if (toys) {
+        showItems = "zabawki"
+    } else if (books) {
+        showItems = "książki"
+    }  else if (another) {
+        showItems = "różne rzeczy"
     }
 
     let show;
@@ -91,12 +104,14 @@ function SelectThings() {
         show = <SelectThingsSubmit
             prev={handlePrevStep}
             submit={handleSubmit}
-            clothes={clothes}
-            badClothes={badClothes}
-            toys={toys}
-            books={books}
-            another={another}
+            // clothes={clothes}
+            // badClothes={badClothes}
+            // toys={toys}
+            // books={books}
+            // another={another}
+            showItems={showItems}
             localization={localization}
+            bags={bags}
             who={who}
             orgName={orgName}
             street={street}
