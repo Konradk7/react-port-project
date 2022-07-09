@@ -18,7 +18,7 @@ function SelectThings() {
     const [bags, setBags] = useState(null);
 
     const [localization, setLocalization] = useState("");
-    const [who, setWho] = useState("");
+    const [who, setWho] = useState("dzieciom");
     const [orgName, setOrgName] = useState("");
 
     const [street, setStreet] = useState("");
@@ -51,6 +51,9 @@ function SelectThings() {
     const handleSelectWho = (e) => {
         setWho(e.target.value)
     }
+    const handleOrgName = (e) => {
+        setOrgName(e.target.value)
+    }
 
     let show;
     if (step === 1) {
@@ -70,7 +73,7 @@ function SelectThings() {
             prev={handlePrevStep}
             localization={handleLocalization}
             who={handleSelectWho}
-            orgName={setOrgName}
+            orgName={handleOrgName}
         />
     } else if (step === 4) {
         show = <SelectThingsFour

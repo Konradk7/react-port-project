@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 
 function SelectThingsThree({prev, next, localization, who, orgName}) {
+    const [selectedOptions, setSelectedOption] = useState("");
     const [options, setOptions] = useState([
         {
             name: "dzieciom",
@@ -54,7 +55,7 @@ function SelectThingsThree({prev, next, localization, who, orgName}) {
                     </section>
                     <section className="step-three__container--footer">
                         <label htmlFor="organization">Wpisz nazwę konkretnej organizacji (opcjonalnie)</label>
-                        <input type="text" name="organization"/>
+                        <input type="text" name="organization" onChange={orgName}/>
                     </section>
                 </div>
             </form>
