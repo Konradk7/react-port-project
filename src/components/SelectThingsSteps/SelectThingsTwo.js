@@ -21,7 +21,8 @@ function SelectThingsTwo({prev, next, bags}) {
                 </div>
 
             </form>
-            <button onClick={prev} className="select-things--btn" style={{marginRight: "50px", marginTop: "400px"}}>Wstecz</button>
+
+            <button onClick={prev} className="select-things--btn" style={{marginRight: "50px", marginTop: "455px"}}>Wstecz</button>
             <button onClick={next} className="select-things--btn">Dalej</button>
         </>
     );
