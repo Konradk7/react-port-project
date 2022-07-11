@@ -9,16 +9,26 @@
   &--title {
     font-size: toRem(38);
     margin-bottom: toRem(25);
+    @include respond-to("medium") {
+      font-size: toRem(32);
+    }
   }
 
   &--decoration {
     width: toRem(225);
     margin-bottom: toRem(10);
+    @include respond-to("medium") {
+      width: toRem(175);
+    }
   }
 
   &--links {
     margin-bottom: toRem(35);
     display: flex;
+    @include respond-to("medium") {
+      flex-direction: column;
+      margin-bottom: toRem(10);
+    }
 
     h3 {
       font-size: toRem(24);
@@ -28,6 +38,11 @@
       padding: toRem(10) toRem(20);
       border: toRem(1) solid transparent;
       cursor: pointer;
+      @include respond-to("medium") {
+        font-size: toRem(20);
+        margin: toRem(10);
+        font-weight: bold;
+      }
 
       &:hover {
         border: toRem(1) solid $color-gray;
@@ -42,6 +57,12 @@
     margin-bottom: toRem(20);
     text-align: center;
     margin-left: toRem(350);
+    @include respond-to("medium") {
+      width: toRem(300);
+      font-size: toRem(18);
+      margin-left: toRem(150);
+      margin-bottom: toRem(10);
+    }
   }
 
   section {
@@ -52,6 +73,12 @@
     align-items: center;
     border-bottom: toRem(1) solid $color-gray;
     padding: toRem(25) 0;
+    @include respond-to("medium") {
+      width: toRem(600);
+      padding: toRem(15) 0;
+      flex-direction: column;
+
+    }
 
     &:last-of-type {
       border-bottom: toRem(1) solid transparent;
@@ -60,12 +87,22 @@
     h2 {
       font-size: toRem(26);
       font-weight: lighter;
+      @include respond-to("medium") {
+        font-size: toRem(18);
+        font-weight: bold;
+      }
 
     }
 
     p {
       font-size: toRem(18);
       font-weight: lighter;
+      @include respond-to("medium") {
+        font-size: toRem(16);
+        margin-bottom: toRem(5);
+        width: toRem(300);
+
+      }
 
     }
   }
