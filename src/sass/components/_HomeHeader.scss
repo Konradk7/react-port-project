@@ -4,7 +4,10 @@
   justify-content: flex-end;
   width: toRem(900);
 
+  &--menu {
+    margin-left: toRem(850);
 
+  }
   &--header {
     display: flex;
     justify-content: flex-end;
@@ -27,6 +30,7 @@
       }
     }
   }
+
 
   &--list {
     font-family: $font-base;
@@ -64,6 +68,9 @@
 }
 
 .home-header__container {
+  @include respond-to("medium") {
+    margin-bottom: toRem(50);
+  }
   &--title {
     width: 70%;
     font-size: toRem(38);
