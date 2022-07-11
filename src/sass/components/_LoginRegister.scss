@@ -1,10 +1,12 @@
 .login {
   min-width: toRem(900);
 
+
   &--navigation {
     display: flex;
     justify-content: flex-end;
     margin-right: toRem(100);
+
 
   }
 
@@ -14,6 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 
     img {
       width: toRem(280);
