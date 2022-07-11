@@ -3,11 +3,11 @@ import Navigation from "./Navigation";
 import Decoration from "../assets/Decoration.svg";
 
 
-function GiveItemsHead() {
+function GiveItemsHead({logout, user}) {
     return (
         <div className="give-items">
             <div className="give-items__header">
-                <Navigation/>
+                <Navigation user={user} logout={logout}/>
             </div>
             <div className="give-items__main">
                 <h1>Oddaj rzeczy, których już nie chcesz <br/> POTRZEBUJĄCYM</h1>

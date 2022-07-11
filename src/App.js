@@ -33,7 +33,6 @@ function App() {
             <Route path='/login' element={<LogIn logout={logout} logoutUser={logoutUser} user={user}/>}/>
             <Route path='/register' element={<Register user={user} logout={logout}/>}/>
             <Route path='/give-items' element={<GiveItems user={user} logout={logout}/>}/>
-            {/*<Route path='/about-us' element={<AboutUs/>}/>*/}
         </Routes>
     </Router>
   );
