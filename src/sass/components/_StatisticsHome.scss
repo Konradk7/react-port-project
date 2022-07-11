@@ -8,11 +8,19 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  @include respond-to("medium") {
+    flex-direction: column;
+    height: toRem(775);
+
+  }
 
   section {
     height: toRem(334);
     width: toRem(252);
     margin-top: toRem(95);
+    @include respond-to("medium") {
+      margin-top: toRem(20);
+    }
 
     h2 {
       font-size: toRem(90);
