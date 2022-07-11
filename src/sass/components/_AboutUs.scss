@@ -4,6 +4,10 @@
   background-color: $color-white;
   margin-bottom: toRem(40);
   min-width: toRem(1800);
+  @include respond-to("medium") {
+    flex-direction: column;
+    align-items: center;
+  }
 
   &--main {
     width: toRem(620);
@@ -14,28 +18,53 @@
     margin-left: toRem(150);
     color: $color-darkgray;
     font-family: $font-alt;
+    @include respond-to("medium") {
+      margin-left: 0;
+      width: toRem(300);
+
+    }
 
     h2 {
       font-size: toRem(38);
       margin-bottom: toRem(20);
+      @include respond-to("medium") {
+        font-size: toRem(32);
+        padding-top: toRem(20);
+      }
     }
     img {
       width: toRem(225);
       margin-bottom: toRem(50);
+      @include respond-to("medium") {
+        width: toRem(200);
+      }
+
     }
     p {
       font-size: toRem(30);
       font-weight: lighter;
       text-align: center;
+      @include respond-to("medium") {
+        font-size: toRem(18);
+      }
     }
     img:last-of-type {
       width: toRem(180);
       margin-left: toRem(400);
       margin-top: toRem(40);
+      @include respond-to("medium") {
+        width: toRem(100);
+        margin-left: toRem(200);
+        margin-top: toRem(20);
+      }
+
     }
   }
   &--image {
     height: toRem(735);
     width: toRem(912);
+    @include respond-to("medium") {
+      display: none;
+    }
   }
 }
