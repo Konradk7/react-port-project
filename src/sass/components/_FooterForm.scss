@@ -2,11 +2,19 @@
   display: flex;
   justify-content: space-between;
 
+
+
   section {
     border-bottom: toRem(2) solid rgba(189, 195, 199);
+    @include respond-to("medium") {
+      width: toRem(150);
+    }
 
     &:last-of-type {
       margin-left: toRem(20);
+      @include respond-to("medium") {
+        margin-left: toRem(10);
+      }
     }
   }
 
@@ -14,7 +22,9 @@
     font-size: toRem(16);
     font-family: $font-alt;
     font-weight: 600;
-
+    @include respond-to("medium") {
+      font-size: toRem(14);
+    }
 
   }
 
@@ -24,6 +34,9 @@
     border: none;
     margin-top: toRem(15);
     background: transparent;
+    @include respond-to("medium") {
+      font-size: toRem(15);
+    }
 
 
     &::placeholder {
@@ -38,10 +51,14 @@
   margin-top: toRem(20);
 
 
+
   label {
     font-size: toRem(16);
     font-family: $font-alt;
     font-weight: 600;
+    @include respond-to("medium") {
+      font-size: toRem(14);
+    }
   }
 
   input {
@@ -51,6 +68,9 @@
     margin-top: toRem(15);
     background: transparent;
     height: toRem(200);
+    @include respond-to("medium") {
+      font-size: toRem(14);
+    }
 
   }
 
@@ -65,6 +85,9 @@
     margin-bottom: toRem(40);
     border: none;
     border-bottom: toRem(2) solid rgba(189, 195, 199);
+    @include respond-to("medium") {
+      font-size: toRem(14);
+    }
 
     &::placeholder {
       opacity: 0.3;
@@ -85,6 +108,9 @@
     background: transparent;
     border: toRem(0.75) solid $color-darkgray;
     cursor: pointer;
+    @include respond-to("medium") {
+      background: white;
+    }
 
   }
 }

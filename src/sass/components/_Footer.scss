@@ -6,6 +6,12 @@
   align-items: center;
   justify-content: flex-end;
   margin-top: toRem(100);
+  @include respond-to("medium") {
+    height: toRem(600);
+    margin-top: 0;
+    justify-content: center;
+    margin-left: toRem(50);
+  }
 
   &::before {
     content: "";
@@ -20,12 +26,18 @@
     left: 0;
     opacity: 0.4;
     z-index: 1;
+    @include respond-to("medium") {
+      opacity: 0.1;
+    }
   }
 
   &--main {
     margin-right: toRem(100);
     z-index: 10;
     width: toRem(530);
+    @include respond-to("medium") {
+      width: toRem(300);
+    }
   }
 
   &--header {
@@ -33,11 +45,17 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: toRem(40);
+    @include respond-to("medium") {
+      margin-bottom: toRem(20);
+    }
 
     h2 {
       font-size: toRem(38);
       font-family: $font-alt;
       margin-bottom: toRem(25);
+      @include respond-to("medium") {
+        font-size: toRem(25);
+      }
     }
   }
 }

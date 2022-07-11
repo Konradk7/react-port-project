@@ -2,6 +2,7 @@
   position: relative;
   min-width: toRem(1800);
 
+
   &__container {
     display: flex;
     width: 100%;
@@ -11,12 +12,24 @@
     position: absolute;
     bottom: toRem(10);
     z-index: 10;
+    @include respond-to("medium") {
+      font-size: toRem(14);
+      justify-content: center;
+    }
 
     p {
       margin-left: toRem(700);
+      @include respond-to("medium") {
+        margin-left: toRem(100);
+
+      }
+
     }
     div {
       margin-left: toRem(500);
+      @include respond-to("medium") {
+        margin-left: toRem(10);
+      }
     }
   }
 }
