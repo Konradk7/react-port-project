@@ -18,6 +18,9 @@
 
   &--decoration {
     margin: toRem(27) 0 toRem(27) toRem(90);
+    @include respond-to("medium") {
+      margin: toRem(20) 0 toRem(20) toRem(65);
+    }
 
   }
   &--footer {
@@ -38,6 +41,10 @@
     width: 100%;
     height: toRem(325);
     background: $color-white;
+    @include respond-to("medium") {
+      flex-direction: column;
+      height: toRem(800);
+    }
 
     section {
       text-align: center;
