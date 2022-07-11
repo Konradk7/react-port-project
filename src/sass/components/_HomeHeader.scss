@@ -8,6 +8,7 @@
     margin-left: toRem(850);
 
   }
+
   &--header {
     display: flex;
     justify-content: flex-end;
@@ -71,16 +72,24 @@
   @include respond-to("medium") {
     margin-bottom: toRem(50);
   }
+
   &--title {
     width: 70%;
     font-size: toRem(38);
     text-align: center;
     margin-right: toRem(300);
     margin-top: toRem(150);
+    @include respond-to("medium") {
+      font-size: toRem(22);
+      font-weight: bold;
+    }
   }
 
   div {
     margin-top: toRem(100);
+    @include respond-to("medium") {
+      margin-top: toRem(25);
+    }
 
     a {
       font-family: $font-alt;
@@ -91,14 +100,27 @@
       text-transform: uppercase;
       border: toRem(0.75) solid #3C3C3C;
       cursor: pointer;
+      @include respond-to("medium") {
+        font-size: toRem(22);
+        padding: toRem(5) toRem(15);
+
+      }
 
       &:first-child {
         text-align: center;
         width: toRem(200);
         margin-left: toRem(15);
+        @include respond-to("medium") {
+          margin-left: toRem(151);
+          width: toRem(125);
+        }
       }
+
       &:last-child {
         margin-left: toRem(40);
+        @include respond-to("medium") {
+          margin-left: toRem(15);
+        }
       }
     }
   }

@@ -10,6 +10,9 @@
     font-size: toRem(38);
     font-family: $font-alt;
     color: $color-darkgray;
+    @include respond-to("medium") {
+      font-size: toRem(35);
+    }
 
   }
 
