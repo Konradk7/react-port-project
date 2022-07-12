@@ -3,6 +3,30 @@ import Decoration from "../assets/Decoration.svg";
 
 
 function Footer() {
+    const nodemailer = require("nodemailer");
+    async function main() {
+        let testAccount = await nodemailer.createTestAccount();
+
+        let transporter = nodemailer.createTransport({
+            host: "smtp.ethereal.email",
+            port: 587,
+            secure: false,
+            auth: {
+                user: testAccount.user,
+                pass: testAccount.pass,
+            },
+        });
+        let info = await transporter.sendMail({
+            from: '"Fred Foo 👻" <foo@example.com>', // sender address
+            to: "bar@example.com, baz@example.com", // list of receivers
+            subject: "Hello ✔", // Subject line
+            text: "Hello world?", // plain text body
+            html: "<b>Hello world?</b>", // html body
+        });
+    }
+    main().catch(console.error);
+
+
     return (
         <div className="footer__container" id="footer-form">
             <div className="footer__container--main">
