@@ -5,21 +5,37 @@
   background-position: center;
   font-family: $font-alt;
   height: toRem(800);
+  @include respond-to("medium") {
+    width: toRem(450);
+    height: toRem(500);
+  }
 
   &__container {
     padding: toRem(35) toRem(100);
+    @include respond-to("medium") {
+      padding: toRem(15) toRem(20);
+    }
+
 
     h4 {
       font-size: toRem(24);
       font-weight: lighter;
       color: $color-darkgray;
       margin-bottom: toRem(60);
+      @include respond-to("medium") {
+        font-size: toRem(16);
+        margin-bottom: toRem(10);
+      }
     }
 
     h2 {
       font-size: toRem(36);
       font-weight: 600;
       margin-bottom: toRem(40);
+      @include respond-to("medium") {
+        font-size: toRem(22);
+        margin-bottom: toRem(20);
+      }
     }
 
     form {
@@ -28,6 +44,9 @@
 
       section {
         margin-bottom: toRem(40);
+        @include respond-to("medium") {
+          margin-bottom: toRem(20);
+        }
 
 
         input {
@@ -35,6 +54,11 @@
           width: toRem(35);
           position: relative;
           margin-right: toRem(30);
+          @include respond-to("medium") {
+            height: toRem(25);
+            margin-right: toRem(10);
+            width: toRem(25);
+          }
 
           &:checked::before {
             content: "";
@@ -47,12 +71,20 @@
             height: toRem(35);
             width: toRem(35);
             border: toRem(1) solid $color-darkgray;
+            @include respond-to("medium") {
+              height: toRem(25);
+              margin-right: toRem(10);
+              width: toRem(25);
+            }
           }
         }
 
         label {
           font-size: toRem(24);
           font-weight: lighter;
+          @include respond-to("medium") {
+            font-size: toRem(15);
+          }
 
         }
       }
@@ -68,6 +100,10 @@
   padding: toRem(20) toRem(50);
   background: transparent;
   border: toRem(1) solid $color-darkgray;
+  @include respond-to("medium") {
+    margin-top: toRem(100);
+    padding: toRem(15) toRem(30);
+  }
 }
 
 .select-options__container {
@@ -145,7 +181,7 @@
   }
 
   &__container {
-      h3 {
+    h3 {
       font-family: $font-alt;
       font-size: toRem(24);
       font-weight: 600;
@@ -315,6 +351,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   div {
     width: toRem(650);
     text-align: center;

@@ -2,9 +2,15 @@
   font-family: $font-alt;
   background: #FAD648;
   padding: toRem(50) 0;
+  @include respond-to("medium") {
+    width: toRem(450);
+  }
 
   &__container {
     margin-left: toRem(150);
+    @include respond-to("medium") {
+      margin-left: toRem(25);
+    }
 
     h2 {
       font-size: toRem(36);
