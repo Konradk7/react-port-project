@@ -1,6 +1,6 @@
 .statistics__container {
   height: toRem(384);
-  min-width: toRem(1800);
+  //min-width: toRem(1800);
   background-image: url("../../assets/OrangeBGC@2x.png");
   background-size: cover;
   background-position: center;
@@ -10,7 +10,9 @@
   text-align: center;
   @include respond-to("medium") {
     flex-direction: column;
-    height: toRem(775);
+    height: toRem(500);
+    //min-width: toRem(500);
+
 
   }
 
@@ -26,18 +28,30 @@
       font-size: toRem(90);
       color: $color-yellow;
       margin-bottom: toRem(16);
+      @include respond-to("medium") {
+        font-size: toRem(50);
+        margin-bottom: toRem(5);
+      }
     }
 
     h3 {
       font-size: toRem(18);
       color: $color-darkgray;
       margin-bottom: toRem(28);
+      @include respond-to("medium") {
+        font-size: toRem(14);
+        margin-bottom: toRem(7);
+      }
+
 
     }
 
     p {
       font-size: toRem(16);
       color: $color-darkgray;
+      @include respond-to("medium") {
+        font-size: toRem(15);
+      }
 
     }
   }
