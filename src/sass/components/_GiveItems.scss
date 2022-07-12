@@ -6,11 +6,19 @@
   background-repeat: no-repeat;
   background-size: contain;
   padding-bottom: toRem(150);
+  @include respond-to("medium") {
+    background-image: none;
+    padding-bottom: toRem(50);
+    width: toRem(725);
+  }
 
   &__header {
     display: flex;
     justify-content: flex-end;
     margin-right: toRem(50);
+    @include respond-to("medium") {
+      justify-content: start;
+    }
 
   }
 
@@ -21,14 +29,24 @@
     text-align: center;
     margin-right: toRem(300);
     margin-top: toRem(100);
+    @include respond-to("medium") {
+      align-items: center;
+    }
 
     h1 {
       font-family: $font-alt;
       font-size: toRem(38);
+      @include respond-to("medium") {
+        font-size: toRem(22);
+        margin-bottom: toRem(-70);
+      }
     }
 
     &--boxes {
       width: toRem(640);
+      @include respond-to("medium") {
+        transform: scale(0.6);
+      }
 
 
       img {
