@@ -1,11 +1,17 @@
 .login {
   min-width: toRem(900);
+  @include respond-to("medium") {
+    min-width: 0;
+  }
 
 
   &--navigation {
     display: flex;
     justify-content: flex-end;
     margin-right: toRem(100);
+    @include respond-to("medium") {
+      margin-right: 0;
+    }
 
 
   }
@@ -16,11 +22,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include respond-to("medium") {
+      height: 60vh;
+    }
 
 
     img {
       width: toRem(280);
       margin-bottom: toRem(50);
+      @include respond-to("medium") {
+        width: toRem(200);
+        margin-bottom: toRem(20);
+      }
     }
 
     h1 {
@@ -28,6 +41,10 @@
       font-size: toRem(40);
       margin-bottom: toRem(25);
       text-align: center;
+      @include respond-to("medium") {
+        font-size: toRem(30);
+        margin-bottom: toRem(15);
+      }
     }
 
     form {
@@ -36,6 +53,10 @@
       padding: toRem(30) toRem(100);
       background: $color-white;
       margin-bottom: toRem(50);
+      @include respond-to("medium") {
+        padding: toRem(10) toRem(125);
+        margin-bottom: toRem(20);
+      }
 
 
       label {
@@ -59,6 +80,9 @@
       display: flex;
       justify-content: space-between;
       width: toRem(500);
+      @include respond-to("medium") {
+        width: toRem(300);
+      }
 
       a {
         font-family: $font-alt;

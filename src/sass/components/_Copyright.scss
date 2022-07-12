@@ -1,6 +1,9 @@
 .copyright {
   position: relative;
   min-width: toRem(1800);
+  @include respond-to("medium") {
+    min-width: 0;
+  }
 
 
   &__container {

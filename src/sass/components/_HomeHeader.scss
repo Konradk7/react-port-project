@@ -152,9 +152,11 @@
 
   }
 }
+
 .home__container {
   display: flex;
   justify-content: space-between;
+
   img {
     @include respond-to("medium") {
       display: none;
