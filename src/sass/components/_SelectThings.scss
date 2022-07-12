@@ -119,6 +119,10 @@
     height: toRem(50);
     display: flex;
     align-items: center;
+    @include respond-to("medium") {
+      font-size: toRem(18);
+      width: toRem(160);
+    }
 
   }
 
@@ -132,6 +136,10 @@
     font-size: toRem(24);
     font-family: $font-alt;
     font-weight: lighter;
+    @include respond-to("medium") {
+      width: toRem(400) !important;
+      font-size: toRem(18);
+    }
 
 
     &::after {
@@ -157,6 +165,9 @@
       color: $color-darkgray;
       background: transparent;
       cursor: pointer;
+      @include respond-to("medium") {
+        padding: toRem(10);
+      }
 
       select::-ms-expand {
         display: none;
@@ -357,5 +368,14 @@
     text-align: center;
 
   }
+}
 
+.step-two--btn {
+  &:first-of-type {
+      margin-right: toRem(50);
+      margin-top: toRem(455);
+    @include respond-to("medium") {
+      margin-top: toRem(250);
+    }
+  }
 }

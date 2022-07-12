@@ -7,7 +7,7 @@ import Copyright from "./Copyright";
 
 function GiveItems({logout, user}) {
     return (
-        <div style={{minWidth: "1800px"}}>
+        <div >
             <GiveItemsHead logout={logout} user={user}/>
             <SelectThings />
             <Footer />
