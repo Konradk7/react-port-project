@@ -5,6 +5,9 @@
   font-family: $font-alt;
   color: $color-darkgray;
   min-width: toRem(1800);
+  @include respond-to("medium") {
+    min-width: 0;
+  }
 
   &--title {
     font-size: toRem(38);
