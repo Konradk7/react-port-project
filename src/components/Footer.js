@@ -1,8 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Decoration from "../assets/Decoration.svg";
 
 
 function Footer() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [error, setError] = useState(null);
+
+    function isValidEmail(email) {
+        return /\S+@\S+\.\S+/.test(email);
+    }
+    const handleChange = e=> {
+        if (!isValidEmail(e.target.value)) {
+            setError("Email is invalid");
+        } else {
+            setError(null);
+        }
+        setEmail(e.target.value)
+    }
+
 
 
     return (
@@ -20,7 +36,7 @@ function Footer() {
                         </section>
                         <section>
                             <label htmlFor="email">Wpisz swój email</label>
-                            <input type="email" placeholder="abc@xyz.pl" name="email"/>
+                            <input type="email" id="email" placeholder="abc@xyz.pl" name="email" value={email} onChange={handleChange}/>
                         </section>
                     </div>
                     <div className="footer-form__main">
