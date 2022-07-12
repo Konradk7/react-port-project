@@ -6,6 +6,11 @@ function Footer() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [error, setError] = useState(null);
+    const [message, setMessage] = useState("");
+
+    const handleWriteName = e => {
+        setName(e.target.value)
+    }
 
     function isValidEmail(email) {
         return /\S+@\S+\.\S+/.test(email);
@@ -17,6 +22,9 @@ function Footer() {
             setError(null);
         }
         setEmail(e.target.value)
+    }
+    const handleSendMessage = e => {
+        setMessage(e.target.value)
     }
 
 
@@ -32,16 +40,19 @@ function Footer() {
                     <div className="footer-form__container">
                         <section>
                             <label htmlFor="name">Wpisz swoje imię</label>
-                            <input type="text" placeholder="Krzysztof" name="name"/>
+                            <input type="text" placeholder="Krzysztof" name="name" value={name} onChange={handleWriteName}/>
                         </section>
                         <section>
                             <label htmlFor="email">Wpisz swój email</label>
                             <input type="email" id="email" placeholder="abc@xyz.pl" name="email" value={email} onChange={handleChange}/>
+                            {error && <h2 style={{color: "red"}}>{error}</h2>}
                         </section>
                     </div>
                     <div className="footer-form__main">
                         <label htmlFor="message">Wpisz swoją wiadomość</label>
                         <textarea
+                            value={message}
+                            onChange={handleSendMessage}
                             placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
