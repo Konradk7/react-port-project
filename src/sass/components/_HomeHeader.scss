@@ -3,9 +3,15 @@
   flex-direction: column;
   justify-content: flex-end;
   width: toRem(900);
+  @include respond-to("medium") {
+    justify-content: start;
+    width: toRem(450);
+  }
 
   &--menu {
-    margin-left: toRem(850);
+    @include respond-to("medium") {
+      margin-left: toRem(350);
+    }
 
   }
 
@@ -44,7 +50,6 @@
     @include respond-to('medium') {
       display: flex;
       flex-direction: column;
-      margin-left: toRem(700);
     }
 
     li {
@@ -129,7 +134,21 @@
 .hide {
   display: none;
   @include respond-to("medium") {
-    display: inline-block;
+    display: block;
+    height: toRem(50);
+    width: toRem(50);
+    justify-content: center;
+    z-index: 10;
+    background: black;
 
+  }
+}
+.home__container {
+  display: flex;
+  justify-content: space-between;
+  img {
+    @include respond-to("medium") {
+      display: none;
+    }
   }
 }

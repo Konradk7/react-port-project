@@ -12,7 +12,7 @@ import Items from "../assets/Hero-Image@2x.png"
 function Home({user, logout}) {
     return (
         <div>
-            <div style={{display: "flex", justifyContent: "space-between"}}>
+            <div className="home__container">
                 <img src={Items}
                      alt="items"
                      style={{

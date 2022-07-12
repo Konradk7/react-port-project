@@ -26,7 +26,9 @@ function Footer() {
     const handleSendMessage = e => {
         setMessage(e.target.value)
     }
-
+    const handleSubmit = e => {
+        e.preventDefault();
+    }
 
 
     return (
@@ -60,7 +62,7 @@ function Footer() {
                         />
                     </div>
                     <div className="footer-form__button">
-                        <button>Wyślij</button>
+                        <button onClick={handleSubmit}>Wyślij</button>
                     </div>
                 </form>
             </div>
