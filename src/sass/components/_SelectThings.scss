@@ -472,10 +472,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include respond-to("medium") {
+    height: toRem(500);
+    width: toRem(400);
+  }
 
   div {
     width: toRem(650);
     text-align: center;
+    @include respond-to("medium") {
+      width: toRem(350);
+    }
+
+    h2 {
+      @include respond-to("medium") {
+        font-size: toRem(20);
+        //width: toRem(600);
+      }
+    }
 
   }
 }
