@@ -26,7 +26,7 @@ function Navigation({user, logout}) {
                 <li><ScrollLink to="about-work" smooth={true} duration={1000}>Fundacja i organizacje</ScrollLink></li>
                 <li><ScrollLink to="footer-form" smooth={true} duration={1000}>Kontakt</ScrollLink></li>
             </ul>}
-            <div className="home-nav__container--menu hide" onClick={handleShowNav}><img src={Hamburger} alt="menu"/></div>
+            <div className="home-nav__container--menu hide" onClick={handleShowNav}></div>
 
         </nav>
     );

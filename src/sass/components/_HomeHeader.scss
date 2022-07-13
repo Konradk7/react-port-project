@@ -11,6 +11,7 @@
   &--menu {
     @include respond-to("medium") {
       margin-left: toRem(350);
+      background-image: url("../../assets/icons8-menu.svg");
     }
 
   }
@@ -142,13 +143,13 @@
 
 .hide {
   display: none;
+
   @include respond-to("medium") {
     display: block;
     height: toRem(50);
     width: toRem(50);
     justify-content: center;
     z-index: 10;
-    background: black;
 
   }
 }
