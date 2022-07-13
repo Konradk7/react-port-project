@@ -18,7 +18,7 @@ function SelectThingsSubmit({prev, submit, localization, who, orgName, street, c
                         <p>dla lokalizacji: {localization}</p>
                     </div>
                 </div>
-                <div className="step-fourth__container">
+                <div className="step-fourth__container submit">
                     <div>
                         <h5>Adres odbioru:</h5>
                         <section>
