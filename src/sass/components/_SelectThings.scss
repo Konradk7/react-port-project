@@ -325,13 +325,17 @@
     &--constrict {
       width: toRem(20);
 
-
+    }
+    &--label {
+      font-size: toRem(14) !important;
+      margin-right: toRem(-15);
     }
 
     section {
       display: flex;
       justify-content: space-between;
       align-items: center !important;
+
 
       &:last-of-type {
         align-items: start;
@@ -344,6 +348,9 @@
         padding: 0 toRem(10);
         width: toRem(250) !important;
         text-align: center;
+        @include respond-to("medium") {
+          width: toRem(100) !important;
+        }
       }
 
 
@@ -352,6 +359,11 @@
         resize: none;
         margin-left: toRem(15);
         margin-right: toRem(30);
+        @include respond-to("medium") {
+          margin-left: toRem(5);
+          margin-right: toRem(5);
+          width: toRem(150);
+        }
       }
     }
 
@@ -362,6 +374,12 @@
       margin-bottom: toRem(30);
 
     }
+
+  }
+}
+.step-four--button {
+  @include respond-to("medium") {
+    margin-top: toRem(50);
   }
 }
 

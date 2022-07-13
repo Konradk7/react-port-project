@@ -10,42 +10,42 @@ function SelectThingsFour({prev, next, street, city, postCode, hour, date, phone
                     <div>
                         <h5>Adres odbioru:</h5>
                         <section>
-                            <label htmlFor="street">Ulica</label>
+                            <label htmlFor="street" className="step-fourth__container--label">Ulica</label>
                             <input type="text" name="street" onChange={street}/>
                         </section>
                         <section>
-                            <label htmlFor="city">Miasto</label>
+                            <label htmlFor="city" className="step-fourth__container--label">Miasto</label>
                             <input type="text" name="city" onChange={city}/>
                         </section>
                         <section>
-                            <label htmlFor="post-code">Kod <p>pocztowy</p></label>
+                            <label htmlFor="post-code" className="step-fourth__container--label">Kod <p>pocztowy</p></label>
                             <input type="text" name="post-code" onChange={postCode}/>
                         </section>
                         <section>
-                            <label htmlFor="phone-number">Numer <p>telefonu</p></label>
+                            <label htmlFor="phone-number" className="step-fourth__container--label">Numer <p>telefonu</p></label>
                             <input type="text" name="phone-number" onChange={phone}/>
                         </section>
                     </div>
                     <div>
                         <h5>Termin odbioru:</h5>
                         <section>
-                            <label htmlFor="date">Data</label>
+                            <label htmlFor="date" className="step-fourth__container--label">Data</label>
                             <input type="text" name="date" onChange={date}/>
                         </section>
                         <section>
-                            <label htmlFor="hour">Godzina</label>
+                            <label htmlFor="hour" className="step-fourth__container--label">Godzina</label>
                             <input type="text" name="hour" onChange={hour}/>
                         </section>
                         <section>
-                            <label htmlFor="note"><span style={{display: "block"}}>Uwagi </span>dla kuriera</label>
+                            <label htmlFor="note" className="step-fourth__container--label"><span style={{display: "block"}}>Uwagi </span>dla kuriera</label>
                             <textarea name="note" cols="27" rows="8" onChange={comments}></textarea>
                         </section>
                     </div>
                 </div>
             </form>
             <div style={{marginTop: "-10px"}}>
-                <button onClick={prev} style={{marginRight: "50px"}} className="select-things--btn">Wstecz</button>
-                <button onClick={next} className="select-things--btn">Dalej</button>
+                <button onClick={prev} style={{marginRight: "50px"}} className="select-things--btn step-four--button">Wstecz</button>
+                <button onClick={next} className="select-things--btn step-four--button">Dalej</button>
             </div>
         </>
     );
