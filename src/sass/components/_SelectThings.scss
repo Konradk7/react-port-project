@@ -108,6 +108,9 @@
 
 .select-options__container {
   width: toRem(800);
+  @include respond-to("medium") {
+    width: toRem(300);
+  }
 
 
   &--label {
@@ -179,16 +182,25 @@
 .step-three {
   margin-bottom: toRem(-25);
 
+
   &--title {
     font-size: toRem(36);
     font-family: $font-alt;
     font-weight: 600;
     margin-bottom: toRem(20);
+    @include respond-to("medium") {
+      margin-bottom: toRem(10);
+      font-size: toRem(22);
+    }
   }
 
   &__header {
     width: toRem(300);
     margin-bottom: toRem(50);
+    @include respond-to("medium") {
+      margin-bottom: toRem(10);
+      font-size: toRem(22);
+    }
   }
 
   &__container {
