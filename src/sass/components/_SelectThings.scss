@@ -379,7 +379,7 @@
 }
 .step-four--button {
   @include respond-to("medium") {
-    margin-top: toRem(30);
+    margin-top: toRem(20);
   }
 }
 
