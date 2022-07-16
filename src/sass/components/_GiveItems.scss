@@ -18,7 +18,7 @@
     margin-right: toRem(50);
     @include respond-to("medium") {
       justify-content: start;
-      width: toRem(500);
+      width: toRem(450);
     }
 
   }
