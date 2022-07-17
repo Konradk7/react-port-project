@@ -28,6 +28,7 @@
       }
 
     }
+
     div {
       margin-left: toRem(500);
       @include respond-to("medium") {

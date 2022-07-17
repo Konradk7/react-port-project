@@ -326,6 +326,7 @@
       width: toRem(20);
 
     }
+
     &--label {
       font-size: toRem(14) !important;
       margin-right: toRem(-15);
@@ -377,6 +378,7 @@
 
   }
 }
+
 .step-four--button {
   @include respond-to("medium") {
     margin-top: toRem(20);
@@ -432,10 +434,12 @@
     }
   }
 }
+
 .submit {
   @include respond-to("medium") {
     font-size: toRem(15);
   }
+
   h5 {
     @include respond-to("medium") {
       font-size: toRem(18);
@@ -445,6 +449,7 @@
       }
     }
   }
+
   section {
     @include respond-to("medium") {
       margin-right: toRem(15);
@@ -496,8 +501,8 @@
 
 .step-two--btn {
   &:first-of-type {
-      margin-right: toRem(50);
-      margin-top: toRem(455);
+    margin-right: toRem(50);
+    margin-top: toRem(455);
     @include respond-to("medium") {
       margin-top: toRem(250);
     }

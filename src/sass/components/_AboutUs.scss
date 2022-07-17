@@ -33,6 +33,7 @@
         padding-top: toRem(20);
       }
     }
+
     img {
       width: toRem(225);
       margin-bottom: toRem(50);
@@ -41,6 +42,7 @@
       }
 
     }
+
     p {
       font-size: toRem(30);
       font-weight: lighter;
@@ -49,6 +51,7 @@
         font-size: toRem(18);
       }
     }
+
     img:last-of-type {
       width: toRem(180);
       margin-left: toRem(400);
@@ -61,6 +64,7 @@
 
     }
   }
+
   &--image {
     height: toRem(735);
     width: toRem(912);

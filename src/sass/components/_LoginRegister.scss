@@ -173,6 +173,7 @@
     color: $color-darkgray;
     border: toRem(1) solid $color-darkgray;
     padding: toRem(10) toRem(20);
+
     &:hover {
       transform: scale(1.05);
     }
