@@ -63,7 +63,7 @@
     @include respond-to("medium") {
       width: toRem(300);
       font-size: toRem(18);
-      margin-left: toRem(150);
+      margin-left: toRem(0);
       margin-bottom: toRem(10);
 
     }
@@ -128,6 +128,14 @@
 
     &:hover {
       border: toRem(1) solid $color-gray;
+    }
+  }
+}
+.about-work__text--fix {
+  //Yes, i know it's not good idea, but i didn't have time:P
+  p, h2, section, div {
+    @include respond-to("medium") {
+      width: toRem(300);
     }
   }
 }

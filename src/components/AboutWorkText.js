@@ -24,7 +24,7 @@ function AboutWorkText({org}) {
         .slice(pagesVisited, pagesVisited + infoPerPage)
         .map((data) => {
             return (
-                <div key={data.id}>
+                <div key={data.id} className="about-work__text--fix">
                     <p
                         className="about-work__container--main">
                         {data.main}
