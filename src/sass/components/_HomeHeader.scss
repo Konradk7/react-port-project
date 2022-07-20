@@ -82,19 +82,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    width: toRem(400);
   }
 
   &--title {
-    width: 70%;
+    width: toRem(650);
     font-size: toRem(38);
     text-align: center;
     margin-right: toRem(300);
     margin-top: toRem(150);
+    box-sizing: border-box;
     @include respond-to("medium") {
       font-size: toRem(22);
       font-weight: bold;
       margin-top: toRem(50);
-      margin-left: toRem(50);
+      margin-left: toRem(60);
+      width: toRem(300);
+      margin-right: toRem(100);
     }
   }
 
