@@ -15,6 +15,7 @@ function Register() {
     const [confirmPassword, setConfirmPassword] = useState(false);
     const [user, setUser] = useState({});
     const [err, setErr] = useState("");
+    const [registered, setRegistered] = useState("");
 
 
     onAuthStateChanged(auth, (currentUser) => {
@@ -29,6 +30,7 @@ function Register() {
                 registerPassword
             );
             console.log(user)
+            setRegistered("Pomyślnie zarejestrowano!")
         } catch (error) {
             console.log(error.message)
 
@@ -38,6 +40,8 @@ function Register() {
                 setErr("Hasło jest zbyt krótkie");
             } else if (registerPassword !== confirmPassword) {
                 setErr("Hasła nie zgadzają się");
+            } else {
+                setErr("Błąd!")
             }
         }
     }
@@ -80,6 +84,7 @@ function Register() {
                         }}
                     />
                     {err ? <div className="error-message">{err}</div> : ""}
+                    <div className="well-message">{registered}</div>
                 </form>
                 <div className="login__container--footer">
                     <Link to="/login">Zaloguj się</Link>

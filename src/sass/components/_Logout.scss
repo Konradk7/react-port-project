@@ -59,3 +59,13 @@
   background: red;
   padding: toRem(5);
 }
+
+.well-message {
+  text-align: center;
+  font-family: $font-base;
+  font-size: toRem(15);
+  transform: scale(2);
+  margin: toRem(10) toRem(15) toRem(2) toRem(15);
+  background: lightgreen;
+  padding: toRem(5);
+}
