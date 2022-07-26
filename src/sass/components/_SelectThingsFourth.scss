@@ -78,6 +78,7 @@
 }
 
 .step-four--button {
+  margin-top: toRem(85);
   @include respond-to("medium") {
     margin-top: toRem(20);
   }
