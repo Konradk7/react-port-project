@@ -129,3 +129,39 @@
   }
 }
 
+.login--message {
+  text-align: center;
+  background: $color-darkgray;
+  padding: toRem(30) toRem(5);
+  color: $color-white;
+  border-radius: toRem(5);
+  border: toRem(1) solid $color-lightyellow;
+  box-shadow: 0 0 toRem(3) 0 $color-darkgray;
+
+  p {
+    font-family: $font-alt;
+    color: lighten($color-gray, 50%);
+
+    span {
+      color: lighten($color-gray, 80%);
+      font-size: toRem(22);
+      border-bottom: toRem(1) solid $color-white;
+      margin: toRem(10) toRem(100);
+    }
+  }
+
+  h2 {
+    margin-bottom: toRem(25);
+  }
+
+  button {
+    margin: toRem(10) 0;
+    font-family: $font-base;
+    font-weight: bold;
+    font-size: toRem(15);
+    border: toRem(1) solid $color-gray;
+    outline: none;
+    border-radius: toRem(3);
+    background: $color-white;
+  }
+}

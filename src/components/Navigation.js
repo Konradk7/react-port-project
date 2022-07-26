@@ -11,6 +11,7 @@ function Navigation({user, logout}) {
     }
 
 
+
     return (
         <nav className="home-nav__container">
             <ul className="home-nav__container--header">

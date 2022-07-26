@@ -57,7 +57,9 @@ function SelectThings() {
     }
     const handleSubmit = (e) => {
         e.preventDefault()
+
         setStep(prevState => prevState + 1)
+
     }
     let showItems;
     if (clothes) {

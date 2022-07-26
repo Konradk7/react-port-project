@@ -33,7 +33,15 @@ function Register() {
             setRegistered("Pomyślnie zarejestrowano!")
         } catch (error) {
             console.log(error.message)
-
+            const emailCond =
+                "/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/";
+            if (registerEmail.trim()) {
+                setErr( "Email nie może być pusty");
+            } else if (registerEmail.match(emailCond)) {
+                setErr("Proszę podaj poprawny adres email");
+            } else {
+                setErr( "");
+            }
             if (registerEmail.length === 0) {
                 setErr("Wpisz poprawny email");
             } else if (registerPassword.length <= 6) {

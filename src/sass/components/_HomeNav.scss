@@ -11,9 +11,9 @@
   &--menu {
     @include respond-to("medium") {
       margin-left: toRem(350);
+      margin-bottom: toRem(30);
       background-image: url("../../assets/icons8-menu.svg");
     }
-
   }
 
   &--header {

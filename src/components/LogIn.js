@@ -12,6 +12,7 @@ function LogIn({logout, logoutUser, user}) {
 
     const [loginEmail, setLoginEmail] = useState("");
     const [loginPassword, setLoginPassword] = useState("");
+    const [logIn, setLogIn] = useState(false);
     const [err, setErr] = useState(false);
 
 
@@ -23,9 +24,11 @@ function LogIn({logout, logoutUser, user}) {
                 loginPassword
             );
             console.log(user);
+            setLogIn(true);
         } catch (error) {
             console.log(error.message);
             setErr(true);
+            setLogIn(false);
         }
     };
 
@@ -45,6 +48,14 @@ function LogIn({logout, logoutUser, user}) {
             :
 
                 <div className="login__container">
+                    {logIn &&
+                        <div className="login--message">
+                            <h2>Witaj {user.email}!</h2>
+                            <p>Wyloguj się ze swojego konta</p>
+                            <button onClick={logout}>Wyloguj</button>
+                            <p style={{display: 'flex', flexDirection: 'column'}}><span>Lub</span> Po prostu zaloguj się poniżej na inne konto!:)</p>
+                        </div>
+                    }
                 <div>
                     <h1>Zaloguj się</h1>
                     <img src={Dec} alt="decoration"/>
@@ -59,6 +70,7 @@ function LogIn({logout, logoutUser, user}) {
                         }}
                     />
                     <label htmlFor="password">Hasło</label>
+
                     <input
                         type="password"
                         name="password"
@@ -68,6 +80,7 @@ function LogIn({logout, logoutUser, user}) {
                     />
                     {err && <div className="error-message">Nieprawidłowy email lub hasło</div>}
                 </form>
+
                 <div className="login__container--footer">
                     <Link to="/register">Załóż konto</Link>
                     <button onClick={login}>Zaloguj się</button>
