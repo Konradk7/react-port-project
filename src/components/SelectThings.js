@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-import { Textbox, Radiobox, Checkbox, Select, Textarea } from 'react-inputs-validation';
-import 'react-inputs-validation/lib/react-inputs-validation.min.css';
 import SelectThingsOne from "./SelectThingsSteps/SelectThingsOne";
 import SelectThingsTwo from "./SelectThingsSteps/SelectThingsTwo";
 import SelectThingsThree from "./SelectThingsSteps/SelectThingsThree";
@@ -57,9 +55,25 @@ function SelectThings() {
     }
     const handleSubmit = (e) => {
         e.preventDefault()
-
-        setStep(prevState => prevState + 1)
-
+        setStep(prevState => prevState + 1);
+        setSubmitForm({
+            clothes,
+            badClothes,
+            toys,
+            books,
+            another,
+            bags,
+            localization,
+            who,
+            orgName,
+            street,
+            city,
+            postCode,
+            phone,
+            date,
+            hour,
+            comments
+        })
     }
     let showItems;
     if (clothes) {
