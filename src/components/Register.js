@@ -84,7 +84,7 @@ function Register() {
                         }}
                     />
                     {err ? <div className="error-message">{err}</div> : ""}
-                    <div className="well-message">{registered}</div>
+                    {registered ? <div className="well-message">{registered}</div> : ""}
                 </form>
                 <div className="login__container--footer">
                     <Link to="/login">Zaloguj się</Link>
