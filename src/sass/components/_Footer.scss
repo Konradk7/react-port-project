@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: flex-end;
   margin-top: toRem(100);
+
   @include respond-to("medium") {
     height: toRem(600);
     margin-top: 0;
