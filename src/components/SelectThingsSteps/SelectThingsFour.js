@@ -11,7 +11,7 @@ function SelectThingsFour({prev, next, street, city, postCode, hour, date, phone
                         <h5>Adres odbioru:</h5>
                         <section>
                             <label htmlFor="street" className="step-fourth__container--label">Ulica</label>
-                            <input type="text" name="street" onChange={street}/>
+                            <input type="text" name="street" onChange={street} minLength={3}/>
                         </section>
                         <section>
                             <label htmlFor="city" className="step-fourth__container--label">Miasto</label>

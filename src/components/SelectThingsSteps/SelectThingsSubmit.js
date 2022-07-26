@@ -5,7 +5,7 @@ import Refresh from "../../assets/refresh@2x.png";
 function SelectThingsSubmit({prev, submit, localization, who, orgName, street, city, postCode, phone, hour, date, comments, bags, showItems}) {
     return (
         <>
-            <form className="select-options__container select-submit--header">
+            <form className="select-options__container select-submit--header" onSubmit={submit}>
                 <h3>Podsumowanie Twojej darowizny</h3>
                 <div>
                     <h4>Oddajesz:</h4>
