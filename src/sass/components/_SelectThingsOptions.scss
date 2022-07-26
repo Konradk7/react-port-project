@@ -1,0 +1,72 @@
+.select-options__container {
+  width: toRem(800);
+  @include respond-to("medium") {
+    width: toRem(300);
+  }
+
+
+  &--label {
+    font-size: toRem(24);
+    font-family: $font-alt;
+    font-weight: lighter;
+    position: relative;
+    width: toRem(225);
+    height: toRem(50);
+    display: flex;
+    align-items: center;
+    @include respond-to("medium") {
+      font-size: toRem(18);
+      width: toRem(160);
+    }
+
+  }
+
+  &--main {
+    position: relative;
+    display: flex;
+    width: toRem(525);
+    height: toRem(50);
+    overflow: hidden;
+    border-radius: toRem(2);
+    font-size: toRem(24);
+    font-family: $font-alt;
+    font-weight: lighter;
+    @include respond-to("medium") {
+      width: toRem(400) !important;
+      font-size: toRem(18);
+    }
+
+
+    &::after {
+      content: url("../../assets/Arrow Down.png");
+      position: absolute;
+      top: toRem(12);
+      right: 0;
+      cursor: pointer;
+      pointer-events: none;
+
+      &:active {
+        transform: rotate(90deg);
+      }
+    }
+
+    select {
+      appearance: none;
+      outline: 0;
+      box-shadow: none;
+      border: toRem(1) solid $color-darkgray;
+      flex: 1;
+      padding: 0 toRem(15);
+      color: $color-darkgray;
+      background: transparent;
+      cursor: pointer;
+      @include respond-to("medium") {
+        padding: toRem(10);
+      }
+
+      select::-ms-expand {
+        display: none;
+      }
+    }
+  }
+}
