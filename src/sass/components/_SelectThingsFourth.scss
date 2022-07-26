@@ -1,0 +1,84 @@
+.step-fourth {
+  width: toRem(910);
+  @include respond-to("medium") {
+    width: toRem(400);
+  }
+
+  h3 {
+    font-family: $font-alt;
+    font-size: toRem(36);
+    font-weight: 600;
+    margin-bottom: toRem(60);
+    @include respond-to("medium") {
+      font-size: toRem(18);
+      margin-bottom: toRem(15);
+    }
+  }
+
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    &--constrict {
+      width: toRem(20);
+
+    }
+
+    &--label {
+      font-size: toRem(14) !important;
+      margin-right: toRem(-15);
+    }
+
+    section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center !important;
+
+
+      &:last-of-type {
+        align-items: start;
+      }
+
+      input {
+        background: transparent;
+        border: toRem(1) solid $color-darkgray;
+        margin-left: toRem(20);
+        padding: 0 toRem(10);
+        width: toRem(250) !important;
+        text-align: center;
+        @include respond-to("medium") {
+          width: toRem(100) !important;
+        }
+      }
+
+
+      textarea {
+        background: transparent;
+        resize: none;
+        margin-left: toRem(15);
+        margin-right: toRem(30);
+        @include respond-to("medium") {
+          margin-left: toRem(5);
+          margin-right: toRem(5);
+          width: toRem(150);
+        }
+      }
+    }
+
+    h5 {
+      font-family: $font-alt;
+      font-weight: 600;
+      font-size: toRem(24);
+      margin-bottom: toRem(30);
+
+    }
+
+  }
+}
+
+.step-four--button {
+  @include respond-to("medium") {
+    margin-top: toRem(20);
+  }
+}

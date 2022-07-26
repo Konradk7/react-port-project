@@ -1,0 +1,116 @@
+.step-three {
+  margin-bottom: toRem(-25);
+
+
+  &--title {
+    font-size: toRem(36);
+    font-family: $font-alt;
+    font-weight: 600;
+    margin-bottom: toRem(20);
+    @include respond-to("medium") {
+      margin-bottom: toRem(10);
+      font-size: toRem(22);
+    }
+  }
+
+  &__header {
+    width: toRem(300);
+    margin-bottom: toRem(50);
+    @include respond-to("medium") {
+      margin-bottom: toRem(10);
+      font-size: toRem(22);
+      width: toRem(275) !important;
+    }
+  }
+
+  &__container {
+    h3 {
+      font-family: $font-alt;
+      font-size: toRem(24);
+      font-weight: 600;
+      margin-bottom: toRem(30);
+      @include respond-to("medium") {
+        font-size: toRem(18);
+        margin-bottom: toRem(15);
+      }
+    }
+
+    &--buttons {
+
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        height: toRem(175);
+        width: toRem(1000);
+        align-items: center;
+        @include respond-to("medium") {
+          width: toRem(400);
+          height: toRem(50);
+          //flex-direction: column;
+          //flex-wrap: nowrap;
+        }
+
+        &:first-of-type {
+          margin-bottom: toRem(-40);
+        }
+
+        div {
+          padding: toRem(20) toRem(12);
+          margin: toRem(0) toRem(20) toRem(0) 0;
+          width: toRem(250);
+          text-align: center;
+          font-size: toRem(24);
+          font-family: $font-alt;
+          font-weight: lighter;
+          border: toRem(1) solid $color-darkgray;
+          @include respond-to("medium") {
+            padding: toRem(5) toRem(10);
+            width: toRem(150);
+            margin: toRem(10) toRem(10) toRem(10) 0;
+            font-size: toRem(16);
+
+          }
+
+          &:hover {
+            transition: 250ms;
+            transform: scale(1.05);
+            background: $color-lightyellow;
+            border: toRem(1) solid $color-darkgray;
+          }
+        }
+      }
+    }
+
+    &--footer {
+      width: toRem(1000);
+      display: flex;
+      flex-direction: column;
+      margin-top: toRem(95);
+      @include respond-to("medium") {
+        width: toRem(400);
+        margin-top: toRem(135);
+      }
+
+      label {
+        font-family: $font-alt !important;
+        font-weight: 600 !important;
+        font-size: toRem(24) !important;
+        @include respond-to("medium") {
+          font-size: toRem(18) !important;
+        }
+      }
+
+      input {
+        margin-top: toRem(30);
+        background: transparent;
+        outline: none;
+        border: toRem(1) solid $color-darkgray;
+        width: toRem(555) !important;
+        @include respond-to("medium") {
+          margin-top: toRem(10);
+          width: toRem(300) !important;
+        }
+      }
+    }
+  }
+}
