@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import { Textbox, Radiobox, Checkbox, Select, Textarea } from 'react-inputs-validation';
+import 'react-inputs-validation/lib/react-inputs-validation.min.css';
 import SelectThingsOne from "./SelectThingsSteps/SelectThingsOne";
 import SelectThingsTwo from "./SelectThingsSteps/SelectThingsTwo";
 import SelectThingsThree from "./SelectThingsSteps/SelectThingsThree";
