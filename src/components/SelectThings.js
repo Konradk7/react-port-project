@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import SelectThingsOne from "./SelectThingsSteps/SelectThingsOne";
 import SelectThingsTwo from "./SelectThingsSteps/SelectThingsTwo";
 import SelectThingsThree from "./SelectThingsSteps/SelectThingsThree";
@@ -6,6 +6,7 @@ import SelectThingsFour from "./SelectThingsSteps/SelectThingsFour";
 import SelectThingsSubmit from "./SelectThingsSteps/SelectThingsSubmit";
 import SelectThingsEnd from "./SelectThingsSteps/SelectThingsEnd";
 import Alert from "./Alert";
+import validator from "react-inputs-validation/lib/validator";
 
 function SelectThings() {
     const [step, setStep] = useState(1);
@@ -23,6 +24,10 @@ function SelectThings() {
     const [who, setWho] = useState("wszystkim potrzebującym");
     const [orgName, setOrgName] = useState("");
 
+    const initialValues = { street: "", city: "", postCode: "", phone: "", date: "", hour: ""}
+    const [formValues, setFormValues] = useState(initialValues);
+    const [formErr, setFormErr] = useState({});
+    const [isSubmit, setIsSubmit] = useState(false);
     const [street, setStreet] = useState("");
     const [city, setCity] = useState("");
     const [postCode, setPostCode] = useState("");
@@ -31,7 +36,42 @@ function SelectThings() {
     const [hour, setHour] = useState("");
     const [comments, setComments] = useState("");
 
-
+    const handleChangeFour = (e) => {
+        const { name, value } = e.target;
+        setFormValues({ ...formValues, [name]: value })
+    };
+    const handleSubmitFour = (e) => {
+        e.preventDefault();
+        setFormErr(validate(formValues));
+        setIsSubmit(true)
+    }
+    useEffect(() => {
+        console.log(formErr);
+        if (Object.keys(formErr).length === 0 && isSubmit) {
+            console.log(formValues);
+        }
+    }, [formErr])
+    const validate = (values) => {
+        const errors = {};
+        if(!values.street) {
+            errors.street = "Podaj swoją ulicę!"
+        }
+        if(!values.city) {
+            errors.city = "Podaj nazwę miasta!"
+        }
+        if(!values.postCode) {
+            errors.postCode = "Podaj kod pocztowy!"
+        }
+        if(!values.phone) {
+            errors.phone = "Podaj numer telefonu!"
+        }
+        if(!values.date) {
+            errors.date = "Podaj datę odbioru!"
+        }
+        if (!values.hour) {
+            errors.phone = "Podaj przybliżoną godzinę odbioru!"
+        }
+    }
     const handleNextStep = () => {
         setStep(prevState => prevState + 1)
     }
