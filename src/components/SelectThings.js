@@ -123,6 +123,7 @@ function SelectThings() {
     } else if (step === 5) {
         show = <SelectThingsSubmit
             prev={handlePrevStep}
+            next={handleNextStep}
             submit={handleSubmit}
             // clothes={clothes}
             // badClothes={badClothes}

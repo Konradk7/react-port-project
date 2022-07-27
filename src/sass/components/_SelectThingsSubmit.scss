@@ -71,7 +71,13 @@
 }
 
 .submit--btn {
-  margin-top: toRem(15);
+  font-family: $font-alt;
+  font-size: toRem(24);
+  font-weight: lighter;
+  margin-top: toRem(50);
+  padding: toRem(20) toRem(50);
+  background: transparent;
+  border: toRem(1) solid $color-darkgray;
   @include respond-to("medium") {
     margin-top: toRem(5);
     padding: toRem(10) toRem(15);
