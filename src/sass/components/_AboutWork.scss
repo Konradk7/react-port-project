@@ -4,7 +4,7 @@
   align-items: center;
   font-family: $font-alt;
   color: $color-darkgray;
-  min-width: toRem(1800);
+  //min-width: toRem(1800);
   @include respond-to("medium") {
     min-width: toRem(450);
   }
@@ -75,18 +75,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: toRem(1) solid $color-gray;
     padding: toRem(25) 0;
+    border-bottom: toRem(1) solid $color-gray;
     @include respond-to("medium") {
       width: toRem(600);
       padding: toRem(15) 0;
       flex-direction: column;
-
     }
 
-    &:last-of-type {
-      border-bottom: toRem(1) solid transparent;
-    }
 
     h2 {
       font-size: toRem(26);
@@ -139,3 +135,4 @@
     }
   }
 }
+

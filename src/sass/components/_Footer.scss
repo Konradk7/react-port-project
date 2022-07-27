@@ -10,7 +10,7 @@
     height: toRem(600);
     margin-top: 0;
     justify-content: center;
-    min-width: toRem(400);
+    min-width: toRem(450);
   }
 
   &::before {
@@ -37,7 +37,7 @@
     width: toRem(530);
     @include respond-to("medium") {
       width: toRem(300);
-      margin-left: toRem(100);
+      margin-left: toRem(50);
 
     }
   }
