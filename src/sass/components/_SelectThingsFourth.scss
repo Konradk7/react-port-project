@@ -82,14 +82,23 @@
   padding: toRem(20);
   &:first-child {
     padding: toRem(20) toRem(50);
+    @include respond-to("medium") {
+      padding: toRem(20) toRem(25);
+      margin-right: toRem(20) !important;
+    }
   }
   @include respond-to("medium") {
     margin-top: toRem(20);
+    padding: toRem(20) toRem(10);
   }
 }
 .step-four--button-next {
   margin-left: toRem(10);
   &:disabled {
     background: lighten(red, 40%);
+  }
+  @include respond-to("medium") {
+    padding: toRem(10);
+    margin-left: toRem(5);
   }
 }
