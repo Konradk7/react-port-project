@@ -3,7 +3,7 @@
   background: #FAD648;
   padding: toRem(50) 0;
   @include respond-to("medium") {
-    width: toRem(450);
+    min-width: toRem(450);
   }
 
   &__container {

@@ -5,7 +5,7 @@
   width: toRem(900);
   @include respond-to("medium") {
     justify-content: start;
-    width: toRem(450);
+    min-width: toRem(425);
   }
 
   &--menu {
@@ -19,6 +19,7 @@
   &--header {
     display: flex;
     justify-content: flex-end;
+
 
     li {
       margin: toRem(20) toRem(5);

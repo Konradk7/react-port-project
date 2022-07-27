@@ -79,7 +79,17 @@
 
 .step-four--button {
   margin-top: toRem(85);
+  padding: toRem(20);
+  &:first-child {
+    padding: toRem(20) toRem(50);
+  }
   @include respond-to("medium") {
     margin-top: toRem(20);
+  }
+}
+.step-four--button-next {
+  margin-left: toRem(10);
+  &:disabled {
+    background: lighten(red, 40%);
   }
 }

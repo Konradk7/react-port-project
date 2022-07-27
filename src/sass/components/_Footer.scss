@@ -6,13 +6,11 @@
   align-items: center;
   justify-content: flex-end;
   margin-top: toRem(100);
-
   @include respond-to("medium") {
     height: toRem(600);
     margin-top: 0;
     justify-content: center;
-    margin-left: toRem(50);
-    min-width: 0;
+    min-width: toRem(400);
   }
 
   &::before {
@@ -39,6 +37,8 @@
     width: toRem(530);
     @include respond-to("medium") {
       width: toRem(300);
+      margin-left: toRem(50);
+
     }
   }
 

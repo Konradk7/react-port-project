@@ -1,6 +1,14 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
-function SelectThingsFour({prev, next, submit, onChange, values}) {
+function SelectThingsFour({prev, next, submit, onChange, values, err, isSubmit}) {
+
+    let disable;
+    if (Object.keys(err).length === 0 && Object.keys(values).length !== 0 && isSubmit ) {
+        disable = false;
+    } else {
+        disable = true;
+    }
+
 
     return (
         <>
@@ -46,11 +54,13 @@ function SelectThingsFour({prev, next, submit, onChange, values}) {
                         </section>
                     </div>
                 </div>
+                <div style={{marginTop: "-10px", display: "flex"}}>
+                    <button onClick={prev} style={{marginRight: "50px"}} className="select-things--btn step-four--button">Wstecz</button>
+                    <button  className="select-things--btn step-four--button" type="submit" >Zatwierdź</button>
+                    <button disabled={disable} onClick={next} className="select-things--btn step-four--button step-four--button-next">Dalej</button>
+                </div>
             </form>
-            <div style={{marginTop: "-10px"}}>
-                <button onClick={prev} style={{marginRight: "50px"}} className="select-things--btn step-four--button">Wstecz</button>
-                <button onClick={next} className="select-things--btn step-four--button" type="submit">Dalej</button>
-            </div>
+
         </>
     );
 }

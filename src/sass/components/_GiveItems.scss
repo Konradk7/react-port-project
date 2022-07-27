@@ -9,7 +9,7 @@
   @include respond-to("medium") {
     background-image: none;
     padding-bottom: toRem(50);
-    width: toRem(450);
+    min-width: toRem(450);
   }
 
   &__header {
@@ -18,7 +18,7 @@
     margin-right: toRem(50);
     @include respond-to("medium") {
       justify-content: start;
-      width: toRem(450);
+      width: toRem(400);
     }
 
   }

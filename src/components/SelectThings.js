@@ -23,7 +23,7 @@ function SelectThings() {
     const [who, setWho] = useState("wszystkim potrzebującym");
     const [orgName, setOrgName] = useState("");
 
-    const initialValues = { street: "", city: "", postCode: "", phone: "", date: "", hour: "", comments: ""}
+    const initialValues = { street: "", city: "", postCode: "", phone: "", date: "", hour: "", comments: ""};
     const [formValues, setFormValues] = useState(initialValues);
     const [formErr, setFormErr] = useState({});
     const [isSubmit, setIsSubmit] = useState(false);
@@ -144,6 +144,9 @@ function SelectThings() {
             submit={handleSubmitFour}
             onChange={handleChangeFour}
             values={formValues}
+            err={formErr}
+            isSubmit={isSubmit}
+
         />
     } else if (step === 5) {
         show = <SelectThingsSubmit
