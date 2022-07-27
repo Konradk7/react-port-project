@@ -8,13 +8,7 @@ function SelectThingsSubmit({
                                 localization,
                                 who,
                                 orgName,
-                                street,
-                                city,
-                                postCode,
-                                phone,
-                                hour,
-                                date,
-                                comments,
+                                values,
                                 bags,
                                 showItems,
                                 next
@@ -39,34 +33,34 @@ function SelectThingsSubmit({
                         <h5>Adres odbioru:</h5>
                         <section>
                             <h6>Ulica</h6>
-                            <p>{street}</p>
+                            <p>{values.street}</p>
                         </section>
                         <section>
                             <h6>Miasto</h6>
-                            <p>{city}</p>
+                            <p>{values.city}</p>
                         </section>
                         <section>
                             <h6 className="step-fourth__container--constrict">Kod pocztowy</h6>
-                            <p>{postCode}</p>
+                            <p>{values.postCode}</p>
                         </section>
                         <section>
                             <h6 className="step-fourth__container--constrict">Numer telefonu</h6>
-                            <p>{phone}</p>
+                            <p>{values.phone}</p>
                         </section>
                     </div>
                     <div style={{marginRight: "200px"}}>
                         <h5>Termin odbioru:</h5>
                         <section>
                             <h6>Data</h6>
-                            <p>{date}</p>
+                            <p>{values.date}</p>
                         </section>
                         <section>
                             <h6>Godzina</h6>
-                            <p>{hour}</p>
+                            <p>{values.hour}</p>
                         </section>
                         <section>
                             <h6>Uwagi dla kuriera</h6>
-                            <p>{comments}</p>
+                            <p>{values.comments}</p>
                         </section>
                     </div>
                 </div>

@@ -6,7 +6,6 @@ import SelectThingsFour from "./SelectThingsSteps/SelectThingsFour";
 import SelectThingsSubmit from "./SelectThingsSteps/SelectThingsSubmit";
 import SelectThingsEnd from "./SelectThingsSteps/SelectThingsEnd";
 import Alert from "./Alert";
-import validator from "react-inputs-validation/lib/validator";
 
 function SelectThings() {
     const [step, setStep] = useState(1);
@@ -24,7 +23,7 @@ function SelectThings() {
     const [who, setWho] = useState("wszystkim potrzebującym");
     const [orgName, setOrgName] = useState("");
 
-    const initialValues = { street: "", city: "", postCode: "", phone: "", date: "", hour: ""}
+    const initialValues = { street: "", city: "", postCode: "", phone: "", date: "", hour: "", comments: ""}
     const [formValues, setFormValues] = useState(initialValues);
     const [formErr, setFormErr] = useState({});
     const [isSubmit, setIsSubmit] = useState(false);
@@ -40,11 +39,7 @@ function SelectThings() {
         const { name, value } = e.target;
         setFormValues({ ...formValues, [name]: value })
     };
-    const handleSubmitFour = (e) => {
-        e.preventDefault();
-        setFormErr(validate(formValues));
-        setIsSubmit(true)
-    }
+
     useEffect(() => {
         console.log(formErr);
         if (Object.keys(formErr).length === 0 && isSubmit) {
@@ -71,6 +66,12 @@ function SelectThings() {
         if (!values.hour) {
             errors.phone = "Podaj przybliżoną godzinę odbioru!"
         }
+        return errors;
+    }
+    const handleSubmitFour = (e) => {
+        e.preventDefault();
+        setFormErr(validate(formValues));
+        setIsSubmit(true)
     }
     const handleNextStep = () => {
         setStep(prevState => prevState + 1)
@@ -152,13 +153,16 @@ function SelectThings() {
         show = <SelectThingsFour
             next={handleNextStep}
             prev={handlePrevStep}
-            street={(e) => setStreet(e.target.value)}
-            city={(e) => setCity(e.target.value)}
-            postCode={(e) => setPostCode(e.target.value)}
-            phone={(e) => setPhone(e.target.value)}
-            hour={(e) => setHour(e.target.value)}
-            date={(e) => setDate(e.target.value)}
-            comments={(e) => setComments(e.target.value)}
+            submit={handleSubmitFour}
+            onChange={handleChangeFour}
+            values={formValues}
+            // street={(e) => setStreet(e.target.value)}
+            // city={(e) => setCity(e.target.value)}
+            // postCode={(e) => setPostCode(e.target.value)}
+            // phone={(e) => setPhone(e.target.value)}
+            // hour={(e) => setHour(e.target.value)}
+            // date={(e) => setDate(e.target.value)}
+            // comments={(e) => setComments(e.target.value)}
         />
     } else if (step === 5) {
         show = <SelectThingsSubmit
@@ -175,13 +179,7 @@ function SelectThings() {
             bags={bags}
             who={who}
             orgName={orgName}
-            street={street}
-            city={city}
-            postCode={postCode}
-            phone={phone}
-            hour={hour}
-            date={date}
-            comments={comments}
+            values={formValues}
         />
     } else if (step === 6) {
         show = <SelectThingsEnd/>
