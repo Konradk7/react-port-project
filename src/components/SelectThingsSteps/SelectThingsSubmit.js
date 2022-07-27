@@ -72,7 +72,7 @@ function SelectThingsSubmit({
                 </div>
                 <div className="select-things__buttons" style={{display: "flex"}}>
                     <button onClick={prev} style={{marginRight: "50px"}} className="select-things__buttons--btn submit--btn">Wstecz</button>
-                    <button type="submit" className="select-things__buttons--btn submit--btn" onClick={next}>Potwierdzam</button>
+                    <button type="submit" className="select-things__buttons--btn submit--btn">Potwierdzam</button>
                 </div>
             </form>
 

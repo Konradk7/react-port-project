@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {
     createUserWithEmailAndPassword,
     onAuthStateChanged,
@@ -9,10 +9,12 @@ import Decoration from "../assets/Decoration.svg";
 import {auth} from "./Firebase";
 
 function Register() {
-
+    const initialValues = { email: "", password: "", confirmPassword: ""};
+    const [formValues, setFormValues] = useState(initialValues);
+    const [formErr, setFormErr] = useState({});
+    const [isSubmit, setIsSubmit] = useState(false);
     const [registerEmail, setRegisterEmail] = useState("");
     const [registerPassword, setRegisterPassword] = useState("");
-    const [confirmPassword, setConfirmPassword] = useState(false);
     const [user, setUser] = useState({});
     const [err, setErr] = useState("");
     const [registered, setRegistered] = useState("");
@@ -21,6 +23,45 @@ function Register() {
     onAuthStateChanged(auth, (currentUser) => {
         setUser(currentUser)
     })
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormValues({...formValues, [name]: value})
+    };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setFormErr(validate(formValues));
+        setIsSubmit(true)
+    }
+    useEffect(() => {
+        console.log(formErr);
+        if (Object.keys(formErr).length === 0 && isSubmit) {
+            console.log(formValues);
+        }
+    },[formErr]);
+
+    const validate = (values) => {
+        const errors = {};
+        const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/;
+        if (!values.email) {
+            errors.email = "Email jest wymagany!"
+        } else if (!regex.test(values.email)) {
+            errors.email = "Błędna składnia emaila!"
+        }
+        if(!values.password) {
+            errors.password = "Hasło jest wymagane!"
+        } else if (values.password.length < 6) {
+            errors.password = "Hasło musi być dłuższe niż 4 znaki!"
+        } else if (values.password.length > 16) {
+            errors.password = "Zbyt długie hasło!"
+        }
+        if (!values.confirmPassword) {
+            errors.confirmPassword = "Powtórz hasło!"
+        } else if (values.confirmPassword !== values.password) {
+            errors.confirmPassword = "Hasła nie zgadzają się ze sobą!"
+        }
+
+    }
 
     const register = async () => {
         try {
@@ -46,8 +87,6 @@ function Register() {
                 setErr("Wpisz poprawny email");
             } else if (registerPassword.length <= 6) {
                 setErr("Hasło jest zbyt krótkie");
-            } else if (registerPassword !== confirmPassword) {
-                setErr("Hasła nie zgadzają się");
             } else {
                 setErr("Błąd!")
             }
@@ -91,9 +130,6 @@ function Register() {
                         type="password"
                         name="repeat-password"
                         autoComplete="on"
-                        onChange={(event) => {
-                            setConfirmPassword(event.target.value)
-                        }}
                     />
                     {err ? <div className="error-message">{err}</div> : ""}
                     {registered ? <div className="well-message">{registered}</div> : ""}
