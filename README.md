@@ -16,3 +16,7 @@ na dział "lokalnie" to w ww. dziale włącza się również strona 3, która ni
 5. W dziale "Oddaj rzeczy" postępuj zgodnie z instrukcją opisaną na żółtym banerze
 6. Dział "Zorganizuj zbiórkę" nie jest jeszcze obsługiwany
 7. W przypadku jakichkolwiek pytań lub próby kontaktu ze mną wyślij mi mail na adres konra.kdro7@gmail.com , pozdrawiam!
+
+Aktualnie równięz studiuję książkę Typescript-Node-React oraz zaraz po rozpoczynam kurs AWS Docker/ Kubernetes jak i książkę linux-terminal-command oraz linux-zabezpieczenia. 
+Po tym czasie planuję dodać (lub najpewniej po prostu napisać nową podobną aplikację) kod Typesciprtowy, backend do rejestracji oraz logowania w node, Redux lub React Context do obłusgi stanu
+oraz wdrożenie wszystkiego w chmurze AWS.
