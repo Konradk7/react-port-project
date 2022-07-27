@@ -71,6 +71,7 @@ function Register() {
                     <input
                         type="email"
                         name="email"
+                        autoComplete="on"
                         onChange={(event) => {
                             setRegisterEmail(event.target.value)
                         }}
@@ -79,6 +80,8 @@ function Register() {
                     <input
                         type="password"
                         name="password"
+                        autoComplete="on"
+
                         onChange={(event) => {
                             setRegisterPassword(event.target.value)
                         }}
@@ -87,6 +90,7 @@ function Register() {
                     <input
                         type="password"
                         name="repeat-password"
+                        autoComplete="on"
                         onChange={(event) => {
                             setConfirmPassword(event.target.value)
                         }}
