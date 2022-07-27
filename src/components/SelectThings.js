@@ -27,13 +27,7 @@ function SelectThings() {
     const [formValues, setFormValues] = useState(initialValues);
     const [formErr, setFormErr] = useState({});
     const [isSubmit, setIsSubmit] = useState(false);
-    const [street, setStreet] = useState("");
-    const [city, setCity] = useState("");
-    const [postCode, setPostCode] = useState("");
-    const [phone, setPhone] = useState("");
-    const [date, setDate] = useState("");
-    const [hour, setHour] = useState("");
-    const [comments, setComments] = useState("");
+
 
     const handleChangeFour = (e) => {
         const { name, value } = e.target;
@@ -107,13 +101,7 @@ function SelectThings() {
             localization,
             who,
             orgName,
-            street,
-            city,
-            postCode,
-            phone,
-            date,
-            hour,
-            comments
+            formValues
         })
     }
     let showItems;
@@ -156,24 +144,12 @@ function SelectThings() {
             submit={handleSubmitFour}
             onChange={handleChangeFour}
             values={formValues}
-            // street={(e) => setStreet(e.target.value)}
-            // city={(e) => setCity(e.target.value)}
-            // postCode={(e) => setPostCode(e.target.value)}
-            // phone={(e) => setPhone(e.target.value)}
-            // hour={(e) => setHour(e.target.value)}
-            // date={(e) => setDate(e.target.value)}
-            // comments={(e) => setComments(e.target.value)}
         />
     } else if (step === 5) {
         show = <SelectThingsSubmit
             prev={handlePrevStep}
             next={handleNextStep}
             submit={handleSubmit}
-            // clothes={clothes}
-            // badClothes={badClothes}
-            // toys={toys}
-            // books={books}
-            // another={another}
             showItems={showItems}
             localization={localization}
             bags={bags}
