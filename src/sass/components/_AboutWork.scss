@@ -6,7 +6,7 @@
   color: $color-darkgray;
   min-width: toRem(1800);
   @include respond-to("medium") {
-    min-width: 0;
+    min-width: toRem(450);
   }
 
   &--title {

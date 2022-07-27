@@ -37,7 +37,7 @@
     width: toRem(530);
     @include respond-to("medium") {
       width: toRem(300);
-      margin-left: toRem(50);
+      margin-left: toRem(125);
 
     }
   }

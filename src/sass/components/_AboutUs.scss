@@ -7,7 +7,7 @@
   @include respond-to("medium") {
     flex-direction: column;
     align-items: center;
-    min-width: 0;
+    min-width: toRem(450);
   }
 
   &--main {

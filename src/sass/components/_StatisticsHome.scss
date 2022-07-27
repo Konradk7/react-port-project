@@ -11,7 +11,7 @@
   @include respond-to("medium") {
     flex-direction: column;
     height: toRem(500);
-    //min-width: toRem(500);
+    min-width: toRem(450);
 
 
   }
