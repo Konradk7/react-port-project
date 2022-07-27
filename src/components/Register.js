@@ -60,7 +60,7 @@ function Register() {
         } else if (values.confirmPassword !== values.password) {
             errors.confirmPassword = "Hasła nie zgadzają się ze sobą!"
         }
-
+        return errors;
     }
 
     const register = async () => {
@@ -105,15 +105,17 @@ function Register() {
                     <h1>Załóż konto</h1>
                     <img src={Decoration} alt="decoration"/>
                 </div>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <label htmlFor="name">Email</label>
                     <input
                         type="email"
                         name="email"
                         autoComplete="on"
+                        // value={formValues.email}
                         onChange={(event) => {
                             setRegisterEmail(event.target.value)
                         }}
+
                     />
                     <label htmlFor="password">Hasło</label>
                     <input
