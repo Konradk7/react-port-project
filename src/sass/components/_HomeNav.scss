@@ -5,7 +5,7 @@
   width: toRem(900);
   @include respond-to("medium") {
     justify-content: start;
-    width: toRem(425);
+    width: toRem(400);
   }
 
   &--menu {
@@ -20,12 +20,15 @@
     display: flex;
     justify-content: flex-end;
     @include respond-to("medium") {
-      width: toRem(450);
+      width: toRem(425);
     }
 
 
     li {
       margin: toRem(20) toRem(5);
+      @include respond-to("medium") {
+        margin: toRem(20) 0;
+      }
 
       &:last-child {
         margin-right: toRem(20);
