@@ -50,7 +50,7 @@ function SelectThingsFour({prev, next, submit, onChange, values, err, isSubmit})
                         <section>
                             <label htmlFor="note" className="step-fourth__container--label"><span
                                 style={{display: "block"}}>Uwagi </span>dla kuriera</label>
-                            <textarea name="note" cols="27" rows="8" onChange={onChange} value={values.comments}></textarea>
+                            <textarea name="comments" cols="27" rows="8" onChange={onChange} value={values.comments}></textarea>
                         </section>
                     </div>
                 </div>
