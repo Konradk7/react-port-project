@@ -6,7 +6,7 @@
   font-family: $font-alt;
   height: toRem(800);
   @include respond-to("medium") {
-    min-width: toRem(450);
+    min-width: toRem(425);
     height: toRem(500);
   }
 
