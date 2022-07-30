@@ -79,8 +79,13 @@
 }
 
 .step-four_buttons {
+  display: flex;
+  margin-top: toRem(-35);
+  @include respond-to("medium") {
+    margin-top: toRem(35);
+  }
+
   &--button {
-    margin-top: toRem(85);
     padding: toRem(20);
 
     &:first-child {
