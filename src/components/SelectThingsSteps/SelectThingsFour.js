@@ -54,14 +54,16 @@ function SelectThingsFour({prev, next, submit, onChange, values, err, isSubmit})
                         </section>
                     </div>
                 </div>
-                <div style={{marginTop: "30px", display: "flex"}}>
-                    <button onClick={prev} style={{marginRight: "50px"}} className="select-things--btn step-four--button">Wstecz</button>
-                    <button  className="select-things--btn step-four--button" type="submit" >Zatwierdź</button>
-                    <button disabled={disable} onClick={next} className="select-things--btn step-four--button step-four--button-next">Dalej</button>
-                </div>
-                {err && <div>{err.city}{err.street}{err.postCode}{err.phone}{err.date}{err.hour}</div>}
-            </form>
 
+                <div style={{marginTop: "-10px", display: "flex"}} className="step-four_buttons">
+                    <button onClick={prev} style={{marginRight: "50px"}} className="select-things--btn step-four_buttons--button">Wstecz</button>
+                    <button  className="select-things--btn step-four--button" type="submit" >Zatwierdź</button>
+                    <button disabled={disable} onClick={next} className="select-things--btn step-four_buttons--button step-four_buttons--button-next">Dalej</button>
+                </div>
+            </form>
+            <div style={{ background: "gray"}}>
+            {err && <div>{err.city}{err.street}{err.postCode}{err.phone}{err.date}{err.hour}</div>}
+            </div>
         </>
     );
 }
