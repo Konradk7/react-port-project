@@ -115,3 +115,18 @@
     }
   }
 }
+
+.step-four_alert {
+  background: lighten(red, 15%);
+  padding: toRem(5);
+  margin-top: toRem(10);
+  width: toRem(220);
+  color: black;
+  font-family: $font-alt;
+  font-weight: bold;
+  box-shadow: 0 0 toRem(4) 0 black;
+  margin-left: toRem(255);
+  @include respond-to("medium") {
+    margin-left: toRem(130);
+  }
+}

@@ -3,7 +3,7 @@ import React from 'react';
 function SelectThingsFour({prev, next, submit, onChange, values, err, isSubmit}) {
 
     let disable;
-    if (Object.keys(err).length === 0 && Object.keys(values).length !== 0 && isSubmit ) {
+    if (Object.keys(err).length === 0 && Object.keys(values).length !== 0 && isSubmit) {
         disable = false;
     } else {
         disable = true;
@@ -50,19 +50,31 @@ function SelectThingsFour({prev, next, submit, onChange, values, err, isSubmit})
                         <section>
                             <label htmlFor="note" className="step-fourth__container--label"><span
                                 style={{display: "block"}}>Uwagi </span>dla kuriera</label>
-                            <textarea name="comments" cols="27" rows="8" onChange={onChange} value={values.comments}></textarea>
+                            <textarea name="comments" cols="27" rows="8" onChange={onChange}
+                                      value={values.comments}></textarea>
                         </section>
                     </div>
                 </div>
 
                 <div className="step-four_buttons">
-                    <button onClick={prev} style={{marginRight: "50px"}} className="select-things--btn step-four_buttons--button">Wstecz</button>
-                    <button  className="select-things--btn step-four_buttons--button" type="submit" >Zatwierdź</button>
-                    <button disabled={disable} onClick={next} className="select-things--btn step-four_buttons--button step-four_buttons--button-next">Dalej</button>
+                    <button onClick={prev} style={{marginRight: "50px"}}
+                            className="select-things--btn step-four_buttons--button">Wstecz
+                    </button>
+                    <button className="select-things--btn step-four_buttons--button" type="submit">Zatwierdź</button>
+                    <button disabled={disable} onClick={next}
+                            className="select-things--btn step-four_buttons--button step-four_buttons--button-next">Dalej
+                    </button>
                 </div>
             </form>
-            <div style={{ background: "gray"}}>
-            {/*{err && <div>{err.city}{err.street}{err.postCode}{err.phone}{err.date}{err.hour}</div>}*/}
+            <div className="step-four_alert">
+                {err && <div>
+                    <div>{err.city}</div>
+                    <div>{err.street}</div>
+                    <div>{err.postCode}</div>
+                    <div>{err.phone}</div>
+                    <div>{err.date}</div>
+                    <div>{err.hour}</div>
+                </div>}
             </div>
         </>
     );
