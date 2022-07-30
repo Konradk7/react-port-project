@@ -66,16 +66,17 @@ function SelectThingsFour({prev, next, submit, onChange, values, err, isSubmit})
                     </button>
                 </div>
             </form>
-            <div className="step-four_alert">
-                {err && <div>
+
+            {err &&
+                <div className="step-four_alert">
                     <div>{err.city}</div>
                     <div>{err.street}</div>
                     <div>{err.postCode}</div>
                     <div>{err.phone}</div>
                     <div>{err.date}</div>
                     <div>{err.hour}</div>
-                </div>}
-            </div>
+                </div>
+            }
         </>
     );
 }
