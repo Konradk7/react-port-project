@@ -15,7 +15,7 @@ function Footer() {
     function isValidEmail(email) {
         return /\S+@\S+\.\S+/.test(email);
     }
-    const handleChange = e=> {
+    const handleChange = e => {
         if (!isValidEmail(e.target.value)) {
             setError("Email is invalid");
         } else {
